@@ -1,10 +1,15 @@
 package com.jarida.server.jaridaserver.jarida.exception;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class ErrorDetails {
+    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss a")
     private Date timestamp;
+
     private String message;
+
     private String details;
 
 
