@@ -14,7 +14,7 @@ public class Course extends AuditModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id",insertable = false, updatable = false)
+    @Column(name = "id",insertable = false, updatable = false, unique = true)
     private Long id;
 
     @Column(name = "title")
