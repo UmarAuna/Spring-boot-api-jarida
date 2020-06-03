@@ -16,5 +16,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://us-cdbr-east-06.cleardb.net:3306</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="@Remote-Jarida" uuid="1a4ecb92-fdb2-431b-8725-53bc5291e363">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://us-cdbr-east-05.cleardb.net:3306</jdbc-url>
+    </data-source>
   </component>
 </project>
