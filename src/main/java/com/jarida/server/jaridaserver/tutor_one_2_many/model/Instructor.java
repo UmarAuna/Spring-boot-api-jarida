@@ -10,8 +10,8 @@ public class Instructor extends AuditModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "instructor_id", unique = true, nullable = false)
-    private Long instructorId;
+    @Column
+    private Long id;
 
     @Column(name = "first_name", unique = true)
     private String firstName;
@@ -35,12 +35,12 @@ public class Instructor extends AuditModel implements Serializable {
         this.email = email;
     }
 
-    public Long getInstructorId() {
-        return instructorId;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdUser(Long instructorId) {
-        this.instructorId = instructorId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -78,7 +78,7 @@ public class Instructor extends AuditModel implements Serializable {
     @Override
     public String toString() {
         return "Instructor{" +
-                "id=" + instructorId +
+                "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +

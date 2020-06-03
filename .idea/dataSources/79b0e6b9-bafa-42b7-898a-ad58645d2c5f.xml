@@ -1420,7 +1420,7 @@ flight_id</RefColNames>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="339" parent="287" name="instructor_id">
+    <column id="339" parent="287" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1456,7 +1456,7 @@ flight_id</RefColNames>
     </column>
     <key id="345" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>instructor_id</ColNames>
+      <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="346" parent="288" name="id">

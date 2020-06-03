@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="" />
+    <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/79b0e6b9-bafa-42b7-898a-ad58645d2c5f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/79b0e6b9-bafa-42b7-898a-ad58645d2c5f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/Instructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +120,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -208,7 +216,7 @@
       <workItem from="1591137073935" duration="6630000" />
       <workItem from="1591177917062" duration="4995000" />
       <workItem from="1591187915742" duration="17506000" />
-      <workItem from="1591207573561" duration="2224000" />
+      <workItem from="1591207573561" duration="4034000" />
     </task>
     <servers />
   </component>
@@ -216,10 +224,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="828" y="183" key="#Assign_Data_Sources" timestamp="1590791892417">
+    <state x="828" y="183" key="#Assign_Data_Sources" timestamp="1591210718388">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="828" y="183" key="#Assign_Data_Sources/0.23.1680.991@0.23.1680.991" timestamp="1590791892417" />
+    <state x="828" y="183" key="#Assign_Data_Sources/0.23.1680.991@0.23.1680.991" timestamp="1591210718388" />
     <state x="758" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591207547925">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
@@ -244,54 +252,54 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="0" y="23" key="FileDocumentManager.FileCacheConflict/0.23.1680.991@0.23.1680.991" timestamp="1591061784787" />
-    <state width="1638" height="345" key="GridCell.Tab.0.bottom" timestamp="1591207562815">
+    <state width="1638" height="345" key="GridCell.Tab.0.bottom" timestamp="1591211552051">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1591207562815" />
-    <state width="1638" height="345" key="GridCell.Tab.0.center" timestamp="1591207562814">
+    <state width="1638" height="345" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1591211552051" />
+    <state width="1638" height="345" key="GridCell.Tab.0.center" timestamp="1591211552050">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1591207562814" />
-    <state width="1638" height="345" key="GridCell.Tab.0.left" timestamp="1591207562813">
+    <state width="1638" height="345" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1591211552050" />
+    <state width="1638" height="345" key="GridCell.Tab.0.left" timestamp="1591211552049">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1591207562813" />
-    <state width="1638" height="345" key="GridCell.Tab.0.right" timestamp="1591207562814">
+    <state width="1638" height="345" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1591211552049" />
+    <state width="1638" height="345" key="GridCell.Tab.0.right" timestamp="1591211552051">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1591207562814" />
-    <state width="1638" height="345" key="GridCell.Tab.1.bottom" timestamp="1591207562817">
+    <state width="1638" height="345" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1591211552051" />
+    <state width="1638" height="345" key="GridCell.Tab.1.bottom" timestamp="1591211297934">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.1.bottom/0.23.1680.991@0.23.1680.991" timestamp="1591207562817" />
-    <state width="1638" height="345" key="GridCell.Tab.1.center" timestamp="1591207562816">
+    <state width="1638" height="345" key="GridCell.Tab.1.bottom/0.23.1680.991@0.23.1680.991" timestamp="1591211297934" />
+    <state width="1638" height="345" key="GridCell.Tab.1.center" timestamp="1591211297933">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.1.center/0.23.1680.991@0.23.1680.991" timestamp="1591207562816" />
-    <state width="1638" height="345" key="GridCell.Tab.1.left" timestamp="1591207562815">
+    <state width="1638" height="345" key="GridCell.Tab.1.center/0.23.1680.991@0.23.1680.991" timestamp="1591211297933" />
+    <state width="1638" height="345" key="GridCell.Tab.1.left" timestamp="1591211297932">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.1.left/0.23.1680.991@0.23.1680.991" timestamp="1591207562815" />
-    <state width="1638" height="345" key="GridCell.Tab.1.right" timestamp="1591207562816">
+    <state width="1638" height="345" key="GridCell.Tab.1.left/0.23.1680.991@0.23.1680.991" timestamp="1591211297932" />
+    <state width="1638" height="345" key="GridCell.Tab.1.right" timestamp="1591211297933">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.1.right/0.23.1680.991@0.23.1680.991" timestamp="1591207562816" />
+    <state width="1638" height="345" key="GridCell.Tab.1.right/0.23.1680.991@0.23.1680.991" timestamp="1591211297933" />
     <state x="642" y="175" key="Maven.ArtifactSearchDialog" timestamp="1591178508695">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="642" y="175" key="Maven.ArtifactSearchDialog/0.23.1680.991@0.23.1680.991" timestamp="1591178508695" />
-    <state x="593" y="29" key="SettingsEditor" timestamp="1590964096571">
+    <state x="593" y="29" key="SettingsEditor" timestamp="1591209949393">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="593" y="29" key="SettingsEditor/0.23.1680.991@0.23.1680.991" timestamp="1590964096571" />
+    <state x="593" y="29" key="SettingsEditor/0.23.1680.991@0.23.1680.991" timestamp="1591209949393" />
     <state width="641" height="456" key="SwitcherDM" timestamp="1591055074597">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="641" height="456" key="SwitcherDM/0.23.1680.991@0.23.1680.991" timestamp="1591055074597" />
-    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591206207058">
+    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591210622666">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.991@0.23.1680.991" timestamp="1591206207058" />
+    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.991@0.23.1680.991" timestamp="1591210622666" />
     <state x="728" y="180" key="com.intellij.database.dbimport.ImportDialog" timestamp="1591206061367">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
@@ -300,10 +308,10 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="878" y="330" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.23.1680.991@0.23.1680.991" timestamp="1590878396069" />
-    <state x="732" y="353" width="451" height="331" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1591208739359">
+    <state x="732" y="353" width="451" height="327" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1591210562342">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="732" y="353" width="451" height="331" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1680.991@0.23.1680.991" timestamp="1591208739359" />
+    <state x="732" y="353" width="451" height="327" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1680.991@0.23.1680.991" timestamp="1591210562342" />
     <state x="947" y="279" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1590804479163">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
