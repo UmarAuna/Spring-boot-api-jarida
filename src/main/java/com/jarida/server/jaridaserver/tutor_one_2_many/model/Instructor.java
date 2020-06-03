@@ -10,7 +10,7 @@ public class Instructor extends AuditModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
+    @Column(name = "id",insertable = false, updatable = false)
     private Long id;
 
     @Column(name = "first_name", unique = true)
