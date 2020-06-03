@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/exception/ErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/exception/ErrorDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +213,7 @@
       <workItem from="1591137073935" duration="6630000" />
       <workItem from="1591177917062" duration="4995000" />
       <workItem from="1591187915742" duration="17506000" />
-      <workItem from="1591207573561" duration="4958000" />
+      <workItem from="1591207573561" duration="5267000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
