@@ -1,16 +1,20 @@
 package com.jarida.server.jaridaserver.tutor_one_2_many.controller;
 
+import com.jarida.server.jaridaserver.jarida.model.Jarida;
 import com.jarida.server.jaridaserver.tutor_one_2_many.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.tutor_one_2_many.model.Instructor;
+import com.jarida.server.jaridaserver.tutor_one_2_many.model.InstructorList;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.InstructorRepository;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,8 +28,15 @@ public class InstructorController {
 
 
     @GetMapping("/instructors")
-    public List<Instructor> getInstructors(){
-       return instructorRepository.findAll();
+    public ResponseEntity<InstructorList> getInstructors() throws ResourceNotFoundException {
+        List<Instructor> instructors = new ArrayList<>(instructorRepository.findAll());
+
+        if(instructors.isEmpty()){
+            throw new ResourceNotFoundException("No Instructors Found");
+        }
+        InstructorList instructorList = new InstructorList(instructors);
+        return new ResponseEntity<InstructorList>(instructorList, HttpStatus.OK);
+       //return instructorRepository.findAll();
     }
 
     @GetMapping("/instructors/{id}")

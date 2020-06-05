@@ -24,7 +24,6 @@ public class Course extends AuditModel implements Serializable {
     @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
     @JoinColumn(name = "instructor_id")
     @OnDelete(action = OnDeleteAction.CASCADE)
-    //@JsonIgnore
     private Instructor instructor;
 
     public Course() {

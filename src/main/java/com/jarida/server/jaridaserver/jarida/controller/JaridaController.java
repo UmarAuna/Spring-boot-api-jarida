@@ -2,6 +2,7 @@ package com.jarida.server.jaridaserver.jarida.controller;
 
 import com.jarida.server.jaridaserver.jarida.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.jarida.model.Jarida;
+import com.jarida.server.jaridaserver.jarida.model.JaridaList;
 import com.jarida.server.jaridaserver.jarida.repository.JaridaRepository;
 import net.bytebuddy.implementation.bind.annotation.FieldValue;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,7 @@ public class JaridaController {
     //query for a title and get jarida
     @GetMapping("/jarida")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<List<Jarida>> getQueryTitle(@RequestParam(required = false) String title) throws ResourceNotFoundException {
+    public ResponseEntity<JaridaList> getQueryTitle(@RequestParam(required = false) String title) throws ResourceNotFoundException {
         try {
             List<Jarida> jarida = new ArrayList<>();
 
@@ -52,8 +53,8 @@ public class JaridaController {
                 //return ResponseEntity.ok().body(jarida);
                 //return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
-
-            return new ResponseEntity<>(jarida, HttpStatus.OK);
+            JaridaList jaridaList  = new JaridaList(jarida);
+            return new ResponseEntity<JaridaList>(jaridaList, HttpStatus.OK);
         }catch (Exception e){
             throw new ResourceNotFoundException("No Record found for " + title);
             //return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
