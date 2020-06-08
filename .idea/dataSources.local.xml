@@ -16,6 +16,7 @@
             <name qname="zero_to_production_bucketlist_jpa" />
             <name qname="jarida" />
             <name qname="flight_manager" />
+            <name qname="authentication" />
           </node>
         </introspection-scope>
       </schema-mapping>
