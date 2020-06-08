@@ -2,7 +2,6 @@ package com.jarida.server.jaridaserver;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -18,7 +17,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableJpaAuditing //Enabling JPA Auditing
 @EnableSwagger2
-//@EnableAdminServer
 public class JaridaServerApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
