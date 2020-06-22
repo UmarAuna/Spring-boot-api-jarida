@@ -1,7 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="" />
+    <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_18_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-15.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-16.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-17.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-21.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-22.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-22.022141542491294.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/ApiTestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/79b0e6b9-bafa-42b7-898a-ad58645d2c5f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/79b0e6b9-bafa-42b7-898a-ad58645d2c5f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jarida-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jarida-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-01.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-02.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-03.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-04.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-05.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/JaridaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/JaridaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/controller/JaridaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/controller/JaridaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/JaridaServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/JaridaServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/DatabaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/controller/JaridaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/controller/JaridaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ErrorDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ErrorDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/Jarida.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/Jarida.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/JaridaList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/JaridaList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/DatabaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/exception/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/AuditModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/AuditModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/PostRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/DatabaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/exception/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/CourseList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/CourseList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Instructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Instructor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/InstructorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/InstructorList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/CourseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/CourseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/InstructorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/InstructorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaControllerIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaControllerIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaServerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaServerApplicationTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +97,14 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flight_manager: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="jarida: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jarida: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="jarida: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -66,6 +135,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JavaeeView">
+    <option name="frameworksView" value="false" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -93,6 +165,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/Auth/exception" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,9 +179,13 @@
       <recent name="com.jarida.server.jaridaserver" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jarida.server.jaridaserver.Auth.exception" />
       <recent name="com.jarida.server.jaridaserver.jarida_v2" />
       <recent name="com.jarida.server.jaridaserver.tutor" />
       <recent name="com.jarida.server.jaridaserver.jarida" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/Auth/exception" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -179,6 +256,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.JaridaServerApplication">
+    <configuration name="ApiTestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jarida.server.jaridaserver.jarida.ApiTestClass" />
+      <module name="jarida-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jarida.server.jaridaserver.jarida.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JaridaServerApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/JaridaServerApplication.http" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -212,6 +302,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ApiTestClass" />
         <item itemvalue="HTTP Request.JaridaServerApplication#1" />
         <item itemvalue="HTTP Request.JaridaServerApplication#3" />
         <item itemvalue="HTTP Request.JaridaServerApplication#2" />
@@ -287,7 +378,30 @@
       <workItem from="1591446152497" duration="1198000" />
       <workItem from="1591526705045" duration="1198000" />
       <workItem from="1591557127588" duration="7888000" />
-      <workItem from="1591636063621" duration="1374000" />
+      <workItem from="1591636063621" duration="17103000" />
+      <workItem from="1591716596023" duration="9539000" />
+      <workItem from="1591798581947" duration="2575000" />
+      <workItem from="1591872597734" duration="596000" />
+      <workItem from="1591885633305" duration="1837000" />
+      <workItem from="1591906000401" duration="855000" />
+      <workItem from="1591960179964" duration="593000" />
+      <workItem from="1592008818620" duration="1862000" />
+      <workItem from="1592039993712" duration="597000" />
+      <workItem from="1592216576312" duration="9952000" />
+      <workItem from="1592251754558" duration="2889000" />
+      <workItem from="1592258385651" duration="2527000" />
+      <workItem from="1592309557911" duration="17052000" />
+      <workItem from="1592389773567" duration="3547000" />
+      <workItem from="1592398783321" duration="3343000" />
+      <workItem from="1592427958020" duration="597000" />
+      <workItem from="1592479744633" duration="1551000" />
+      <workItem from="1592514417271" duration="598000" />
+      <workItem from="1592556725133" duration="318000" />
+      <workItem from="1592559519441" duration="592000" />
+      <workItem from="1592572325398" duration="598000" />
+      <workItem from="1592654949941" duration="1478000" />
+      <workItem from="1592736424868" duration="12791000" />
+      <workItem from="1592820629435" duration="12616000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
@@ -344,10 +458,14 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="758" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.991@0.23.1680.991" timestamp="1591357122734" />
-    <state x="1041" y="209" key="#com.intellij.ide.util.MemberChooser" timestamp="1591308746589">
+    <state x="315" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592252079326">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="1041" y="209" key="#com.intellij.ide.util.MemberChooser/0.23.1680.991@0.23.1680.991" timestamp="1591308746589" />
+    <state x="315" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.991@0.23.1680.991" timestamp="1592252079326" />
+    <state x="1041" y="209" key="#com.intellij.ide.util.MemberChooser" timestamp="1592316344161">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="1041" y="209" key="#com.intellij.ide.util.MemberChooser/0.23.1680.991@0.23.1680.991" timestamp="1592316344161" />
     <state x="615" y="451" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590970160258">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
@@ -376,54 +494,58 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="0" y="23" key="FileDocumentManager.FileCacheConflict/0.23.1680.991@0.23.1680.991" timestamp="1591061784787" />
-    <state width="854" height="185" key="GridCell.Tab.0.bottom" timestamp="1591647000083">
+    <state width="1638" height="185" key="GridCell.Tab.0.bottom" timestamp="1592845699898">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="854" height="185" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1591647000083" />
-    <state width="854" height="185" key="GridCell.Tab.0.center" timestamp="1591647000081">
+    <state width="1638" height="185" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1592845699898" />
+    <state width="1638" height="185" key="GridCell.Tab.0.center" timestamp="1592845699897">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="854" height="185" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1591647000081" />
-    <state width="854" height="185" key="GridCell.Tab.0.left" timestamp="1591647000081">
+    <state width="1638" height="185" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1592845699897" />
+    <state width="1638" height="185" key="GridCell.Tab.0.left" timestamp="1592845699896">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="854" height="185" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1591647000081" />
-    <state width="854" height="185" key="GridCell.Tab.0.right" timestamp="1591647000082">
+    <state width="1638" height="185" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1592845699896" />
+    <state width="1638" height="185" key="GridCell.Tab.0.right" timestamp="1592845699897">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="854" height="185" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1591647000082" />
-    <state width="854" height="185" key="GridCell.Tab.1.bottom" timestamp="1591647000085">
+    <state width="1638" height="185" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1592845699897" />
+    <state width="1638" height="185" key="GridCell.Tab.1.bottom" timestamp="1592845699899">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="854" height="185" key="GridCell.Tab.1.bottom/0.23.1680.991@0.23.1680.991" timestamp="1591647000085" />
-    <state width="854" height="185" key="GridCell.Tab.1.center" timestamp="1591647000084">
+    <state width="1638" height="185" key="GridCell.Tab.1.bottom/0.23.1680.991@0.23.1680.991" timestamp="1592845699899" />
+    <state width="1638" height="185" key="GridCell.Tab.1.center" timestamp="1592845699899">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="854" height="185" key="GridCell.Tab.1.center/0.23.1680.991@0.23.1680.991" timestamp="1591647000084" />
-    <state width="854" height="185" key="GridCell.Tab.1.left" timestamp="1591647000083">
+    <state width="1638" height="185" key="GridCell.Tab.1.center/0.23.1680.991@0.23.1680.991" timestamp="1592845699899" />
+    <state width="1638" height="185" key="GridCell.Tab.1.left" timestamp="1592845699898">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="854" height="185" key="GridCell.Tab.1.left/0.23.1680.991@0.23.1680.991" timestamp="1591647000083" />
-    <state width="854" height="185" key="GridCell.Tab.1.right" timestamp="1591647000084">
+    <state width="1638" height="185" key="GridCell.Tab.1.left/0.23.1680.991@0.23.1680.991" timestamp="1592845699898" />
+    <state width="1638" height="185" key="GridCell.Tab.1.right" timestamp="1592845699899">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="854" height="185" key="GridCell.Tab.1.right/0.23.1680.991@0.23.1680.991" timestamp="1591647000084" />
+    <state width="1638" height="185" key="GridCell.Tab.1.right/0.23.1680.991@0.23.1680.991" timestamp="1592845699899" />
     <state x="642" y="175" key="Maven.ArtifactSearchDialog" timestamp="1591178508695">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="642" y="175" key="Maven.ArtifactSearchDialog/0.23.1680.991@0.23.1680.991" timestamp="1591178508695" />
-    <state x="593" y="29" key="SettingsEditor" timestamp="1591312631649">
+    <state x="593" y="29" key="SettingsEditor" timestamp="1592317629563">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="593" y="29" key="SettingsEditor/0.23.1680.991@0.23.1680.991" timestamp="1591312631649" />
+    <state x="593" y="29" key="SettingsEditor/0.23.1680.991@0.23.1680.991" timestamp="1592317629563" />
     <state width="641" height="456" key="SwitcherDM" timestamp="1591232212962">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="641" height="456" key="SwitcherDM/0.23.1680.991@0.23.1680.991" timestamp="1591232212962" />
-    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591309067389">
+    <state width="448" height="495" key="XDebugger.FullValuePopup" timestamp="1591666090004">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.991@0.23.1680.991" timestamp="1591309067389" />
+    <state width="448" height="495" key="XDebugger.FullValuePopup/0.23.1680.991@0.23.1680.991" timestamp="1591666090004" />
+    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1592331122911">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.991@0.23.1680.991" timestamp="1592331122911" />
     <state x="728" y="180" key="com.intellij.database.dbimport.ImportDialog" timestamp="1591206061367">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
@@ -440,10 +562,10 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="947" y="279" key="com.intellij.database.run.ParametersPanel.Standalone/0.23.1680.991@0.23.1680.991" timestamp="1590804479163" />
-    <state x="658" y="227" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1591273020900">
+    <state x="658" y="227" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1592742220668">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="658" y="227" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.991@0.23.1680.991" timestamp="1591273020900" />
+    <state x="658" y="227" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.991@0.23.1680.991" timestamp="1592742220668" />
     <state x="706" y="263" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1591356380598">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
@@ -452,10 +574,14 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="1078" y="414" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.23.1680.991@0.23.1680.991" timestamp="1590764883573" />
-    <state x="536" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1591558771675">
+    <state x="536" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1592820862795">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="536" y="350" key="com.intellij.ide.util.TipDialog/0.23.1680.991@0.23.1680.991" timestamp="1591558771675" />
+    <state x="536" y="350" key="com.intellij.ide.util.TipDialog/0.23.1680.991@0.23.1680.991" timestamp="1592820862795" />
+    <state x="635" y="215" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592824287011">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="635" y="215" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.991@0.23.1680.991" timestamp="1592824287011" />
     <state x="270" y="222" key="new project wizard" timestamp="1591356014388">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
@@ -464,5 +590,9 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="893" y="239" key="run.anything.popup/0.23.1680.991@0.23.1680.991" timestamp="1590761652133" />
+    <state x="111" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1591914670292">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="111" y="239" width="672" height="678" key="search.everywhere.popup/0.23.1680.991@0.23.1680.991" timestamp="1591914670292" />
   </component>
 </project>

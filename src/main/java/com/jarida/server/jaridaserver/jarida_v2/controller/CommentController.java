@@ -11,6 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -74,7 +76,7 @@ public class CommentController {
     }
 
     @DeleteMapping("posts/{postId}/comments/{commentId}")
-    public Map<String, Boolean> deleteComment(@PathVariable(value = "postId") Long postId,
+    public Map<String, String> deleteComment(@PathVariable(value = "postId") Long postId,
                                               @PathVariable(value = "commentId") Long commentId){
 
         if(!postRepository.existsById(postId)){
@@ -82,8 +84,9 @@ public class CommentController {
         }
 
         this.commentRepository.deleteById(commentId);
-        Map<String, Boolean> response = new HashMap<>();
-        response.put("Deleted", Boolean.TRUE);
+        Map<String,String> response = new HashMap<>();
+        response.put("timestamp", new SimpleDateFormat("dd, MMMM, yyyy - hh:mm aa").format(Calendar.getInstance().getTime()));
+        response.put("message","Deleted Successfully");
         return response;
 
 

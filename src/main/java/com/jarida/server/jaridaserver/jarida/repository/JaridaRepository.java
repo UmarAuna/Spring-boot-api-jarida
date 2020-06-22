@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface JaridaRepository extends JpaRepository<Jarida, Long> {
     List<Jarida> findByTitleContaining(String title);
+    Jarida findByTitle(String title);
 }

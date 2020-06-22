@@ -18,7 +18,7 @@ public class Comment extends AuditModel implements Serializable {
     private Long id;
 
     @NotNull
-    @Lob
+    @Lob //is used to map fields/properties of large value to a corresponding database-supported large object type.
     private String text;
 
     @JsonBackReference

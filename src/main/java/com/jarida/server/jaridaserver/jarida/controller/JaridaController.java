@@ -16,10 +16,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -38,7 +36,7 @@ public class JaridaController {
     //query for a title and get jarida
     @GetMapping("/jarida")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<JaridaList> getQueryTitle(@RequestParam(required = false) String title) throws ResourceNotFoundException {
+    public ResponseEntity<List<Jarida>> getQueryTitle(@RequestParam(required = false) String title) throws ResourceNotFoundException {
         try {
             List<Jarida> jarida = new ArrayList<>();
 
@@ -53,8 +51,10 @@ public class JaridaController {
                 //return ResponseEntity.ok().body(jarida);
                 //return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
-            JaridaList jaridaList  = new JaridaList(jarida);
-            return new ResponseEntity<JaridaList>(jaridaList, HttpStatus.OK);
+
+            //JaridaList jaridaList  = new JaridaList(jarida);
+            return new ResponseEntity<>(jarida, HttpStatus.OK);
+
         }catch (Exception e){
             throw new ResourceNotFoundException("No Record found for " + title);
             //return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -65,6 +65,7 @@ public class JaridaController {
     @GetMapping("/jarida/{id}")
     public ResponseEntity<Jarida> getJaridaById(@PathVariable(value = "id" ) Long jaridaId)
             throws ResourceNotFoundException{
+
         Jarida jarida = jaridaRepository.findById(jaridaId)
                 .orElseThrow(() -> new ResourceNotFoundException("Jarida not found for this id :: " + jaridaId ));
         return ResponseEntity.ok().body(jarida);
@@ -74,7 +75,10 @@ public class JaridaController {
     @PostMapping("/jarida")
     @ResponseStatus(HttpStatus.CREATED)
     public  Jarida createJarida(
-            @Valid @FieldValue @NotEmpty  @NonNull @NotEmpty(message = "Content is mandatory") /*@RequestBody*/ Jarida jarida){
+            @Valid @FieldValue @NonNull @NotEmpty(message = "Content is mandatory") /*@RequestBody*/ Jarida jarida){
+          if (jaridaExist(jarida.getTitle())){
+            throw new ResourceNotFoundException("This is a title that exists " + jarida.getTitle());
+        }
         return this.jaridaRepository.save(jarida);
 
     }
@@ -95,27 +99,33 @@ public class JaridaController {
 
     //delete jarida by id
     @DeleteMapping("/jarida/{id}")
-    public Map<String, Boolean> deleteJarida(@PathVariable(value = "id" ) Long jaridaId) throws ResourceNotFoundException {
+    public Map<String,String> deleteJarida(@PathVariable(value = "id" ) Long jaridaId) throws ResourceNotFoundException {
 
         Jarida jarida = jaridaRepository.findById(jaridaId)
                 .orElseThrow(() -> new ResourceNotFoundException("Jarida not found for this id :: " + jaridaId ));
 
         this.jaridaRepository.delete(jarida);
-        Map<String,Boolean> response = new HashMap<>();
-        response.put("Deleted",Boolean.TRUE );
+        Map<String,String> response = new HashMap<>();
+        response.put("timestamp", new SimpleDateFormat("dd, MMMM, yyyy - hh:mm aa").format(Calendar.getInstance().getTime()));
+        response.put("message","Deleted Successfully");
         return response;
     }
 
-    //delete jarida
+   /* //delete jarida
     @DeleteMapping("/jarida")
-    public Map<String, Boolean> deleteJaridaAll() throws ResourceNotFoundException {
+    public Map<String, String> deleteJaridaAll() throws ResourceNotFoundException {
 
         //Jarida jarida = jaridaRepository.findById(jaridaId).orElseThrow(() -> new ResourceNotFoundException("Jarida not found for this id :: " + jaridaId ));
 
         this.jaridaRepository.deleteAll();
-        Map<String,Boolean> response = new HashMap<>();
-        response.put("Deleted",Boolean.TRUE );
+        Map<String,String> response = new HashMap<>();
+        response.put("timestamp", new SimpleDateFormat("dd, MMMM, yyyy - hh:mm aa").format(Calendar.getInstance().getTime()));
+        response.put("message","Deleted Successfully");
         return response;
+    }*/
+
+    public boolean jaridaExist(String jarida){
+        return jaridaRepository.findByTitle(jarida) != null;
     }
 
 

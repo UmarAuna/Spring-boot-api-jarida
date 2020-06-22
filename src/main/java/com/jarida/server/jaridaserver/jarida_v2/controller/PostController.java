@@ -3,14 +3,19 @@ package com.jarida.server.jaridaserver.jarida_v2.controller;
 import com.jarida.server.jaridaserver.jarida_v2.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.jarida_v2.model.Post;
 import com.jarida.server.jaridaserver.jarida_v2.repository.PostRepository;
+import net.bytebuddy.implementation.bind.annotation.FieldValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -21,7 +26,7 @@ public class PostController {
     private PostRepository postRepository;
 
     @GetMapping("/posts")
-    public Page<Post> getAllPosts(Pageable pageable){
+    public Page<Post> getAllPosts(/*@PageableDefault(size = 20)*/ Pageable pageable){
         return postRepository.findAll(pageable);
     }
 
@@ -34,12 +39,12 @@ public class PostController {
     }
 
     @PostMapping("/posts")
-    public Post createPost(@Valid @RequestBody Post post){
+    public Post createPost(@Valid /*@RequestBody*/ @FieldValue Post post){
         return postRepository.save(post);
     }
 
     @PutMapping("/posts/{postId}")
-    public Post updatePost(@PathVariable(value = "postId") Long postId, @Valid @RequestBody Post postRequest){
+    public Post updatePost(@PathVariable(value = "postId") Long postId, @Valid @FieldValue /* @RequestBody*/ Post postRequest){
         return postRepository.findById(postId).map(post -> {
             post.setTitle(postRequest.getTitle());
             post.setContent(postRequest.getContent());
@@ -49,14 +54,15 @@ public class PostController {
     }
 
     @DeleteMapping("/posts/{postId}")
-    public Map<String, Boolean> deletePost(@PathVariable(value = "postId") Long postId){
+    public Map<String, String> deletePost(@PathVariable(value = "postId") Long postId){
 
         Post post = postRepository.findById(postId)
                 .orElseThrow(()-> new ResourceNotFoundException("Post not found :: " + postId));
 
         postRepository.delete(post);
-        Map<String, Boolean> response = new HashMap<>();
-        response.put("Deleted", Boolean.TRUE);
+        Map<String,String> response = new HashMap<>();
+        response.put("timestamp", new SimpleDateFormat("dd, MMMM, yyyy - hh:mm aa").format(Calendar.getInstance().getTime()));
+        response.put("message","Deleted Successfully");
         return response;
     }
 

@@ -9,10 +9,9 @@ import com.jarida.server.jaridaserver.tutor_one_2_many.model.InstructorList;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.CourseRepository;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.InstructorRepository;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -84,14 +83,15 @@ public class CourseController {
 
 
     @DeleteMapping("/instructors/{instructorId}/courses/{courseId}")
-    public Map<String, Boolean> removeCountry(@PathVariable Long instructorId, @PathVariable Long courseId) throws ResourceNotFoundException {
+    public Map<String, String> removeCountry(@PathVariable Long instructorId, @PathVariable Long courseId) throws ResourceNotFoundException {
         if(!instructorRepository.existsById(instructorId)){
             throw new ResourceNotFoundException("instructorId not found");
         }
 
         this.courseRepository.deleteById(courseId);
-        Map<String,Boolean> response = new HashMap<>();
-        response.put("Deleted",Boolean.TRUE );
+        Map<String,String> response = new HashMap<>();
+        response.put("timestamp", new SimpleDateFormat("dd, MMMM, yyyy - hh:mm aa").format(Calendar.getInstance().getTime()));
+        response.put("message","Deleted Successfully");
         return response;
     }
 }
