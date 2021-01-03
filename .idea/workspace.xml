@@ -1,73 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_18_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-15.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-16.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-17.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-21.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-22.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-06-22.022141542491294.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/ApiTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/79b0e6b9-bafa-42b7-898a-ad58645d2c5f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/79b0e6b9-bafa-42b7-898a-ad58645d2c5f.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-12-30.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jarida-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jarida-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-01.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-02.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-03.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-04.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2020-06-05.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/JaridaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/JaridaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/controller/JaridaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/controller/JaridaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida_v2/model/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jarida-server.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/JaridaServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/JaridaServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/DatabaseConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/controller/JaridaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/controller/JaridaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ErrorDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ErrorDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ResourceNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/Jarida.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/Jarida.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/JaridaList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/JaridaList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/DatabaseConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/exception/ResourceNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/AuditModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/AuditModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/CommentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/PostRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/DatabaseConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/exception/ResourceNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/CourseList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/CourseList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Instructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Instructor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/InstructorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/InstructorList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/CourseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/CourseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/InstructorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/InstructorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaControllerIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaControllerIntegrationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaServerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaServerApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
@@ -135,15 +95,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="JavaeeView">
     <option name="frameworksView" value="false" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="KotlinCodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ProjectId" id="1cYVyb7WJwvN33lwoK3VL0mPIX5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -151,7 +110,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -161,6 +119,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -172,7 +131,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -191,6 +154,20 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/v1/jarida" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/v1/jarida" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8080/api/v1/instructors" />
@@ -272,26 +249,14 @@
     <configuration name="JaridaServerApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/JaridaServerApplication.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="JaridaServerApplication#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/JaridaServerApplication.http" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="JaridaServerApplication#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/JaridaServerApplication.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="JaridaControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jarida-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jarida.server.jaridaserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jarida.server.jaridaserver" />
-      <option name="MAIN_CLASS_NAME" value="com.jarida.server.jaridaserver.JaridaControllerIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="JaridaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jarida-server" />
@@ -302,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests#1" />
+        <item itemvalue="HTTP Request.generated-requests#2" />
         <item itemvalue="Application.ApiTestClass" />
         <item itemvalue="HTTP Request.JaridaServerApplication#1" />
         <item itemvalue="HTTP Request.JaridaServerApplication#3" />
-        <item itemvalue="HTTP Request.JaridaServerApplication#2" />
-        <item itemvalue="JUnit.JaridaControllerIntegrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -342,6 +307,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -402,6 +368,10 @@
       <workItem from="1592654949941" duration="1478000" />
       <workItem from="1592736424868" duration="12791000" />
       <workItem from="1592820629435" duration="12616000" />
+      <workItem from="1609283945498" duration="16292000" />
+      <workItem from="1609429104093" duration="6101000" />
+      <workItem from="1609654579118" duration="375000" />
+      <workItem from="1609654967395" duration="3227000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
@@ -442,157 +412,26 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new fixes" />
     <option name="LAST_COMMIT_MESSAGE" value="new fixes" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="828" y="183" key="#Assign_Data_Sources" timestamp="1591272143863">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="828" y="183" key="#Assign_Data_Sources/0.23.1680.991@0.23.1680.991" timestamp="1591272143863" />
-    <state x="758" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591357122734">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="758" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.991@0.23.1680.991" timestamp="1591357122734" />
-    <state x="315" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592252079326">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="315" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.991@0.23.1680.991" timestamp="1592252079326" />
-    <state x="1041" y="209" key="#com.intellij.ide.util.MemberChooser" timestamp="1592316344161">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="1041" y="209" key="#com.intellij.ide.util.MemberChooser/0.23.1680.991@0.23.1680.991" timestamp="1592316344161" />
-    <state x="615" y="451" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590970160258">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="615" y="451" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.991@0.23.1680.991" timestamp="1590970160258" />
-    <state x="614" y="406" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1590969422398">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="614" y="406" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1680.991@0.23.1680.991" timestamp="1590969422398" />
-    <state x="585" y="392" key="#com.intellij.ws.actions.HttpClientConvertFromCurlDialog" timestamp="1591227110952">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="585" y="392" key="#com.intellij.ws.actions.HttpClientConvertFromCurlDialog/0.23.1680.991@0.23.1680.991" timestamp="1591227110952" />
-    <state x="78" y="119" key="CommitChangelistDialog2" timestamp="1591216634993">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="78" y="119" key="CommitChangelistDialog2/0.23.1680.991@0.23.1680.991" timestamp="1591216634993" />
-    <state x="528" y="330" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1591205986360">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="528" y="330" key="DUMP_DIALOG_DIMENSION_KEY/0.23.1680.991@0.23.1680.991" timestamp="1591205986360" />
-    <state x="100" y="123" width="1480" height="791" key="DiffContextDialog" timestamp="1591227213453">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="100" y="123" width="1480" height="791" key="DiffContextDialog/0.23.1680.991@0.23.1680.991" timestamp="1591227213453" />
-    <state x="0" y="23" key="FileDocumentManager.FileCacheConflict" timestamp="1591061784787">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="0" y="23" key="FileDocumentManager.FileCacheConflict/0.23.1680.991@0.23.1680.991" timestamp="1591061784787" />
-    <state width="1638" height="185" key="GridCell.Tab.0.bottom" timestamp="1592845699898">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="1638" height="185" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1592845699898" />
-    <state width="1638" height="185" key="GridCell.Tab.0.center" timestamp="1592845699897">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="1638" height="185" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1592845699897" />
-    <state width="1638" height="185" key="GridCell.Tab.0.left" timestamp="1592845699896">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="1638" height="185" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1592845699896" />
-    <state width="1638" height="185" key="GridCell.Tab.0.right" timestamp="1592845699897">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="1638" height="185" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1592845699897" />
-    <state width="1638" height="185" key="GridCell.Tab.1.bottom" timestamp="1592845699899">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="1638" height="185" key="GridCell.Tab.1.bottom/0.23.1680.991@0.23.1680.991" timestamp="1592845699899" />
-    <state width="1638" height="185" key="GridCell.Tab.1.center" timestamp="1592845699899">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="1638" height="185" key="GridCell.Tab.1.center/0.23.1680.991@0.23.1680.991" timestamp="1592845699899" />
-    <state width="1638" height="185" key="GridCell.Tab.1.left" timestamp="1592845699898">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="1638" height="185" key="GridCell.Tab.1.left/0.23.1680.991@0.23.1680.991" timestamp="1592845699898" />
-    <state width="1638" height="185" key="GridCell.Tab.1.right" timestamp="1592845699899">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="1638" height="185" key="GridCell.Tab.1.right/0.23.1680.991@0.23.1680.991" timestamp="1592845699899" />
-    <state x="642" y="175" key="Maven.ArtifactSearchDialog" timestamp="1591178508695">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="642" y="175" key="Maven.ArtifactSearchDialog/0.23.1680.991@0.23.1680.991" timestamp="1591178508695" />
-    <state x="593" y="29" key="SettingsEditor" timestamp="1592317629563">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="593" y="29" key="SettingsEditor/0.23.1680.991@0.23.1680.991" timestamp="1592317629563" />
-    <state width="641" height="456" key="SwitcherDM" timestamp="1591232212962">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="641" height="456" key="SwitcherDM/0.23.1680.991@0.23.1680.991" timestamp="1591232212962" />
-    <state width="448" height="495" key="XDebugger.FullValuePopup" timestamp="1591666090004">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state width="448" height="495" key="XDebugger.FullValuePopup/0.23.1680.991@0.23.1680.991" timestamp="1591666090004" />
-    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1592331122911">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="747" y="413" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.991@0.23.1680.991" timestamp="1592331122911" />
-    <state x="728" y="180" key="com.intellij.database.dbimport.ImportDialog" timestamp="1591206061367">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="728" y="180" key="com.intellij.database.dbimport.ImportDialog/0.23.1680.991@0.23.1680.991" timestamp="1591206061367" />
-    <state x="878" y="330" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1590878396069">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="878" y="330" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.23.1680.991@0.23.1680.991" timestamp="1590878396069" />
-    <state x="732" y="353" width="451" height="327" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1591210562342">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="732" y="353" width="451" height="327" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1680.991@0.23.1680.991" timestamp="1591210562342" />
-    <state x="947" y="279" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1590804479163">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="947" y="279" key="com.intellij.database.run.ParametersPanel.Standalone/0.23.1680.991@0.23.1680.991" timestamp="1590804479163" />
-    <state x="658" y="227" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1592742220668">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="658" y="227" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.991@0.23.1680.991" timestamp="1592742220668" />
-    <state x="706" y="263" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1591356380598">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="706" y="263" key="com.intellij.database.view.ui.DbObjectDialog/0.23.1680.991@0.23.1680.991" timestamp="1591356380598" />
-    <state x="1078" y="414" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1590764883573">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="1078" y="414" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.23.1680.991@0.23.1680.991" timestamp="1590764883573" />
-    <state x="536" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1592820862795">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="536" y="350" key="com.intellij.ide.util.TipDialog/0.23.1680.991@0.23.1680.991" timestamp="1592820862795" />
-    <state x="635" y="215" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592824287011">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="635" y="215" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.991@0.23.1680.991" timestamp="1592824287011" />
-    <state x="270" y="222" key="new project wizard" timestamp="1591356014388">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="270" y="222" key="new project wizard/0.23.1680.991@0.23.1680.991" timestamp="1591356014388" />
-    <state x="893" y="239" key="run.anything.popup" timestamp="1590761652133">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="893" y="239" key="run.anything.popup/0.23.1680.991@0.23.1680.991" timestamp="1590761652133" />
-    <state x="111" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1591914670292">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="111" y="239" width="672" height="678" key="search.everywhere.popup/0.23.1680.991@0.23.1680.991" timestamp="1591914670292" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

@@ -1,24 +1,17 @@
 package com.jarida.server.jaridaserver.tutor_one_2_many.controller;
 
-import com.jarida.server.jaridaserver.jarida.exception.ErrorDetails;
-import com.jarida.server.jaridaserver.jarida.model.Jarida;
 import com.jarida.server.jaridaserver.tutor_one_2_many.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.tutor_one_2_many.model.Course;
-import com.jarida.server.jaridaserver.tutor_one_2_many.model.CourseList;
-import com.jarida.server.jaridaserver.tutor_one_2_many.model.InstructorList;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.CourseRepository;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.InstructorRepository;
-
-import java.sql.Date;
-import java.text.SimpleDateFormat;
-import java.util.*;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -31,15 +24,16 @@ public class CourseController {
     private InstructorRepository instructorRepository;
 
     @GetMapping("/instructors/{instructorId}/courses")
-    public ResponseEntity<CourseList> getCoursesByInstructor(@PathVariable(value = "instructorId") Long instructorId) throws ResourceNotFoundException {
+    public ResponseEntity <List<Course>> getCoursesByInstructor(@PathVariable(value = "instructorId") Long instructorId) throws ResourceNotFoundException {
         List<Course> courses = new ArrayList<>(courseRepository.findByInstructorId(instructorId));
 
         if(courses.isEmpty()) {
             throw new ResourceNotFoundException("No Courses Found");
         }
-            //return courseRepository.findByInstructorId(instructorId);
-        CourseList courseList = new CourseList(courses);
-        return new ResponseEntity<CourseList>(courseList, HttpStatus.OK);
+
+        //return courseRepository.findByInstructorId(instructorId);
+        //CourseList courseList = new CourseList(courses);
+        return new ResponseEntity(courses, HttpStatus.OK);
 
 
     }
@@ -57,8 +51,10 @@ public class CourseController {
     }
 
     @PostMapping("/instructors/{instructorId}/courses")
-    public Course createCourse(@PathVariable(value = "instructorId") Long instructorId,
-                               @Valid @RequestBody Course course) throws ResourceNotFoundException{
+    public Course createCourse(
+            @PathVariable(value = "instructorId") Long instructorId,
+            @Valid @RequestBody Course course)
+            throws ResourceNotFoundException{
 
         return instructorRepository.findById(instructorId).map(instructor -> {
             course.setInstructor(instructor);
@@ -67,9 +63,11 @@ public class CourseController {
     }
 
     @PutMapping("/instructors/{instructorId}/courses/{courseId}")
-    public Course updateCourse(@PathVariable(value = "instructorId") Long instructorId,
-                               @PathVariable(value = "courseId") Long courseId, @Valid @RequestBody Course courseRequest)
-        throws ResourceNotFoundException{
+    public Course updateCourse(
+            @PathVariable(value = "instructorId") Long instructorId,
+            @PathVariable(value = "courseId") Long courseId,
+            @Valid @RequestBody Course courseRequest
+    ) throws ResourceNotFoundException{
 
         if(!instructorRepository.existsById(instructorId)){
             throw new ResourceNotFoundException("instructorId not found");

@@ -1,17 +1,12 @@
 package com.jarida.server.jaridaserver.tutor_one_2_many.controller;
 
-import com.jarida.server.jaridaserver.jarida.model.Jarida;
 import com.jarida.server.jaridaserver.tutor_one_2_many.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.tutor_one_2_many.model.Instructor;
-import com.jarida.server.jaridaserver.tutor_one_2_many.model.InstructorList;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.InstructorRepository;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-
 
 import javax.validation.Valid;
 import java.text.SimpleDateFormat;
@@ -26,18 +21,20 @@ public class InstructorController {
 
 
     @GetMapping("/instructors")
-    public ResponseEntity<InstructorList> getInstructors() throws ResourceNotFoundException {
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<List<Instructor>> getInstructors() throws ResourceNotFoundException {
         List<Instructor> instructors = new ArrayList<>(instructorRepository.findAll());
 
         if(instructors.isEmpty()){
             throw new ResourceNotFoundException("No Instructors Found");
         }
-        InstructorList instructorList = new InstructorList(instructors);
-        return new ResponseEntity<InstructorList>(instructorList, HttpStatus.OK);
+        //InstructorList instructorList = new InstructorList(instructors);
+        return new ResponseEntity(instructors, HttpStatus.OK);
        //return instructorRepository.findAll();
     }
 
     @GetMapping("/instructors/{id}")
+    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Instructor> getInstructorById(
             @PathVariable(value = "id") Long instructorId) throws ResourceNotFoundException{
 
@@ -54,6 +51,7 @@ public class InstructorController {
     }
 
     @PutMapping("/instructors/{id}")
+    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Instructor> updateUser(
             @PathVariable(value = "id")Long instructorId,
             @Valid @RequestBody Instructor userDetails) throws ResourceNotFoundException{
