@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2020-12-30.0.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jarida-server.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +90,9 @@
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1cYVyb7WJwvN33lwoK3VL0mPIX5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -131,10 +120,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="zielu.gittoolbox.app.config" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
@@ -371,7 +361,8 @@
       <workItem from="1609283945498" duration="16292000" />
       <workItem from="1609429104093" duration="6101000" />
       <workItem from="1609654579118" duration="375000" />
-      <workItem from="1609654967395" duration="3227000" />
+      <workItem from="1609654967395" duration="4649000" />
+      <workItem from="1609935210015" duration="110000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
