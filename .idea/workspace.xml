@@ -5,8 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jarida-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jarida-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/ApiTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/ApiTestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/JaridaServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/ApiTestClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/DatabaseConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/controller/JaridaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ErrorDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/Jarida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/model/JaridaList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida/repository/JaridaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/DatabaseConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/controller/PostController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/AuditModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/model/Post.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/CommentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/jarida_v2/repository/PostRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/DatabaseConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/CourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/AuditModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/CourseList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/Instructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/model/InstructorList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/CourseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/repository/InstructorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaControllerIntegrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jarida/server/jaridaserver/JaridaServerApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +165,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="zielu.gittoolbox.app.config" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
@@ -376,7 +416,10 @@
       <workItem from="1609654967395" duration="4649000" />
       <workItem from="1609935210015" duration="110000" />
       <workItem from="1609944507209" duration="433000" />
-      <workItem from="1609945301363" duration="1863000" />
+      <workItem from="1609945301363" duration="2883000" />
+      <workItem from="1609948211701" duration="174000" />
+      <workItem from="1609948403230" duration="43000" />
+      <workItem from="1609948459843" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
@@ -419,6 +462,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -434,6 +487,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/jarida-spring" />
+    </ignored-roots>
     <MESSAGE value="new fixes" />
     <option name="LAST_COMMIT_MESSAGE" value="new fixes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />

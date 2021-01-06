@@ -1,23 +1,18 @@
 package com.jarida.server.jaridaserver.jarida;
 
-import io.swagger.annotations.Api;
-import org.jetbrains.annotations.NotNull;
-
-import javax.net.ssl.HttpsURLConnection;
-import java.io.*;
-import java.net.*;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ApiTestClass {
     private static HttpURLConnection connection;
-    private final HttpClient httpClient = HttpClient.newBuilder()
+    /*private final HttpClient httpClient = HttpClient.newBuilder()
             .version(HttpClient.Version.HTTP_2)
-            .build();
+            .build();*/
 
     public static void main(String[] args) throws Exception {
         ApiTestClass.GETRequest();

@@ -7,6 +7,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="entityManagerFactory" value="79b0e6b9-bafa-42b7-898a-ad58645d2c5f" />
+          <factory-entry name="jarida-server" value="4b73f31b-bafa-4b3a-9bb2-21193a5b0e82" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
@@ -24,7 +25,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
