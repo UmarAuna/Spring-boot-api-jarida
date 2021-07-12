@@ -33,6 +33,12 @@ public class JaridaController {
         return this.jaridaRepository.findAll();
     }*/
 
+ /*   @GetMapping("/gaisuwa")
+    @ResponseStatus(HttpStatus.OK)
+    public List<String> gaisuwa() {
+        return List.of("Ina Kwana", "Ina Yini");
+    }*/
+
     //query for a title and get jarida
     @GetMapping("/jarida")
     @ResponseStatus(HttpStatus.OK)

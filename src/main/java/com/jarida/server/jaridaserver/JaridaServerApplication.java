@@ -35,6 +35,7 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 		return objectMapper;
 	}
 
+	// http://localhost:8080/swagger-ui.html#/
 	@Bean
 	public Docket productApi() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
