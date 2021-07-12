@@ -7,7 +7,7 @@ import net.bytebuddy.implementation.bind.annotation.FieldValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +15,6 @@ import javax.validation.Valid;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -26,11 +25,13 @@ public class PostController {
     private PostRepository postRepository;
 
     @GetMapping("/posts")
+    @ResponseStatus(HttpStatus.OK)
     public Page<Post> getAllPosts(/*@PageableDefault(size = 20)*/ Pageable pageable){
         return postRepository.findAll(pageable);
     }
 
     @GetMapping("/posts/{postId}")
+    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Post>getPostById(@PathVariable(value = "postId")Long postId)throws ResourceNotFoundException{
         Post post = postRepository.findById(postId)
                 .orElseThrow(()-> new ResourceNotFoundException("Post not found :: " + postId));
@@ -39,11 +40,13 @@ public class PostController {
     }
 
     @PostMapping("/posts")
+    @ResponseStatus(HttpStatus.OK)
     public Post createPost(@Valid /*@RequestBody*/ @FieldValue Post post){
         return postRepository.save(post);
     }
 
     @PutMapping("/posts/{postId}")
+    @ResponseStatus(HttpStatus.OK)
     public Post updatePost(@PathVariable(value = "postId") Long postId, @Valid @FieldValue /* @RequestBody*/ Post postRequest){
         return postRepository.findById(postId).map(post -> {
             post.setTitle(postRequest.getTitle());
@@ -54,6 +57,7 @@ public class PostController {
     }
 
     @DeleteMapping("/posts/{postId}")
+    @ResponseStatus(HttpStatus.OK)
     public Map<String, String> deletePost(@PathVariable(value = "postId") Long postId){
 
         Post post = postRepository.findById(postId)

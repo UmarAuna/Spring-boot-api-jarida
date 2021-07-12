@@ -44,7 +44,7 @@ public class InstructorController {
     }
 
     @PostMapping("/instructors")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     public Instructor createUser(@Valid @RequestBody Instructor instructor){
 
         return instructorRepository.save(instructor);
@@ -57,7 +57,7 @@ public class InstructorController {
             @Valid @RequestBody Instructor userDetails) throws ResourceNotFoundException{
 
         Instructor user = instructorRepository.findById(instructorId)
-                .orElseThrow(() -> new ResourceNotFoundException("Instructor not found :: " + instructorId));
+                .orElseThrow( () -> new ResourceNotFoundException("Instructor not found :: " + instructorId));
 
         user.setFirstName(userDetails.getFirstName());
         user.setLastName(userDetails.getLastName());
@@ -68,6 +68,7 @@ public class InstructorController {
     }
 
     @DeleteMapping("/instructors/{id}")
+    @ResponseStatus(HttpStatus.OK)
     public Map<String, String> deleteUser(@PathVariable(value = "id") Long instructorId) throws ResourceNotFoundException{
 
         Instructor instructor = instructorRepository.findById(instructorId)

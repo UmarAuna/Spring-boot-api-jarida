@@ -7,6 +7,7 @@ import com.jarida.server.jaridaserver.jarida_v2.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,6 +28,7 @@ public class CommentController {
     private PostRepository postRepository;
 
     @GetMapping("/posts/{postId}/comments")
+    @ResponseStatus(HttpStatus.OK)
     public Page<Comment> getAllCommentsByPost(@PathVariable(value = "postId") Long postId,
                                                 Pageable pageable){
 
@@ -37,6 +39,7 @@ public class CommentController {
         return commentRepository.findByPostId(postId, pageable);
     }
     @GetMapping("/posts/{postId}/comments/{commentId}")
+    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Comment> getAllCommentsByPostId(@PathVariable(value = "postId") Long postId,
                                                 @PathVariable(value = "commentId") Long commentId){
         if(!postRepository.existsById(postId)){
@@ -51,6 +54,7 @@ public class CommentController {
 
 
     @PostMapping("/posts/{postId}/comments")
+    @ResponseStatus(HttpStatus.OK)
     public Comment createComment(@PathVariable (value = "postId") Long postId,
                                  @Valid @RequestBody Comment comment){
         return postRepository.findById(postId).map(post -> {
@@ -60,6 +64,7 @@ public class CommentController {
     }
 
     @PutMapping("/posts/{postId}/comments/{commentId}")
+    @ResponseStatus(HttpStatus.OK)
     public Comment updateComment(@PathVariable(value = "postId") Long postId,
                                  @PathVariable(value = "commentId") Long commentId,
                                  @Valid @RequestBody Comment commentRequest){
@@ -76,6 +81,7 @@ public class CommentController {
     }
 
     @DeleteMapping("posts/{postId}/comments/{commentId}")
+    @ResponseStatus(HttpStatus.OK)
     public Map<String, String> deleteComment(@PathVariable(value = "postId") Long postId,
                                               @PathVariable(value = "commentId") Long commentId){
 

@@ -24,6 +24,7 @@ public class CourseController {
     private InstructorRepository instructorRepository;
 
     @GetMapping("/instructors/{instructorId}/courses")
+    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity <List<Course>> getCoursesByInstructor(@PathVariable(value = "instructorId") Long instructorId) throws ResourceNotFoundException {
         List<Course> courses = new ArrayList<>(courseRepository.findByInstructorId(instructorId));
 
@@ -39,6 +40,7 @@ public class CourseController {
     }
 
     @GetMapping("/instructors/{instructorId}/courses/{courseId}")
+    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Course> getCoursesByInstructorId(@PathVariable(value = "instructorId") Long instructorId,
                                                            @PathVariable(value = "courseId") Long coursesId) throws ResourceNotFoundException {
         if(!instructorRepository.existsById(instructorId)){
@@ -51,6 +53,7 @@ public class CourseController {
     }
 
     @PostMapping("/instructors/{instructorId}/courses")
+    @ResponseStatus(HttpStatus.OK)
     public Course createCourse(
             @PathVariable(value = "instructorId") Long instructorId,
             @Valid @RequestBody Course course)
@@ -63,6 +66,7 @@ public class CourseController {
     }
 
     @PutMapping("/instructors/{instructorId}/courses/{courseId}")
+    @ResponseStatus(HttpStatus.OK)
     public Course updateCourse(
             @PathVariable(value = "instructorId") Long instructorId,
             @PathVariable(value = "courseId") Long courseId,
@@ -81,6 +85,7 @@ public class CourseController {
 
 
     @DeleteMapping("/instructors/{instructorId}/courses/{courseId}")
+    @ResponseStatus(HttpStatus.OK)
     public Map<String, String> removeCountry(@PathVariable Long instructorId, @PathVariable Long courseId) throws ResourceNotFoundException {
         if(!instructorRepository.existsById(instructorId)){
             throw new ResourceNotFoundException("instructorId not found");

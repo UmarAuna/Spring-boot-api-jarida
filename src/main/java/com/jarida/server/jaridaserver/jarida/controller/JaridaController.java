@@ -63,6 +63,7 @@ public class JaridaController {
 
     //get jarida by id
     @GetMapping("/jarida/{id}")
+    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Jarida> getJaridaById(@PathVariable(value = "id" ) Long jaridaId)
             throws ResourceNotFoundException{
 
@@ -73,7 +74,7 @@ public class JaridaController {
 
     //save jarida
     @PostMapping("/jarida")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     public  Jarida createJarida(
             @Valid @FieldValue @NonNull @NotEmpty(message = "Content is mandatory") /*@RequestBody*/ Jarida jarida){
           if (jaridaExist(jarida.getTitle())){
@@ -85,6 +86,7 @@ public class JaridaController {
 
     //update jarida
     @PutMapping("/jarida/{id}")
+    @ResponseStatus(HttpStatus.OK)
     public  ResponseEntity<Jarida> updateJarida(@PathVariable(value = "id") Long jaridaId,
                                                 @Valid @FieldValue @NotBlank @NotEmpty /*@RequestBody*/ Jarida jaridaDetails) throws ResourceNotFoundException {
         Jarida jarida = jaridaRepository.findById(jaridaId)
@@ -99,6 +101,7 @@ public class JaridaController {
 
     //delete jarida by id
     @DeleteMapping("/jarida/{id}")
+    @ResponseStatus(HttpStatus.OK)
     public Map<String,String> deleteJarida(@PathVariable(value = "id" ) Long jaridaId) throws ResourceNotFoundException {
 
         Jarida jarida = jaridaRepository.findById(jaridaId)
