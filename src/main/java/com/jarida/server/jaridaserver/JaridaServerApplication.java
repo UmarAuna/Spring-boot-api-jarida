@@ -43,7 +43,7 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 	UiConfiguration uiConfig() {
 		return UiConfigurationBuilder.builder()
 				.displayRequestDuration(true)
-				.validatorUrl(null)
+				.validatorUrl("")
 				.build();
 	}
 
