@@ -4,11 +4,15 @@ import com.jarida.server.jaridaserver.jarida_v2.exception.ResourceNotFoundExcept
 import com.jarida.server.jaridaserver.jarida_v2.model.Comment;
 import com.jarida.server.jaridaserver.jarida_v2.repository.CommentRepository;
 import com.jarida.server.jaridaserver.jarida_v2.repository.PostRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.SwaggerDefinition;
+import io.swagger.annotations.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -19,6 +23,11 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v2")
+@Validated
+@Api(tags = "Jarida Comment API v2")
+@SwaggerDefinition(tags = {
+        @Tag(name = "Jarida-V2", description = "This is for getting Jarida Comment v2")
+})
 public class CommentController {
 
     @Autowired

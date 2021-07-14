@@ -10,30 +10,12 @@
         <property name="serverTimezone" value="UTC" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="@Remote-State-Capital" uuid="40fcfc9d-aea3-433a-9764-b29a5dc6961c">
+    <data-source source="LOCAL" name="@heroku" uuid="14012ed9-132e-4674-9186-296f6f61ceda">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://us-cdbr-east-06.cleardb.net:3306</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="jarida-server/Hibernate" uuid="4b73f31b-bafa-4b3a-9bb2-21193a5b0e82">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate</remarks>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/jarida?serverTimezone=UTC&amp;useSSL=false&amp;useLegacyDatetimeCode=false</jdbc-url>
+      <jdbc-url>jdbc:mysql://us-cdbr-east-05.cleardb.net:3306/heroku_520a86a68a253e7</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="@localhost [2]" uuid="399814a5-ae40-46aa-b8a5-260dd7b0ef56">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-      <driver-properties>
-        <property name="serverTimezone" value="UTC" />
-      </driver-properties>
     </data-source>
   </component>
 </project>

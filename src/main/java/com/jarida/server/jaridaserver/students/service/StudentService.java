@@ -54,6 +54,8 @@ public class StudentService {
 
         if (name != null && name.length() > 0 && !Objects.equals(student.getName(), name)) {
             student.setName(name);
+        } else {
+            throw new IllegalStateException("name is required");
         }
 
         if (email != null && email.length() > 0 && !Objects.equals(student.getEmail(), email)) {
@@ -62,6 +64,8 @@ public class StudentService {
                 throw new IllegalStateException("email taken");
             }
             student.setEmail(email);
+        } else {
+            throw new IllegalStateException("email is required");
         }
 
     }

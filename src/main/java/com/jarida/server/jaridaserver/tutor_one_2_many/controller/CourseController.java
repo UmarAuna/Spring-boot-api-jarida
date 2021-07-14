@@ -4,6 +4,9 @@ import com.jarida.server.jaridaserver.tutor_one_2_many.exception.ResourceNotFoun
 import com.jarida.server.jaridaserver.tutor_one_2_many.model.Course;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.CourseRepository;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.InstructorRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.SwaggerDefinition;
+import io.swagger.annotations.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +17,11 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v2")
+@Api(tags = "Course API v2")
+@SwaggerDefinition(tags = {
+        @Tag(name = "Course-V2", description = "This is for getting Course v2")
+})
 public class CourseController {
 
     @Autowired

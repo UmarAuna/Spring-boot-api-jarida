@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "java.runtime.version",
+      "type": "java.lang.String",
+      "description": "Description for java.runtime.version."
+  }
+] }

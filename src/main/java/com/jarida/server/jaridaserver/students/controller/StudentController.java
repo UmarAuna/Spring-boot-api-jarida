@@ -3,16 +3,27 @@ package com.jarida.server.jaridaserver.students.controller;
 
 import com.jarida.server.jaridaserver.students.model.Student;
 import com.jarida.server.jaridaserver.students.service.StudentService;
+import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v2")
 @Validated
+@Api(tags = "Students API v2")
+@SwaggerDefinition(tags = {
+        @Tag(name = "Students", description = "This is for getting  Students")
+})
 public class StudentController {
 
     private final StudentService studentService;
@@ -24,25 +35,81 @@ public class StudentController {
 
     @GetMapping("/students")
     @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This is for getting all the list of Students", response = Student.class)
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Successful"),
+            @ApiResponse(code = 400, message = "Invalid request"),
+            @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
+            @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
+            @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 500, message = "Internal server error")
+            //@ApiResponse(code = 500, message = "Failure", response = ErrorResource.class)
+    }
+    )
     public List<Student> getStudents() {
         return studentService.getStudent();
     }
 
     @PostMapping("/students")
-    public void registerNewStudent(@RequestBody Student student) {
+    @ApiOperation(value = "This is for posting Students")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Successful"),
+            @ApiResponse(code = 400, message = "Invalid request"),
+            @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
+            @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
+            @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 500, message = "Internal server error")
+    }
+    )
+    public ResponseEntity<Student> registerNewStudent(@Valid @RequestBody Student student) {
         studentService.addNewStudent(student);
+        return ResponseEntity.ok().body(student);
     }
 
     @DeleteMapping("/students/{studentId}")
-    public void deleteStudent(@PathVariable(value = "studentId") Long studentId) {
+    @ApiOperation(value = "This is for getting all the list of Students", response = Student.class)
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Successful"),
+            @ApiResponse(code = 400, message = "Invalid request"),
+            @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
+            @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
+            @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 500, message = "Internal server error")
+            //@ApiResponse(code = 500, message = "Failure", response = ErrorResource.class)
+    }
+    )
+    public Map<String, String> deleteStudent(@PathVariable(value = "studentId") Long studentId) {
         studentService.deleteStudent(studentId);
+        Map<String,String> response = new HashMap<>();
+        response.put("timestamp", new SimpleDateFormat("dd, MMMM, yyyy - hh:mm aa").format(Calendar.getInstance().getTime()));
+        response.put("message","Deleted Successfully");
+        return response;
     }
 
     @PutMapping("/students/{studentId}")
-    public void updateStudent(
-            @PathVariable(value = "studentId") Long studentId,
-            @RequestParam(required = false) String name,
-            @RequestParam(required = false) String email) {
-        studentService.updateStudent(studentId, name, email);
+    @ApiOperation(value = "This is for getting all the list of Students", response = Student.class)
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Successful"),
+            @ApiResponse(code = 400, message = "Invalid request"),
+            @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
+            @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
+            @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 500, message = "Internal server error")
+            //@ApiResponse(code = 500, message = "Failure", response = ErrorResource.class)
+    }
+    )
+    public ResponseEntity<Map<String, String>> updateStudent(
+            @PathVariable(value = "studentId") @Valid Long studentId,
+            @RequestParam(required = false) @Valid String name,
+            @RequestParam(required = false) @Valid  String email) {
+
+          studentService.updateStudent(studentId, name, email);
+
+        Map<String,String> response = new HashMap<>();
+        response.put("id",studentId.toString());
+        response.put("name",name);
+        response.put("email", email);
+
+        return ResponseEntity.ok().body(response);
     }
 }

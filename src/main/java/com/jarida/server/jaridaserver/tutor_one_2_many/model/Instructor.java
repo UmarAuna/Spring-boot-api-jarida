@@ -82,7 +82,7 @@ public class Instructor extends AuditModel implements Serializable {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", courses=" + courses +
+           /*     ", courses=" + courses +*/
                 '}';
     }
 }

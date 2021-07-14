@@ -1,6 +1,8 @@
 package com.jarida.server.jaridaserver.students.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -18,9 +20,17 @@ public class Student {
             strategy = GenerationType.SEQUENCE,
             generator = "student_sequence"
     )
+    // @ApiModelProperty(hidden = true) // for swagger hidding not to show
     private Long id;
+
+    @NotNull(message = "Name cannot be empty")
+    @NotBlank(message = "Name cannot be empty")
     private String name;
+
+    @NotNull(message = "Name cannot be empty")
+    @NotBlank(message = "Name cannot be empty")
     private String email;
+
     private LocalDate dob;
     @Transient
     private Integer age;

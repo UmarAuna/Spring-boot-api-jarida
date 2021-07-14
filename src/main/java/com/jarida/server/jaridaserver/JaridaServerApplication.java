@@ -2,6 +2,7 @@ package com.jarida.server.jaridaserver;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.collect.Sets;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
+import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
@@ -38,12 +40,34 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 	// http://localhost:8080/swagger-ui.html#/
 	@Bean
 	public Docket productApi() {
-		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.jarida.server.jaridaserver"
-				))
-				/*.paths(PathSelectors.ant("/foo/*"))*/
+		return new Docket(DocumentationType.SWAGGER_2)
+				.consumes(Sets.newHashSet("application/json"))
+				.produces(Sets.newHashSet("application/json"))
+				.protocols(Sets.newHashSet("http", "https"))
+				.groupName("B Jarida - V1")
+				.select()
+				.apis(RequestHandlerSelectors.basePackage("com.jarida.server.jaridaserver"))
+				.paths(PathSelectors.ant("/api/v1/**"))
 				.build()
-				.apiInfo(apiInfo());
+				.apiInfo(apiInfo())
+				.forCodeGeneration(true);
+
+	}
+
+	@Bean
+	public Docket studentApi() {
+		return new Docket(DocumentationType.SWAGGER_2)
+				.consumes(Sets.newHashSet("application/json"))
+				.produces(Sets.newHashSet("application/json"))
+				.protocols(Sets.newHashSet("http", "https"))
+				.groupName("A Student - V2")
+				.select()
+				.apis(RequestHandlerSelectors.basePackage("com.jarida.server.jaridaserver"))
+				.paths(PathSelectors.ant("/api/v2/**"))
+				.build()
+				.apiInfo(apiInfo())
+				.forCodeGeneration(true);
+
 	}
 
 	private ApiInfo apiInfo() {

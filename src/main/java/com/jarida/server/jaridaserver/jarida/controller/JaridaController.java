@@ -2,8 +2,10 @@ package com.jarida.server.jaridaserver.jarida.controller;
 
 import com.jarida.server.jaridaserver.jarida.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.jarida.model.Jarida;
-import com.jarida.server.jaridaserver.jarida.model.JaridaList;
 import com.jarida.server.jaridaserver.jarida.repository.JaridaRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.SwaggerDefinition;
+import io.swagger.annotations.Tag;
 import net.bytebuddy.implementation.bind.annotation.FieldValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,17 +13,20 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.lang.NonNull;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 @RestController
 @RequestMapping("/api/v1")
 @Validated
+@Api(tags = "Jarida API v1")
+@SwaggerDefinition(tags = {
+        @Tag(name = "Jarida", description = "This is for getting Jarida v1")
+})
 public class JaridaController {
 
     @Autowired
@@ -42,6 +47,7 @@ public class JaridaController {
     //query for a title and get jarida
     @GetMapping("/jarida")
     @ResponseStatus(HttpStatus.OK)
+   // @Deprecated
     public ResponseEntity<List<Jarida>> getQueryTitle(@RequestParam(required = false) String title) throws ResourceNotFoundException {
         try {
             List<Jarida> jarida = new ArrayList<>();

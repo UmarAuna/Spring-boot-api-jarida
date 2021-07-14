@@ -3,6 +3,9 @@ package com.jarida.server.jaridaserver.jarida_v2.controller;
 import com.jarida.server.jaridaserver.jarida_v2.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.jarida_v2.model.Post;
 import com.jarida.server.jaridaserver.jarida_v2.repository.PostRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.SwaggerDefinition;
+import io.swagger.annotations.Tag;
 import net.bytebuddy.implementation.bind.annotation.FieldValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,6 +22,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v2")
+@Api(tags = "Jarida Post API v2")
+@SwaggerDefinition(tags = {
+        @Tag(name = "Jarida-V2", description = "This is for getting Jarida Post v2")
+})
 public class PostController {
 
     @Autowired
