@@ -4,5 +4,10 @@
       "name": "java.runtime.version",
       "type": "java.lang.String",
       "description": "Description for java.runtime.version."
-  }
-] }
+    },
+    {
+      "name": "maven.version",
+      "type": "java.lang.String",
+      "description": "Description for maven.version."
+    }
+  ] }
