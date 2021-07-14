@@ -155,7 +155,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
@@ -167,7 +167,7 @@
 				<groupId>com.heroku.sdk</groupId>
 				<artifactId>heroku-maven-plugin</artifactId>
 				<version>3.0.3</version>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 
