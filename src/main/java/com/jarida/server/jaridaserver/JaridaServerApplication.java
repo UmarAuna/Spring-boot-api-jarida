@@ -43,7 +43,7 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.consumes(Sets.newHashSet("application/json"))
 				.produces(Sets.newHashSet("application/json"))
-				.protocols(Sets.newHashSet("http", "https"))
+				/*.protocols(Sets.newHashSet("http", "https"))*/
 				.groupName("B Jarida - V1")
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("com.jarida.server.jaridaserver"))
@@ -59,7 +59,7 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.consumes(Sets.newHashSet("application/json"))
 				.produces(Sets.newHashSet("application/json"))
-				.protocols(Sets.newHashSet("http", "https"))
+				/*.protocols(Sets.newHashSet("http", "https"))*/
 				.groupName("A Student - V2")
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("com.jarida.server.jaridaserver"))
