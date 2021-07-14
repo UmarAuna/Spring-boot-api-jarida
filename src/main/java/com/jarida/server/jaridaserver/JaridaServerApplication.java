@@ -39,7 +39,7 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 
 	// http://localhost:8080/swagger-ui.html#/
 	@Bean
-	public Docket productApi() {
+	public Docket jaridaApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.consumes(Sets.newHashSet("application/json"))
 				.produces(Sets.newHashSet("application/json"))
@@ -49,7 +49,7 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 				.apis(RequestHandlerSelectors.basePackage("com.jarida.server.jaridaserver"))
 				.paths(PathSelectors.ant("/api/v1/**"))
 				.build()
-				.apiInfo(apiInfo())
+				.apiInfo(apiJaridaInfo())
 				.forCodeGeneration(true);
 
 	}
@@ -65,19 +65,30 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 				.apis(RequestHandlerSelectors.basePackage("com.jarida.server.jaridaserver"))
 				.paths(PathSelectors.ant("/api/v2/**"))
 				.build()
-				.apiInfo(apiInfo())
+				.apiInfo(apiStudentInfo())
 				.forCodeGeneration(true);
 
 	}
 
-	private ApiInfo apiInfo() {
+
+	private ApiInfo apiStudentInfo() {
 		return new ApiInfo(
-				"My REST API",
-				"Some custom description of API.",
+				"Student Rest API",
+				"This API is for getting, posting, deleting and updating Students.",
 				"API TOS",
-				"Terms of service",
-				new Contact("John Doe", "www.example.com", "myeaddress@company.com"),
-				"License of API", "API license URL", Collections.emptyList());
+				"https://www.apache.org/licenses/LICENSE-2.0",
+				new Contact("Umar Saidu Auna", "https://umarauna.bitbucket.io", "umarmanofpeace@gmail.com"),
+				"License of API", "https://www.apache.org/licenses/LICENSE-2.0", Collections.emptyList());
+	}
+
+	private ApiInfo apiJaridaInfo() {
+		return new ApiInfo(
+				"Jarida Rest API",
+				"This API is for getting, posting, deleting and updating Jarida.",
+				"API TOS",
+				"https://www.apache.org/licenses/LICENSE-2.0",
+				new Contact("Umar Saidu Auna", "https://umarauna.bitbucket.io", "umarmanofpeace@gmail.com"),
+				"License of API", "https://www.apache.org/licenses/LICENSE-2.0", Collections.emptyList());
 	}
 
 

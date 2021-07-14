@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="new fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jarida-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jarida-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutor_one_2_many/controller/InstructorController.class" afterDir="false" />
     </list>
     <list id="eca22010-4e1d-4786-9a5e-88b263e15d4a" name="fix: 🐛 student db" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -230,6 +235,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.JaridaServerApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="generated-requests#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -382,6 +398,7 @@
       <workItem from="1626256686883" duration="1032000" />
       <workItem from="1626258529935" duration="10857000" />
       <workItem from="1626272947408" duration="17236000" />
+      <workItem from="1626300373657" duration="982000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
