@@ -25,8 +25,8 @@ public class StudentService {
     }
 
     public void addNewStudent(Student student) {
-        Optional<Student> studentOptional =  studentRepository.findStudentByEmail(student.getEmail());
-        if(studentOptional.isPresent()) {
+        Optional<Student> studentOptional = studentRepository.findStudentByEmail(student.getEmail());
+        if (studentOptional.isPresent()) {
             throw new IllegalStateException("email taken");
         }
         studentRepository.save(student);
@@ -35,7 +35,7 @@ public class StudentService {
     public void deleteStudent(Long studentId) {
         boolean exists = studentRepository.existsById(studentId);
 
-        if(!exists) {
+        if (!exists) {
             throw new IllegalStateException(
                     "student with id " + studentId + " does not exists"
             );
@@ -47,10 +47,10 @@ public class StudentService {
     public void updateStudent(Long studentId, String name, String email) {
 
         Student student = studentRepository.findById(studentId)
-        .orElseThrow(() -> new IllegalStateException(
-                "student with id " + studentId + " does not exists"
+                .orElseThrow(() -> new IllegalStateException(
+                        "student with id " + studentId + " does not exists"
 
-        ));
+                ));
 
         if (name != null && name.length() > 0 && !Objects.equals(student.getName(), name)) {
             student.setName(name);
@@ -68,6 +68,10 @@ public class StudentService {
             throw new IllegalStateException("email is required");
         }
 
+    }
+
+    public Optional<Student> getStudentById(Long studentId) {
+        return studentRepository.findStudentById(studentId);
     }
 
     /*  public List<Student> getStudent() {

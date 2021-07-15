@@ -6,7 +6,6 @@ import com.jarida.server.jaridaserver.jarida_v2.repository.PostRepository;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.SwaggerDefinition;
 import io.swagger.annotations.Tag;
-import net.bytebuddy.implementation.bind.annotation.FieldValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -48,13 +47,13 @@ public class PostController {
 
     @PostMapping("/posts")
     @ResponseStatus(HttpStatus.OK)
-    public Post createPost(@Valid /*@RequestBody*/ @FieldValue Post post){
+    public Post createPost(@Valid @RequestBody /*@FieldValue */Post post){
         return postRepository.save(post);
     }
 
     @PutMapping("/posts/{postId}")
     @ResponseStatus(HttpStatus.OK)
-    public Post updatePost(@PathVariable(value = "postId") Long postId, @Valid @FieldValue /* @RequestBody*/ Post postRequest){
+    public Post updatePost(@PathVariable(value = "postId") Long postId, @Valid /*@FieldValue*/  @RequestBody Post postRequest){
         return postRepository.findById(postId).map(post -> {
             post.setTitle(postRequest.getTitle());
             post.setContent(postRequest.getContent());
