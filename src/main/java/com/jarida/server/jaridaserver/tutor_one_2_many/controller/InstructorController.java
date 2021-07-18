@@ -1,6 +1,6 @@
 package com.jarida.server.jaridaserver.tutor_one_2_many.controller;
 
-import com.jarida.server.jaridaserver.tutor_one_2_many.exception.ResourceNotFoundException;
+import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.tutor_one_2_many.model.Instructor;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.InstructorRepository;
 import io.swagger.annotations.Api;

@@ -5,6 +5,8 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
@@ -17,6 +19,8 @@ public class Course extends AuditModel implements Serializable {
     private Long id;
 
     @Column(name = "title")
+    @NotNull(message = "Tittle is mandatory")
+    @NotEmpty(message = "Title is mandatory" )
     private String title;
 
     @JsonBackReference

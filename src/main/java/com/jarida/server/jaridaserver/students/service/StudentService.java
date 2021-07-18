@@ -1,5 +1,6 @@
 package com.jarida.server.jaridaserver.students.service;
 
+import com.jarida.server.jaridaserver.exception.*;
 import com.jarida.server.jaridaserver.students.model.Student;
 import com.jarida.server.jaridaserver.students.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -27,7 +27,7 @@ public class StudentService {
     public void addNewStudent(Student student) {
         Optional<Student> studentOptional = studentRepository.findStudentByEmail(student.getEmail());
         if (studentOptional.isPresent()) {
-            throw new IllegalStateException("email taken");
+            throw new ResourceBadRequestException("email taken");
         }
         studentRepository.save(student);
     }
@@ -36,7 +36,7 @@ public class StudentService {
         boolean exists = studentRepository.existsById(studentId);
 
         if (!exists) {
-            throw new IllegalStateException(
+            throw new ResourceNotFoundException(
                     "student with id " + studentId + " does not exists"
             );
         }
@@ -47,25 +47,25 @@ public class StudentService {
     public void updateStudent(Long studentId, String name, String email) {
 
         Student student = studentRepository.findById(studentId)
-                .orElseThrow(() -> new IllegalStateException(
+                .orElseThrow(() -> new ResourceNotFoundException(
                         "student with id " + studentId + " does not exists"
 
                 ));
 
-        if (name != null && name.length() > 0 && !Objects.equals(student.getName(), name)) {
+        if (name != null && name.length() > 0/* && !Objects.equals(student.getName(), name)*/) {
             student.setName(name);
         } else {
-            throw new IllegalStateException("name is required");
+            throw new ResourceBadRequestException("name is required");
         }
 
-        if (email != null && email.length() > 0 && !Objects.equals(student.getEmail(), email)) {
+        if (email != null && email.length() > 0 /*&& !Objects.equals(student.getEmail(), email)*/) {
             Optional<Student> studentOptional = studentRepository.findStudentByEmail(email);
             if (studentOptional.isPresent()) {
-                throw new IllegalStateException("email taken");
+                throw new ResourceAlreadyExists("email taken");
             }
             student.setEmail(email);
         } else {
-            throw new IllegalStateException("email is required");
+            throw new ResourceBadRequestException("email is required");
         }
 
     }

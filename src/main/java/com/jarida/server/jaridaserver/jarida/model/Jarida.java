@@ -1,7 +1,6 @@
 package com.jarida.server.jaridaserver.jarida.model;
 
 import javax.persistence.*;
-import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -13,22 +12,19 @@ public class Jarida {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotNull
-    @Valid
+    @NotNull(message = "Title is mandatory")
     @NotEmpty(message = "Title is mandatory" )
     @Size(min = 2, message = "Title should have atleast 2 characters")
     @Column(name = "title", nullable = false)
     private String title;
 
-    @NotNull
-    @Valid
+    @NotNull(message = "Content is mandatory")
     @NotEmpty(message = "Content is mandatory" )
     @Size(min = 2, message = "Content should have atleast 2 characters")
     @Column(name = "content", nullable = false)
     private String content;
 
-    @NotNull
-    @Valid
+    @NotNull(message = "Author is mandatory")
     @NotEmpty(message = "Author is mandatory" )
     @Size(min = 2, message = "Author should have atleast 2 characters")
     @Column(name = "author", nullable = false)

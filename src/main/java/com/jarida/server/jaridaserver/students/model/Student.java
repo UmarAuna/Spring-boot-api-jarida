@@ -1,8 +1,11 @@
 package com.jarida.server.jaridaserver.students.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -27,11 +30,14 @@ public class Student {
     @NotBlank(message = "Name cannot be empty")
     private String name;
 
-    @NotNull(message = "Name cannot be empty")
-    @NotBlank(message = "Name cannot be empty")
+    @NotNull(message = "Email cannot be empty")
+    @NotBlank(message = "Email cannot be empty")
     private String email;
 
+    @Past(message="date of birth must be less than today")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dob;
+
     @Transient
     private Integer age;
 

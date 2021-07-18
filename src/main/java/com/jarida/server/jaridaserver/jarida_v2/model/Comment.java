@@ -1,11 +1,11 @@
 package com.jarida.server.jaridaserver.jarida_v2.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
@@ -17,7 +17,8 @@ public class Comment extends AuditModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
+    @NotNull(message = "Tittle is mandatory")
+    @NotEmpty(message = "Title is mandatory" )
     @Lob //is used to map fields/properties of large value to a corresponding database-supported large object type.
     private String text;
 

@@ -1,12 +1,11 @@
 package com.jarida.server.jaridaserver.jarida_v2.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "posts")
@@ -16,12 +15,14 @@ public class Post extends AuditModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
+    @NotNull(message = "Tittle is mandatory")
+    @NotEmpty(message = "Title is mandatory" )
     @Size(max = 255)
     @Column(unique = true)
     private String title;
 
-    @NotNull
+    @NotNull(message = "Content is mandatory")
+    @NotEmpty(message = "Content is mandatory" )
     @Size(max = 255)
     private String content;
 

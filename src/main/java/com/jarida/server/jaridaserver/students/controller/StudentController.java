@@ -1,7 +1,7 @@
 package com.jarida.server.jaridaserver.students.controller;
 
 
-import com.jarida.server.jaridaserver.jarida.exception.ResourceNotFoundException;
+import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.students.model.Student;
 import com.jarida.server.jaridaserver.students.service.StudentService;
 import io.swagger.annotations.*;
@@ -40,6 +40,8 @@ public class StudentController {
             @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 409, message = "The resource you were trying to reach exist/conflict"),
+            @ApiResponse(code = 415, message = "Unsupported Media Type"),
             @ApiResponse(code = 500, message = "Internal server error")
             //@ApiResponse(code = 500, message = "Failure", response = ErrorResource.class)
     }
@@ -57,6 +59,8 @@ public class StudentController {
             @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 409, message = "The resource you were trying to reach exist/conflict"),
+            @ApiResponse(code = 415, message = "Unsupported Media Type"),
             @ApiResponse(code = 500, message = "Internal server error")
             //@ApiResponse(code = 500, message = "Failure", response = ErrorResource.class)
     }
@@ -78,6 +82,8 @@ public class StudentController {
             @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 409, message = "The resource you were trying to reach exist/conflict"),
+            @ApiResponse(code = 415, message = "Unsupported Media Type"),
             @ApiResponse(code = 500, message = "Internal server error")
     }
     )
@@ -94,6 +100,8 @@ public class StudentController {
             @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 409, message = "The resource you were trying to reach exist/conflict"),
+            @ApiResponse(code = 415, message = "Unsupported Media Type"),
             @ApiResponse(code = 500, message = "Internal server error")
             //@ApiResponse(code = 500, message = "Failure", response = ErrorResource.class)
     }
@@ -114,6 +122,8 @@ public class StudentController {
             @ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @ApiResponse(code = 409, message = "The resource you were trying to reach exist/conflict"),
+            @ApiResponse(code = 415, message = "Unsupported Media Type"),
             @ApiResponse(code = 500, message = "Internal server error")
             //@ApiResponse(code = 500, message = "Failure", response = ErrorResource.class)
     }

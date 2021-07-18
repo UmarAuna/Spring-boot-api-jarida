@@ -1,6 +1,6 @@
 package com.jarida.server.jaridaserver.tutor_one_2_many.controller;
 
-import com.jarida.server.jaridaserver.tutor_one_2_many.exception.ResourceNotFoundException;
+import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.tutor_one_2_many.model.Course;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.CourseRepository;
 import com.jarida.server.jaridaserver.tutor_one_2_many.repository.InstructorRepository;
@@ -54,7 +54,8 @@ public class CourseController {
             throw new ResourceNotFoundException("instructorId not found");
         }
 
-        Course course = courseRepository.findById(coursesId).orElseThrow(() -> new ResourceNotFoundException("Course not found for this id :: " + coursesId ));
+        Course course = courseRepository.findById(coursesId)
+                .orElseThrow(() -> new ResourceNotFoundException("Course not found for this id :: " + coursesId ));
         //return courseRepository.findByInstructorId(coursesId);
         return ResponseEntity.ok().body(course);
     }
@@ -94,8 +95,13 @@ public class CourseController {
     @DeleteMapping("/instructors/{instructorId}/courses/{courseId}")
     @ResponseStatus(HttpStatus.OK)
     public Map<String, String> removeCountry(@PathVariable Long instructorId, @PathVariable Long courseId) throws ResourceNotFoundException {
+
         if(!instructorRepository.existsById(instructorId)){
             throw new ResourceNotFoundException("instructorId not found");
+        }
+
+        if(!courseRepository.existsById(courseId)) {
+            throw new ResourceNotFoundException("courseId not found");
         }
 
         this.courseRepository.deleteById(courseId);

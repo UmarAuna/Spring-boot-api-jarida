@@ -1,6 +1,6 @@
 package com.jarida.server.jaridaserver.jarida_v2.controller;
 
-import com.jarida.server.jaridaserver.jarida_v2.exception.ResourceNotFoundException;
+import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.jarida_v2.model.Comment;
 import com.jarida.server.jaridaserver.jarida_v2.repository.CommentRepository;
 import com.jarida.server.jaridaserver.jarida_v2.repository.PostRepository;
@@ -96,6 +96,10 @@ public class CommentController {
 
         if(!postRepository.existsById(postId)){
             throw new ResourceNotFoundException("Post Id not found");
+        }
+
+        if(!commentRepository.existsById(commentId)){
+            throw new ResourceNotFoundException("Comment Id not found");
         }
 
         this.commentRepository.deleteById(commentId);

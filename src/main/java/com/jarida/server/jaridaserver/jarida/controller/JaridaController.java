@@ -1,6 +1,7 @@
 package com.jarida.server.jaridaserver.jarida.controller;
 
-import com.jarida.server.jaridaserver.jarida.exception.ResourceNotFoundException;
+import com.jarida.server.jaridaserver.exception.ResourceAlreadyExists;
+import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.jarida.model.Jarida;
 import com.jarida.server.jaridaserver.jarida.repository.JaridaRepository;
 import io.swagger.annotations.Api;
@@ -90,7 +91,7 @@ public class JaridaController {
     public  Jarida createJarida(
             @Valid @FieldValue @NonNull @NotEmpty(message = "Content is mandatory") /*@RequestBody*/ Jarida jarida){
           if (jaridaExist(jarida.getTitle())){
-            throw new ResourceNotFoundException("This is a title that exists " + jarida.getTitle());
+            throw new ResourceAlreadyExists("This is a title that exists " + jarida.getTitle());
         }
         return this.jaridaRepository.save(jarida);
 
@@ -100,7 +101,7 @@ public class JaridaController {
     @PutMapping("/jarida/{id}")
     @ResponseStatus(HttpStatus.OK)
     public  ResponseEntity<Jarida> updateJarida(@PathVariable(value = "id") Long jaridaId,
-                                                @Valid @FieldValue @NotBlank @NotEmpty /*@RequestBody*/ Jarida jaridaDetails) throws ResourceNotFoundException {
+                                                @Valid @FieldValue /*@RequestBody*/ Jarida jaridaDetails) throws ResourceNotFoundException {
         Jarida jarida = jaridaRepository.findById(jaridaId)
                 .orElseThrow(() -> new ResourceNotFoundException("Jarida not found for this id :: " + jaridaId ));
 

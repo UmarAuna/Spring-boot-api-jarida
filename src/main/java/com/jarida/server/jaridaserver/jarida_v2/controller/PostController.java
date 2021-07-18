@@ -1,6 +1,6 @@
 package com.jarida.server.jaridaserver.jarida_v2.controller;
 
-import com.jarida.server.jaridaserver.jarida_v2.exception.ResourceNotFoundException;
+import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.jarida_v2.model.Post;
 import com.jarida.server.jaridaserver.jarida_v2.repository.PostRepository;
 import io.swagger.annotations.Api;
@@ -38,7 +38,7 @@ public class PostController {
 
     @GetMapping("/posts/{postId}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Post>getPostById(@PathVariable(value = "postId")Long postId)throws ResourceNotFoundException{
+    public ResponseEntity<Post>getPostById(@PathVariable(value = "postId")Long postId)throws ResourceNotFoundException {
         Post post = postRepository.findById(postId)
                 .orElseThrow(()-> new ResourceNotFoundException("Post not found :: " + postId));
         return ResponseEntity.ok().body(post);
