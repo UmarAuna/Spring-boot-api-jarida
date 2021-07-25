@@ -36,6 +36,19 @@ public class ApiExceptionHandler {
         return new ResponseEntity<>(response, notFound);
     }
 
+    @ExceptionHandler(ResourceNoContentFoundException.class)
+    public ResponseEntity<ApiExceptionResponse> resourceNoContentFound(ResourceNoContentFoundException ex) {
+        HttpStatus noContent = HttpStatus.NO_CONTENT;
+        ApiExceptionResponse response = new ApiExceptionResponse();
+        response.setHttpStatus(noContent);
+        response.setMessage(ex.getMessage());
+        response.setStatusCode(noContent.value());
+        response.setLocalizedMessage(ex.getLocalizedMessage());
+        response.setTimeStamp(ZonedDateTime.now(ZoneId.of("Z")));
+
+        return new ResponseEntity<>(response, noContent);
+    }
+
     @ExceptionHandler(ResourceAlreadyExists.class)
     public ResponseEntity<ApiExceptionResponse> resourceAlreadyExist(ResourceAlreadyExists ex) {
         HttpStatus alreadyExist = HttpStatus.CONFLICT;
@@ -99,6 +112,19 @@ public class ApiExceptionHandler {
         response.setTimeStamp(ZonedDateTime.now(ZoneId.of("Z")));
 
         return new ResponseEntity<>(response, unsupportedMediaTypeRequest );
+    }
+
+    @ExceptionHandler(ResourceInternalServerException.class)
+    public ResponseEntity<ApiExceptionResponse> forbiddenException(ResourceInternalServerException ex) {
+        HttpStatus internalServerError = HttpStatus.INTERNAL_SERVER_ERROR;
+        ApiExceptionResponse response = new ApiExceptionResponse();
+        response.setHttpStatus(internalServerError );
+        response.setMessage(ex.getMessage());
+        response.setStatusCode(internalServerError .value());
+        response.setLocalizedMessage(ex.getLocalizedMessage());
+        response.setTimeStamp(ZonedDateTime.now(ZoneId.of("Z")));
+
+        return new ResponseEntity<>(response, internalServerError );
     }
 
 
