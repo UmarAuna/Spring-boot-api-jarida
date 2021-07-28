@@ -23,6 +23,19 @@ public class ApiExceptionHandler {
         return  new ResponseEntity<>(apiException, badRequest);
     }*/
 
+    @ExceptionHandler(ResourceSuccessfulException.class)
+    public ResponseEntity<ApiExceptionResponse> resourceSuccessfulFound(ResourceSuccessfulException ex) {
+        HttpStatus successful = HttpStatus.OK;
+        ApiExceptionResponse response = new ApiExceptionResponse();
+        response.setHttpStatus(successful);
+        response.setMessage(ex.getMessage());
+        response.setStatusCode(successful.value());
+        response.setLocalizedMessage(ex.getLocalizedMessage());
+        response.setTimeStamp(ZonedDateTime.now(ZoneId.of("Z")));
+
+        return new ResponseEntity<>(response, successful);
+    }
+
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<ApiExceptionResponse> resourceNotFound(ResourceNotFoundException ex) {
         HttpStatus notFound = HttpStatus.NOT_FOUND;

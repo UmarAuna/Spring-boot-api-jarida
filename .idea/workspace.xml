@@ -5,25 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="new fixes">
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2021-07-18.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/exception/ResourceInternalServerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/exception/ResourceNoContentFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutorialApi/controller/TutorialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutorialApi/model/Tutorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutorialApi/repository/TutorialRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2021-07-25.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2021-07-26.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2021-07-27.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2021-07-27.02992422939316.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/exception/ResourceSuccessfulException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/organization_one_to_one/controller/OrganizationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/organization_one_to_one/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/organization_one_to_one/model/Organization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/organization_one_to_one/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/organization_one_to_one/repository/OrganizationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/organization_one_to_one/service/OrganizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/DatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/controller/RoleUniController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/controller/UserUniController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/model/RoleUni.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/model/UserUni.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/repository/RoleUniRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/repository/UserUniRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/service/RoleUniService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_unidirectional/service/UserUniService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/79b0e6b9-bafa-42b7-898a-ad58645d2c5f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/79b0e6b9-bafa-42b7-898a-ad58645d2c5f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2021-07-12.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2021-07-13.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2021-07-14.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2021-07-15.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2021-07-16.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2021-07-18.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/exception/ApiExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/exception/ApiExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/todoApi/model/ResponseBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/organization_many_to_many/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/users_many_to_many_bidirectional/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutorialApi/repository/TutorialRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/tutorialApi/repository/TutorialRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/exception/ApiExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/exception/ApiExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/todoApi/model/ResponseBody$ResponseBodyBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/todoApi/model/ResponseBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/organization_many_to_many/DatabaseConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutorialApi/repository/TutorialRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/tutorialApi/repository/TutorialRepository.class" afterDir="false" />
     </list>
     <list id="eca22010-4e1d-4786-9a5e-88b263e15d4a" name="fix: 🐛 student db" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,6 +180,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
@@ -170,10 +193,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jarida.server.jaridaserver.exception" />
+      <recent name="com.jarida.server.jaridaserver.users_many_to_many_unidirectional" />
       <recent name="com.jarida.server.jaridaserver.tutorialApi" />
       <recent name="com.jarida.server.jaridaserver.todoApi" />
       <recent name="com.jarida.server.jaridaserver.organization_one_to_one" />
-      <recent name="com.jarida.server.jaridaserver.organization_one_toone" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -258,17 +281,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.JaridaServerApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="generated-requests#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -428,7 +440,12 @@
       <workItem from="1626443191126" duration="8703000" />
       <workItem from="1626590317327" duration="27381000" />
       <workItem from="1626727776067" duration="1232000" />
-      <workItem from="1627204339097" duration="5100000" />
+      <workItem from="1627204339097" duration="16089000" />
+      <workItem from="1627255723543" duration="9136000" />
+      <workItem from="1627299739271" duration="2509000" />
+      <workItem from="1627381804807" duration="1196000" />
+      <workItem from="1627391560400" duration="8592000" />
+      <workItem from="1627424185880" duration="8502000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
@@ -503,21 +520,5 @@
     <option name="LAST_COMMIT_MESSAGE" value="new fixes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/exception/ApiExceptionHandler.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/exception/ApiExceptionHandler.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

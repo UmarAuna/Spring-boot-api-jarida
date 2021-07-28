@@ -1,4 +1,4 @@
-package com.jarida.server.jaridaserver.organization_many_to_many;
+package com.jarida.server.jaridaserver.users_many_to_many_bidirectional;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
