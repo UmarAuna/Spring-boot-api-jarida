@@ -3,11 +3,13 @@ package com.jarida.server.jaridaserver.tutorialApi;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 
 import javax.sql.DataSource;
 
 //@Configuration
+@EnableCaching
 public class DatabaseConfig {
 
     @Value("${spring.datasource.url}")

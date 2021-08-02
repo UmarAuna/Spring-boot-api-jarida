@@ -1,8 +1,11 @@
 package com.jarida.server.jaridaserver;
 
+import com.cloudinary.Cloudinary;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Sets;
+import com.jarida.server.jaridaserver.upload_image.service.FilesStorageService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -20,15 +23,34 @@ import springfox.documentation.swagger.web.UiConfiguration;
 import springfox.documentation.swagger.web.UiConfigurationBuilder;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import javax.annotation.Resource;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 @SpringBootApplication
 @EnableJpaAuditing //Enabling JPA Auditing
 @EnableSwagger2
 public class JaridaServerApplication extends SpringBootServletInitializer {
 
+	@Resource
+	FilesStorageService storageService;
+
+	@Value("${cloudinary.cloud_name}")
+	private String cloudName;
+
+	@Value("${cloudinary.api_key}")
+	private String apiKey;
+
+	@Value("${cloudinary.api_secret}")
+	private String apiSecret;
+
 	public static void main(String[] args) {
 		SpringApplication.run(JaridaServerApplication.class, args);
+	}
+
+	public void run(String... arg) throws Exception {
+		storageService.init();
 	}
 
 	@Bean
@@ -45,6 +67,17 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 				.displayRequestDuration(true)
 				.validatorUrl("")
 				.build();
+	}
+
+	@Bean
+	public Cloudinary cloudinaryConfig() {
+		Cloudinary cloudinary = null;
+		Map config = new HashMap();
+		config.put("dxrxviiv8", cloudName);
+		config.put("855727313552936", apiKey);
+		config.put("BEfHJes5oDvWM9QAfFoTyJlWMdo", apiSecret);
+		cloudinary = new Cloudinary(config);
+		return cloudinary;
 	}
 
 
