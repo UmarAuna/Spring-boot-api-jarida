@@ -110,8 +110,10 @@ public class TodoController {
             //@ApiResponse(code = 500, message = "Failure", response = ErrorResource.class)
     }
     )
-    public Todo updateTodo(@PathVariable(value = "todoId") Long todoId,
-                                           @Valid  @RequestBody Todo todos) {
+    public Todo updateTodo(
+            @ApiParam(value = "Todo Id from which todo object will update from database table", required = true)
+            @PathVariable(value = "todoId") Long todoId,
+            @Valid  @RequestBody Todo todos) {
        return todoService.updateTodo(todoId, todos);
     }
 

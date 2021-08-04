@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v2")
 @Validated
-@Api(tags = "Organization API v2")
+@Api(tags = "Organization One to One API v2")
 @SwaggerDefinition(tags = {
         @Tag(name = "Organization", description = "This is for getting Organization")
 })
