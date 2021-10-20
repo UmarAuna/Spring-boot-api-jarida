@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-212.4746.92">
-    <data-source name="@localhost" uuid="79b0e6b9-bafa-42b7-898a-ad58645d2c5f">
-      <database-info product="MySQL" version="8.0.25-0ubuntu0.20.10.1" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.21 (Revision: 33f65445a1bcc544eb0120491926484da168f199)" dbms="MYSQL" exact-version="8.0.25" exact-driver-version="8.0">
+  <component name="dataSourceStorageLocal" created-in="IU-212.5284.40">
+    <data-source name="@localhost" uuid="68f38a90-9ecc-4dbf-a2f1-cdefa24c0a1a">
+      <database-info product="MySQL" version="8.0.26-0ubuntu0.20.04.3" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.26" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
@@ -13,25 +13,12 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="zero_to_production_bucketlist_jpa" />
             <name qname="jarida" />
-            <name qname="flight_manager" />
-            <name qname="authentication" />
+            <name qname="mysql" />
+            <name qname="performance_schema" />
+            <name qname="sys" />
+            <name qname="wpblog" />
           </node>
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="@heroku" uuid="14012ed9-132e-4674-9186-296f6f61ceda">
-      <database-info product="MySQL" version="5.6.50-log" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.21 (Revision: 33f65445a1bcc544eb0120491926484da168f199)" dbms="MYSQL" exact-version="5.6.50" exact-driver-version="8.0">
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>bf9fe3a9239b28</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="@" />
         </introspection-scope>
       </schema-mapping>
     </data-source>

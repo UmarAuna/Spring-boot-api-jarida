@@ -142,4 +142,14 @@ public class StudentController {
 
         return ResponseEntity.ok().body(response);
     }
+
+
+    @PostMapping("/calculator")
+    public ResponseEntity calculate(@RequestParam @Valid int num1, @RequestParam @Valid int num2) {
+       int result;
+
+       result = num1 + num2;
+
+       return ResponseEntity.ok().body(result);
+    }
 }
