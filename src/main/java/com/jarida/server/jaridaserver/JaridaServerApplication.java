@@ -3,16 +3,19 @@ package com.jarida.server.jaridaserver;
 import com.cloudinary.Cloudinary;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.collect.Sets;
 import com.jarida.server.jaridaserver.upload_image.service.FilesStorageService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -21,17 +24,14 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger.web.UiConfiguration;
 import springfox.documentation.swagger.web.UiConfigurationBuilder;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.annotation.Resource;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @SpringBootApplication
 @EnableJpaAuditing //Enabling JPA Auditing
-@EnableSwagger2
-public class JaridaServerApplication extends SpringBootServletInitializer {
+@Configuration
+public class JaridaServerApplication extends SpringBootServletInitializer implements WebMvcConfigurer {
 
 	@Resource
 	FilesStorageService storageService;
@@ -81,12 +81,35 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 	}
 
 
-	// http://localhost:8080/swagger-ui.html#/
+	// http://localhost:8080/swagger-ui/index.html
+	public static final Set<String> consumes = new HashSet<>(Arrays.asList("application/json"));
+	public static final Set<String> produces = new HashSet<>(Arrays.asList("application/json"));
+
+
+	@Override
+	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addRedirectViewController("/documentation/v2/api-docs", "/v2/api-docs?group=restful-api");
+		registry.addRedirectViewController("/documentation/swagger-resources/configuration/ui","/swagger-resources/configuration/ui");
+		registry.addRedirectViewController("/documentation/swagger-resources/configuration/security","/swagger-resources/configuration/security");
+		registry.addRedirectViewController("/documentation/swagger-resources", "/swagger-resources");
+	}
+
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry
+				.addResourceHandler("swagger-ui.html")
+				.addResourceLocations("classpath:/META-INF/resources/");
+
+		registry
+				.addResourceHandler("/webjars/**")
+				.addResourceLocations("classpath:/META-INF/resources/webjars/");
+	}
+
 	@Bean
 	public Docket jaridaApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
-				.consumes(Sets.newHashSet("application/json"))
-				.produces(Sets.newHashSet("application/json"))
+				.consumes(consumes)
+				.produces(produces)
 				/*.protocols(Sets.newHashSet("http", "https"))*/
 				.groupName("B Jarida - V1")
 				.select()
@@ -101,8 +124,8 @@ public class JaridaServerApplication extends SpringBootServletInitializer {
 	@Bean
 	public Docket studentApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
-				.consumes(Sets.newHashSet("application/json"))
-				.produces(Sets.newHashSet("application/json"))
+				.consumes(consumes)
+				.produces(produces)
 				/*.protocols(Sets.newHashSet("http", "https"))*/
 				.groupName("A Student - V2")
 				.select()

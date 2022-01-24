@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jarida-server" target="9" />
+      <module name="jarida-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
