@@ -1,4 +1,4 @@
-package com.jarida.server.jaridaserver.cloudinary_image_upload_2.entity;
+package com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

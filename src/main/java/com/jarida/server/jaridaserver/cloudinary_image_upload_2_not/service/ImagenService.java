@@ -1,7 +1,7 @@
-package com.jarida.server.jaridaserver.cloudinary_image_upload_2.service;
+package com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.service;
 
-import com.jarida.server.jaridaserver.cloudinary_image_upload_2.entity.Imagen;
-import com.jarida.server.jaridaserver.cloudinary_image_upload_2.repository.ImagenRepository;
+import com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.entity.Imagen;
+import com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.repository.ImagenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

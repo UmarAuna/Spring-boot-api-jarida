@@ -1,10 +1,10 @@
-package com.jarida.server.jaridaserver.cloudinary_image_upload_2.controller;
+package com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.controller;
 
 
-import com.jarida.server.jaridaserver.cloudinary_image_upload_2.entity.Imagen;
-import com.jarida.server.jaridaserver.cloudinary_image_upload_2.entity.Message;
-import com.jarida.server.jaridaserver.cloudinary_image_upload_2.service.CloudinaryService;
-import com.jarida.server.jaridaserver.cloudinary_image_upload_2.service.ImagenService;
+import com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.entity.Imagen;
+import com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.entity.Message;
+import com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.service.CloudinaryService;
+import com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.service.ImagenService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.SwaggerDefinition;
 import io.swagger.annotations.Tag;

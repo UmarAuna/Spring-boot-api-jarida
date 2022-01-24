@@ -1,4 +1,4 @@
-package com.jarida.server.jaridaserver.cloudinary_image_upload_2;
+package com.jarida.server.jaridaserver.cloudinary_image_upload_2_not;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

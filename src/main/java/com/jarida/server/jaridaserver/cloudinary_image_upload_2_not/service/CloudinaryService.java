@@ -1,4 +1,4 @@
-package com.jarida.server.jaridaserver.cloudinary_image_upload_2.service;
+package com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.service;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;

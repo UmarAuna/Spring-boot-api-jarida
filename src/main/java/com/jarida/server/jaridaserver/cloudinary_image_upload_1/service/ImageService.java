@@ -51,7 +51,7 @@ public class ImageService {
         return Optional.ofNullable(imageRepository.findById(id).orElse(null));
     }
 
-    public Image createImage(MultipartFile multipartFile) {
+    public Image createImage(MultipartFile multipartFile, String owner) {
         Image image = new Image();
 
         File file;
@@ -75,6 +75,7 @@ public class ImageService {
             image.setUrl((String) uploadResult.get("url"));
             image.setSecure_url((String) uploadResult.get("secure_url"));
             image.setFormat((String) uploadResult.get("format"));
+            image.setOwner(owner);
             //image.setFileName(multipartFile.getOriginalFilename());
             image.setFileName(String.format("%d%s", random.nextLong(), multipartFile.getOriginalFilename()));
             return imageRepository.save(image);
@@ -88,7 +89,7 @@ public class ImageService {
     }
 
     @Transactional
-    public Image updateImage(MultipartFile multipartFile, Long id) throws IOException {
+    public Image updateImage(MultipartFile multipartFile, Long id, String owner) throws IOException {
         Optional<Image> imageOptional = imageRepository.findById(id);
         cloudinary.uploader().destroy(imageOptional.get().getName(), ObjectUtils.emptyMap());
 
@@ -109,6 +110,7 @@ public class ImageService {
                 image.setUrl((String) uploadResult.get("url"));
                 image.setSecure_url((String) uploadResult.get("secure_url"));
                 image.setFormat((String) uploadResult.get("format"));
+                image.setOwner(owner);
                 // image.setFileName(multipartFile.getOriginalFilename());
                 image.setFileName(String.format("%d%s", random.nextLong(), multipartFile.getOriginalFilename()));
 

@@ -1,6 +1,6 @@
-package com.jarida.server.jaridaserver.cloudinary_image_upload_2.repository;
+package com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.repository;
 
-import com.jarida.server.jaridaserver.cloudinary_image_upload_2.entity.Imagen;
+import com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.entity.Imagen;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

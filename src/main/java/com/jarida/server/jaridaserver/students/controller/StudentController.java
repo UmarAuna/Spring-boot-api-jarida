@@ -92,6 +92,11 @@ public class StudentController {
         return ResponseEntity.ok().body(student);
     }
 
+    @PostMapping("/phonenumber")
+    public Map<String, String> phoneNumber(@RequestParam @Valid String number) {
+        return studentService.phoneNumber(number);
+    }
+
     @DeleteMapping("/students/{studentId}")
     @ApiOperation(value = "This is for deleting a Student", response = Student.class)
     @ApiResponses(value = {

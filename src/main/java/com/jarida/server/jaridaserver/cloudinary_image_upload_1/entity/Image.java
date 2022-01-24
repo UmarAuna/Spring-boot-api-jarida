@@ -30,4 +30,7 @@ public class Image extends BaseEntity{
 
     @Column(name = "file_name", nullable = false)
     private String fileName;
+
+    @Column(name = "owner", nullable = false)
+    private String owner;
 }

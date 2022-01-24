@@ -20,7 +20,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/v1")
 @Validated
-@Api(tags = "Upload Image Cloudinary API v1")
+@Api(tags = "Upload Image Cloudinary API v1 - Working Properly")
 @SwaggerDefinition(tags = {
         @Tag(name = "Upload Image Cloudinary", description = "This is for getting Upload Image Cloudinary Api")
 })
@@ -40,16 +40,21 @@ public class ImageController {
     }
 
     @PostMapping("/image")
-    public Image create(@RequestParam(name = "file") MultipartFile multipartFile) {
-        return imageService.createImage(multipartFile);
+    public Image create(
+            @RequestParam(name = "file") MultipartFile multipartFile,
+            @RequestParam(required = false)String owner) {
+        return imageService.createImage(multipartFile, owner);
     }
 
     @PutMapping("/image/{id}")
-    public Image updatImage(@RequestParam(name = "file") MultipartFile multipartFile, Long id) throws IOException {
+    public Image updatImage(
+            @RequestParam(name = "file") MultipartFile multipartFile,
+            Long id,
+            @RequestParam(required = false) String owner) throws IOException {
       /*  Image image = imageService.getById(id).get();
         Map result = imageService.updateImage(image.getName());*/
 
-        return imageService.updateImage(multipartFile, id);
+        return imageService.updateImage(multipartFile, id, owner);
     }
 
     @DeleteMapping("/image/{id}")
