@@ -3903,3 +3903,265 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2022-01-29 01:04:20.085  INFO 170239 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2022-01-29 01:04:20.088  INFO 170239 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-01-29 01:04:20.095  INFO 170239 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-29 01:51:13.369  INFO 185849 --- [restartedMain] c.j.s.j.JaridaServerApplication          : Starting JaridaServerApplication on umar-auna with PID 185849 (/home/umar-auna/IdeaProjects/Spring-boot-api-jarida/target/classes started by umar-auna in /home/umar-auna/IdeaProjects/Spring-boot-api-jarida)
+2022-01-29 01:51:13.372  INFO 185849 --- [restartedMain] c.j.s.j.JaridaServerApplication          : No active profile set, falling back to default profiles: default
+2022-01-29 01:51:13.416  INFO 185849 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-29 01:51:14.805  INFO 185849 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-29 01:51:15.025  INFO 185849 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 212ms. Found 18 JPA repository interfaces.
+2022-01-29 01:51:15.537  INFO 185849 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@56214d53' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-29 01:51:15.551  INFO 185849 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-29 01:51:17.720  INFO 185849 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-29 01:51:17.834  INFO 185849 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-29 01:51:17.866  INFO 185849 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-01-29 01:51:18.199  INFO 185849 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-29 01:51:18.203 DEBUG 185849 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-01-29 01:51:18.203  INFO 185849 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4787 ms
+2022-01-29 01:51:18.445  WARN 185849 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-29 01:51:18.553  INFO 185849 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-29 01:51:18.602  INFO 185849 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-29 01:51:18.668  INFO 185849 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2022-01-29 01:51:19.452 DEBUG 185849 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtRequestFilter urls=[/*] order=2147483647
+2022-01-29 01:51:19.452 DEBUG 185849 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-01-29 01:51:19.764  INFO 185849 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-29 01:51:19.915 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@60f45b93
+2022-01-29 01:51:19.919 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@60f45b93
+2022-01-29 01:51:19.926 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@60f45b93
+2022-01-29 01:51:19.936 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@40b2d658
+2022-01-29 01:51:19.936 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@576b8ec6
+2022-01-29 01:51:19.937 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@3cb07a25
+2022-01-29 01:51:19.939 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@12172f42
+2022-01-29 01:51:19.939 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@12172f42
+2022-01-29 01:51:19.939 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@12172f42
+2022-01-29 01:51:19.940 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@4d5f00bc
+2022-01-29 01:51:19.941 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@4d5f00bc
+2022-01-29 01:51:19.941 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4d5f00bc
+2022-01-29 01:51:19.942 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3dfd8374
+2022-01-29 01:51:19.943 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3dfd8374
+2022-01-29 01:51:19.943 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3dfd8374
+2022-01-29 01:51:19.944 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@250e9f3a
+2022-01-29 01:51:19.945 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@250e9f3a
+2022-01-29 01:51:19.945 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@250e9f3a
+2022-01-29 01:51:19.946 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@158fb32b
+2022-01-29 01:51:19.947 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@158fb32b
+2022-01-29 01:51:19.947 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@158fb32b
+2022-01-29 01:51:19.948 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@65de008e
+2022-01-29 01:51:19.950 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@65de008e
+2022-01-29 01:51:19.950 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@65de008e
+2022-01-29 01:51:19.952 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@4561c115
+2022-01-29 01:51:19.953 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@4561c115
+2022-01-29 01:51:19.953 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4561c115
+2022-01-29 01:51:19.954 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4d20460a
+2022-01-29 01:51:19.954 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4d20460a
+2022-01-29 01:51:19.955 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5a1755d0
+2022-01-29 01:51:19.956 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5a1755d0
+2022-01-29 01:51:19.956 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@2bbb45bd
+2022-01-29 01:51:19.957 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@2bbb45bd
+2022-01-29 01:51:19.957 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@163de6d2
+2022-01-29 01:51:19.958 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@183d1511
+2022-01-29 01:51:19.958 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@5953faf5
+2022-01-29 01:51:19.959 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@5953faf5
+2022-01-29 01:51:19.960 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@5dee14ae
+2022-01-29 01:51:19.961 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5dee14ae
+2022-01-29 01:51:19.962 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@624827ce
+2022-01-29 01:51:19.962 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@624827ce
+2022-01-29 01:51:20.185 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@54b99365
+2022-01-29 01:51:20.200 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@54b99365
+2022-01-29 01:51:20.201 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@44246915
+2022-01-29 01:51:20.204 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@44246915
+2022-01-29 01:51:20.213 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@10375a40
+2022-01-29 01:51:20.218 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@10375a40
+2022-01-29 01:51:20.228 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@79f89a4b
+2022-01-29 01:51:20.228 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@79f89a4b
+2022-01-29 01:51:20.229 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2ebeee2e
+2022-01-29 01:51:20.230 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2ebeee2e
+2022-01-29 01:51:20.232 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@72a21ff
+2022-01-29 01:51:20.232 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@72a21ff
+2022-01-29 01:51:20.234 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@576cfe62
+2022-01-29 01:51:20.234 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@576cfe62
+2022-01-29 01:51:20.235 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@4cccabf5
+2022-01-29 01:51:20.235 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4cccabf5
+2022-01-29 01:51:20.237 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@63181066
+2022-01-29 01:51:20.240 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@63181066
+2022-01-29 01:51:20.240 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@63181066
+2022-01-29 01:51:20.241 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1f747b51
+2022-01-29 01:51:20.242 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@28e812d7
+2022-01-29 01:51:20.242 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@28e812d7
+2022-01-29 01:51:20.242 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@28e812d7
+2022-01-29 01:51:20.246 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7c2d465
+2022-01-29 01:51:20.246 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@74e70377
+2022-01-29 01:51:20.247 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@72aedc6c
+2022-01-29 01:51:20.247 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@72aedc6c
+2022-01-29 01:51:20.255 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@39f7efa
+2022-01-29 01:51:20.256 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@39f7efa
+2022-01-29 01:51:20.256 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@4dcbe3c4
+2022-01-29 01:51:20.257 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4dcbe3c4
+2022-01-29 01:51:20.257 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@52a79ad
+2022-01-29 01:51:20.258 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@52a79ad
+2022-01-29 01:51:20.400 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@40799046
+2022-01-29 01:51:20.403 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@40799046
+2022-01-29 01:51:20.405 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@61636035
+2022-01-29 01:51:20.409 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@7a99ccc8
+2022-01-29 01:51:20.410 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@7a99ccc8
+2022-01-29 01:51:20.421 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@7a99ccc8
+2022-01-29 01:51:20.423 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@38e57dc8
+2022-01-29 01:51:20.423 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@38e57dc8
+2022-01-29 01:51:20.424 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@38e57dc8
+2022-01-29 01:51:20.426 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@52d08768
+2022-01-29 01:51:20.430 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@2b382690
+2022-01-29 01:51:20.431 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@503ac895
+2022-01-29 01:51:20.436 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@503ac895
+2022-01-29 01:51:20.436 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@503ac895
+2022-01-29 01:51:20.437 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7e1fa51
+2022-01-29 01:51:20.441 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7e1fa51
+2022-01-29 01:51:20.441 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7e1fa51
+2022-01-29 01:51:20.442 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@5379fe6d
+2022-01-29 01:51:20.442 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@25d41144
+2022-01-29 01:51:20.445 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@4feb76f4
+2022-01-29 01:51:20.445 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4feb76f4
+2022-01-29 01:51:20.446 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@25c9d4ea
+2022-01-29 01:51:20.447 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@2d0e8bd9
+2022-01-29 01:51:20.448 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@2d0e8bd9
+2022-01-29 01:51:20.449 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@9f1d36c
+2022-01-29 01:51:20.450 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@9f1d36c
+2022-01-29 01:51:20.451 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@14b861ae
+2022-01-29 01:51:20.452 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6fe71744
+2022-01-29 01:51:20.453 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@6779dbac
+2022-01-29 01:51:20.456 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@2bf94e62
+2022-01-29 01:51:20.456 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2bf94e62
+2022-01-29 01:51:20.457 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7a237b74
+2022-01-29 01:51:20.457 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@356d994b
+2022-01-29 01:51:20.457 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@6608ea2b
+2022-01-29 01:51:20.457 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@387f7b6f
+2022-01-29 01:51:20.457 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@59664fcf
+2022-01-29 01:51:20.458 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@182269
+2022-01-29 01:51:20.458 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@21e0d9f3
+2022-01-29 01:51:20.458 DEBUG 185849 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@62077aa3
+2022-01-29 01:51:20.596  INFO 185849 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-29 01:51:21.118  INFO 185849 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-29 01:51:21.131  INFO 185849 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-29 01:51:21.212 DEBUG 185849 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2b0c48db] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@eaea1fe]
+2022-01-29 01:51:21.383 DEBUG 185849 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-01-29 01:51:21.435 DEBUG 185849 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-01-29 01:51:21.550 DEBUG 185849 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2b0c48db] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4c43a81c]
+2022-01-29 01:51:21.714  INFO 185849 --- [task-1] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.entity.Imagen (class must be instantiated by Interceptor)
+2022-01-29 01:51:21.769 DEBUG 185849 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-01-29 01:51:21.769 DEBUG 185849 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-01-29 01:51:21.782 DEBUG 185849 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-01-29 01:51:21.782 DEBUG 185849 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-01-29 01:51:21.967 DEBUG 185849 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-01-29 01:51:21.967 DEBUG 185849 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-01-29 01:51:22.172 DEBUG 185849 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table comments 
+       add constraint FKh4c7lvsc298whoyd4w9ta25cr 
+       foreign key (post_id) 
+       references posts (id)
+2022-01-29 01:51:22.608 DEBUG 185849 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table course 
+       add constraint FKqk2yq2yk124dhlsilomy36qr9 
+       foreign key (instructor_id) 
+       references instructor (id)
+2022-01-29 01:51:22.955 DEBUG 185849 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table organization 
+       add constraint FK97eigsvq2tsrd2bge4ox651wh 
+       foreign key (address_id) 
+       references address (id)
+2022-01-29 01:51:23.077 DEBUG 185849 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_roles 
+       add constraint FKj9553ass9uctjrmh0gkqsmv0d 
+       foreign key (roles_id) 
+       references role (id)
+2022-01-29 01:51:23.265 DEBUG 185849 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_roles 
+       add constraint FK7ecyobaa59vxkxckg6t355l86 
+       foreign key (users_id) 
+       references user (id)
+2022-01-29 01:51:23.388 DEBUG 185849 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_uni_roles_uni 
+       add constraint FKbhdimqeipm48tgut1uvhg0p4 
+       foreign key (roles_uni_id) 
+       references role_uni (id)
+2022-01-29 01:51:23.453 DEBUG 185849 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_uni_roles_uni 
+       add constraint FKphgnyu7jr3n9t9b27gltn17p 
+       foreign key (user_uni_id) 
+       references user_uni (id)
+2022-01-29 01:51:23.500  INFO 185849 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-29 01:51:23.537 TRACE 185849 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@4c43a81c] for TypeConfiguration
+2022-01-29 01:51:23.562  INFO 185849 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 01:51:24.301 DEBUG 185849 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 96 mappings in 'requestMappingHandlerMapping'
+2022-01-29 01:51:24.469  INFO 185849 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-01-29 01:51:24.555  INFO 185849 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-29 01:51:24.786  INFO 185849 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b42e86e, org.springframework.security.web.context.SecurityContextPersistenceFilter@27d366aa, org.springframework.security.web.header.HeaderWriterFilter@5ddf08c6, org.springframework.security.web.authentication.logout.LogoutFilter@5f3b19cf, com.jarida.server.jaridaserver.spring_security_1.config.JwtRequestFilter@2124f3b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@279a7e0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24935cf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26f95732, org.springframework.security.web.session.SessionManagementFilter@4d800fe4, org.springframework.security.web.access.ExceptionTranslationFilter@2adbadc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@812db2d]
+2022-01-29 01:51:25.060 DEBUG 185849 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-29 01:51:25.099 DEBUG 185849 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/, /documentation/v2/api-docs, /documentation/swagger-resources/configuration/ui, /documentation/swagger-resources/configuration/security, /documentation/swagger-resources] in 'viewControllerHandlerMapping'
+2022-01-29 01:51:25.122 DEBUG 185849 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui.html, /swagger-ui/**] in 'resourceHandlerMapping'
+2022-01-29 01:51:25.134 DEBUG 185849 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-29 01:51:25.162  WARN 185849 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-29 01:51:25.447  INFO 185849 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-29 01:51:26.704  INFO 185849 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-01-29 01:51:27.109  INFO 185849 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-01-29 01:51:27.125  INFO 185849 --- [restartedMain] c.j.s.j.JaridaServerApplication          : Started JaridaServerApplication in 14.05 seconds (JVM running for 14.707)
+2022-01-29 01:51:27.668  INFO 185849 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-29 01:51:27.669  INFO 185849 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-29 01:51:27.669 DEBUG 185849 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-01-29 01:51:27.678 DEBUG 185849 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2022-01-29 01:51:27.678  INFO 185849 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-01-29 01:51:41.945  WARN 185849 --- [http-nio-8080-exec-1] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:41.960 DEBUG 185849 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?urls.primaryName=B%20Jarida%20-%20V1", parameters={urls.primaryName:[B Jarida - V1]}
+2022-01-29 01:51:41.969 DEBUG 185849 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-01-29 01:51:41.987 DEBUG 185849 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:42.301  WARN 185849 --- [http-nio-8080-exec-4] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:42.301 DEBUG 185849 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-01-29 01:51:42.336  WARN 185849 --- [http-nio-8080-exec-5] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:42.337 DEBUG 185849 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-01-29 01:51:42.338 DEBUG 185849 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-01-29 01:51:42.341  WARN 185849 --- [http-nio-8080-exec-2] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:42.342 DEBUG 185849 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.css?v=3.0.0", parameters={v:[3.0.0]}
+2022-01-29 01:51:42.344 DEBUG 185849 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-01-29 01:51:42.347  WARN 185849 --- [http-nio-8080-exec-6] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:42.349 DEBUG 185849 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-01-29 01:51:42.356 DEBUG 185849 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-01-29 01:51:42.372 DEBUG 185849 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:42.375 DEBUG 185849 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:42.375 DEBUG 185849 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-01-29 01:51:42.375 DEBUG 185849 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:42.380  WARN 185849 --- [http-nio-8080-exec-3] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:42.380 DEBUG 185849 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css?v=3.0.0", parameters={v:[3.0.0]}
+2022-01-29 01:51:42.382 DEBUG 185849 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-01-29 01:51:42.401 DEBUG 185849 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:42.408 DEBUG 185849 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:43.056  WARN 185849 --- [http-nio-8080-exec-7] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:43.056 DEBUG 185849 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources/configuration/ui", parameters={}
+2022-01-29 01:51:43.057  WARN 185849 --- [http-nio-8080-exec-8] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:43.058 DEBUG 185849 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png?v=3.0.0", parameters={v:[3.0.0]}
+2022-01-29 01:51:43.059 DEBUG 185849 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-01-29 01:51:43.065 DEBUG 185849 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:43.066 DEBUG 185849 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2022-01-29 01:51:43.156 DEBUG 185849 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-01-29 01:51:43.162 DEBUG 185849 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.UiConfiguration@2e3b506c]
+2022-01-29 01:51:43.173 DEBUG 185849 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:43.181  WARN 185849 --- [http-nio-8080-exec-9] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:43.182 DEBUG 185849 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources/configuration/security", parameters={}
+2022-01-29 01:51:43.182 DEBUG 185849 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2022-01-29 01:51:43.183 DEBUG 185849 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-01-29 01:51:43.186 DEBUG 185849 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.SecurityConfiguration@60b849f0]
+2022-01-29 01:51:43.187 DEBUG 185849 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:43.199  WARN 185849 --- [http-nio-8080-exec-10] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:43.200 DEBUG 185849 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources", parameters={}
+2022-01-29 01:51:43.200 DEBUG 185849 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2022-01-29 01:51:43.201 DEBUG 185849 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-01-29 01:51:43.201 DEBUG 185849 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[springfox.documentation.swagger.web.SwaggerResource@7c8b1e4f, springfox.documentation.swagger.web.S (truncated)...]
+2022-01-29 01:51:43.205 DEBUG 185849 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-29 01:51:43.319  WARN 185849 --- [http-nio-8080-exec-1] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
+2022-01-29 01:51:43.320 DEBUG 185849 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=B%20Jarida%20-%20V1", parameters={group:[B Jarida - V1]}
+2022-01-29 01:51:43.320 DEBUG 185849 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)
+2022-01-29 01:51:43.473 DEBUG 185849 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, */*] and supported [application/json, application/hal+json]
+2022-01-29 01:51:43.475 DEBUG 185849 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@2f007a96]
+2022-01-29 01:51:43.478 DEBUG 185849 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
