@@ -15,6 +15,8 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
+		<!-- The main class to start by executing "java -jar" -->
+		<start-class>com.jarida.server.jaridaserver.JaridaServerApplication</start-class>
 		<java.version>11</java.version>
 		<kotlin.version>1.5.10</kotlin.version>
 	</properties>
@@ -221,10 +223,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.jarida.server.jaridaserver.JaridaServerApplication</mainClass>
+				</configuration>
 			</plugin>
 			<plugin>
-				<artifactId>kotlin-maven-plugin</artifactId>
 				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-maven-plugin</artifactId>
 				<configuration>
 					<args>
 						<arg>-Xjsr305=strict</arg>

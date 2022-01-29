@@ -1307,7 +1307,7 @@
 2022-01-29 00:54:20.453 DEBUG 162589 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-01-29 00:54:29.266  WARN 162589 --- [http-nio-8080-exec-3] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 00:54:29.267 DEBUG 162589 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/food", parameters={}
-2022-01-29 00:54:29.267 DEBUG 162589 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.FoodController#getFood()
+2022-01-29 00:54:29.267 DEBUG 162589 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to FoodController#getFood()
 2022-01-29 00:54:29.281 DEBUG 162589 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : View remains unresolved given [application/json]
 2022-01-29 00:54:29.360 ERROR 162589 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "food": Error resolving template [food], template might not exist or might not be accessible by any of the configured Template Resolvers
 
@@ -1596,7 +1596,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [food]
 2022-01-29 00:54:29.374 DEBUG 162589 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
 2022-01-29 00:54:37.511  WARN 162589 --- [http-nio-8080-exec-5] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 00:54:37.512 DEBUG 162589 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/food", parameters={}
-2022-01-29 00:54:37.512 DEBUG 162589 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.FoodController#getFood()
+2022-01-29 00:54:37.512 DEBUG 162589 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to FoodController#getFood()
 2022-01-29 00:54:37.514 DEBUG 162589 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : View remains unresolved given [application/json]
 2022-01-29 00:54:37.515 ERROR 162589 --- [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "food": Error resolving template [food], template might not exist or might not be accessible by any of the configured Template Resolvers
 
@@ -2121,13 +2121,13 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [food]
 2022-01-29 00:56:57.203 DEBUG 165254 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
 2022-01-29 00:57:07.679  WARN 165254 --- [http-nio-8080-exec-3] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 00:57:07.680 DEBUG 165254 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/food", parameters={}
-2022-01-29 00:57:07.681 DEBUG 165254 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.FoodController#getFood()
+2022-01-29 00:57:07.681 DEBUG 165254 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to FoodController#getFood()
 2022-01-29 00:57:07.691 DEBUG 165254 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2022-01-29 00:57:07.692 DEBUG 165254 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["food"]
 2022-01-29 00:57:07.695 DEBUG 165254 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-01-29 00:57:14.990  WARN 165254 --- [http-nio-8080-exec-4] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 00:57:14.991 DEBUG 165254 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/food", parameters={}
-2022-01-29 00:57:14.992 DEBUG 165254 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.FoodController#getFood()
+2022-01-29 00:57:14.992 DEBUG 165254 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to FoodController#getFood()
 2022-01-29 00:57:14.993 DEBUG 165254 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2022-01-29 00:57:14.993 DEBUG 165254 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["food"]
 2022-01-29 00:57:14.994 DEBUG 165254 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
@@ -2402,7 +2402,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [food]
 2022-01-29 00:57:51.112 DEBUG 166556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-01-29 00:58:05.748  WARN 166556 --- [http-nio-8080-exec-2] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 00:58:05.749 DEBUG 166556 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/food", parameters={}
-2022-01-29 00:58:05.749 DEBUG 166556 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.FoodController#getFood()
+2022-01-29 00:58:05.749 DEBUG 166556 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to FoodController#getFood()
 2022-01-29 00:58:05.756 DEBUG 166556 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2022-01-29 00:58:05.757 DEBUG 166556 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["food"]
 2022-01-29 00:58:05.758 DEBUG 166556 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
@@ -2614,7 +2614,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [food]
 2022-01-29 00:59:23.702  WARN 167446 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/umar-auna/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'moneyController' method 
 com.jarida.server.jaridaserver.MoneyController#getFood()
 to {GET /api/v1/food}: There is already 'foodController' bean method
-com.jarida.server.jaridaserver.FoodController#getFood() mapped.
+FoodController#getFood() mapped.
 2022-01-29 00:59:23.742  INFO 167446 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2022-01-29 00:59:23.748  INFO 167446 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-29 00:59:23.749 TRACE 167446 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@467ca5af] for TypeConfiguration
@@ -2631,7 +2631,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/umar-auna/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'moneyController' method 
 com.jarida.server.jaridaserver.MoneyController#getFood()
 to {GET /api/v1/food}: There is already 'foodController' bean method
-com.jarida.server.jaridaserver.FoodController#getFood() mapped.
+FoodController#getFood() mapped.
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
@@ -2661,7 +2661,7 @@ com.jarida.server.jaridaserver.FoodController#getFood() mapped.
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'moneyController' method 
 com.jarida.server.jaridaserver.MoneyController#getFood()
 to {GET /api/v1/food}: There is already 'foodController' bean method
-com.jarida.server.jaridaserver.FoodController#getFood() mapped.
+FoodController#getFood() mapped.
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
@@ -2681,7 +2681,7 @@ com.jarida.server.jaridaserver.FoodController#getFood() mapped.
 Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'moneyController' method 
 com.jarida.server.jaridaserver.MoneyController#getFood()
 to {GET /api/v1/food}: There is already 'foodController' bean method
-com.jarida.server.jaridaserver.FoodController#getFood() mapped.
+FoodController#getFood() mapped.
 	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
@@ -2972,7 +2972,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2022-01-29 00:59:35.660  WARN 168037 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/umar-auna/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'moneyController' method 
 com.jarida.server.jaridaserver.MoneyController#getFood()
 to {GET /api/v1/food}: There is already 'foodController' bean method
-com.jarida.server.jaridaserver.FoodController#getFood() mapped.
+FoodController#getFood() mapped.
 2022-01-29 00:59:35.692  INFO 168037 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2022-01-29 00:59:35.704  INFO 168037 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-29 00:59:35.704 TRACE 168037 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@7806e6a7] for TypeConfiguration
@@ -2989,7 +2989,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/umar-auna/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'moneyController' method 
 com.jarida.server.jaridaserver.MoneyController#getFood()
 to {GET /api/v1/food}: There is already 'foodController' bean method
-com.jarida.server.jaridaserver.FoodController#getFood() mapped.
+FoodController#getFood() mapped.
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
@@ -3019,7 +3019,7 @@ com.jarida.server.jaridaserver.FoodController#getFood() mapped.
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'moneyController' method 
 com.jarida.server.jaridaserver.MoneyController#getFood()
 to {GET /api/v1/food}: There is already 'foodController' bean method
-com.jarida.server.jaridaserver.FoodController#getFood() mapped.
+FoodController#getFood() mapped.
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
@@ -3039,7 +3039,7 @@ com.jarida.server.jaridaserver.FoodController#getFood() mapped.
 Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'moneyController' method 
 com.jarida.server.jaridaserver.MoneyController#getFood()
 to {GET /api/v1/food}: There is already 'foodController' bean method
-com.jarida.server.jaridaserver.FoodController#getFood() mapped.
+FoodController#getFood() mapped.
 	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
@@ -3347,7 +3347,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2022-01-29 01:00:50.819  INFO 168785 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
 2022-01-29 01:01:00.677  WARN 168785 --- [http-nio-8080-exec-1] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 01:01:00.684 DEBUG 168785 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/money", parameters={}
-2022-01-29 01:01:00.689 DEBUG 168785 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.FoodController#getFood()
+2022-01-29 01:01:00.689 DEBUG 168785 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to FoodController#getFood()
 2022-01-29 01:01:00.711 DEBUG 168785 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2022-01-29 01:01:00.711 DEBUG 168785 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["food"]
 2022-01-29 01:01:00.718 DEBUG 168785 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
@@ -3359,7 +3359,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2022-01-29 01:01:00.974 DEBUG 168785 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
 2022-01-29 01:01:03.598  WARN 168785 --- [http-nio-8080-exec-3] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 01:01:03.599 DEBUG 168785 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/money", parameters={}
-2022-01-29 01:01:03.600 DEBUG 168785 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.FoodController#getFood()
+2022-01-29 01:01:03.600 DEBUG 168785 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to FoodController#getFood()
 2022-01-29 01:01:03.601 DEBUG 168785 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2022-01-29 01:01:03.602 DEBUG 168785 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["food"]
 2022-01-29 01:01:03.603 DEBUG 168785 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
@@ -3588,7 +3588,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2022-01-29 01:01:29.305  INFO 169472 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
 2022-01-29 01:01:35.043  WARN 169472 --- [http-nio-8080-exec-1] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 01:01:35.049 DEBUG 169472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/money", parameters={}
-2022-01-29 01:01:35.053 DEBUG 169472 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.FoodController#getFood()
+2022-01-29 01:01:35.053 DEBUG 169472 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to FoodController#getFood()
 2022-01-29 01:01:35.070 DEBUG 169472 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2022-01-29 01:01:35.070 DEBUG 169472 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["money"]
 2022-01-29 01:01:35.076 DEBUG 169472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
@@ -3817,7 +3817,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2022-01-29 01:02:35.403  INFO 170239 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
 2022-01-29 01:03:00.831  WARN 170239 --- [http-nio-8080-exec-1] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 01:03:00.839 DEBUG 170239 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/cloth", parameters={}
-2022-01-29 01:03:00.844 DEBUG 170239 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.ClothController#getFood()
+2022-01-29 01:03:00.844 DEBUG 170239 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ClothController#getFood()
 2022-01-29 01:03:00.874 DEBUG 170239 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2022-01-29 01:03:00.874 DEBUG 170239 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["cloth"]
 2022-01-29 01:03:00.881 DEBUG 170239 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
@@ -3893,7 +3893,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2022-01-29 01:03:30.964 DEBUG 170239 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-01-29 01:03:38.330  WARN 170239 --- [http-nio-8080-exec-7] c.j.s.j.s.config.JwtRequestFilter        : JWT Token does not begin with Bearer String
 2022-01-29 01:03:38.331 DEBUG 170239 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/cloth", parameters={}
-2022-01-29 01:03:38.332 DEBUG 170239 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.ClothController#getFood()
+2022-01-29 01:03:38.332 DEBUG 170239 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ClothController#getFood()
 2022-01-29 01:03:38.332 DEBUG 170239 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2022-01-29 01:03:38.334 DEBUG 170239 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["cloth"]
 2022-01-29 01:03:38.334 DEBUG 170239 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
