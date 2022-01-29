@@ -30,6 +30,8 @@ public class StudentService {
     static String m7 = "0903";
     static String m8 = "0703";
     static String m9 = "0706";
+    static String m10 = "0903";
+    static String m11 = "0906";
 
     //GLO GSM Prefixes
     static String g1 = "0805";
@@ -54,6 +56,7 @@ public class StudentService {
     static String a5 = "0708";
     static String a6 = "0812";
     static String a7 = "0907";
+    static String a8 = "0901";
 
     //STARCOMMS GSM Prefixes
     static String s1 = "07028";

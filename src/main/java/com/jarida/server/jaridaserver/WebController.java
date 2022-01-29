@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/swagger/api")
 @Validated
 @CrossOrigin(allowedHeaders = "*", origins = "*")
 public class WebController {

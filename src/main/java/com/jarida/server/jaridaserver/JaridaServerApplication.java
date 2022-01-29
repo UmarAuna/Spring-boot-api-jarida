@@ -19,6 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.ApiKey;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -85,7 +86,6 @@ public class JaridaServerApplication extends SpringBootServletInitializer implem
 	public static final Set<String> consumes = new HashSet<>(Arrays.asList("application/json"));
 	public static final Set<String> produces = new HashSet<>(Arrays.asList("application/json"));
 
-
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addRedirectViewController("/documentation/v2/api-docs", "/v2/api-docs?group=restful-api");
@@ -118,7 +118,6 @@ public class JaridaServerApplication extends SpringBootServletInitializer implem
 				.build()
 				.apiInfo(apiJaridaInfo())
 				.forCodeGeneration(true);
-
 	}
 
 	@Bean
@@ -134,7 +133,22 @@ public class JaridaServerApplication extends SpringBootServletInitializer implem
 				.build()
 				.apiInfo(apiStudentInfo())
 				.forCodeGeneration(true);
+	}
 
+	@Bean
+	public Docket securityApi() {
+		return new Docket(DocumentationType.SWAGGER_2)
+				.securitySchemes(Collections.singletonList(apiKeyToken()))
+				.consumes(consumes)
+				.produces(produces)
+				/*.protocols(Sets.newHashSet("http", "https"))*/
+				.groupName("A Security - V3")
+				.select()
+				.apis(RequestHandlerSelectors.basePackage("com.jarida.server.jaridaserver"))
+				.paths(PathSelectors.ant("/api/v3/**"))
+				.build()
+				.apiInfo(apiSecurityInfo())
+				.forCodeGeneration(true);
 	}
 
 
@@ -156,6 +170,20 @@ public class JaridaServerApplication extends SpringBootServletInitializer implem
 				"https://www.apache.org/licenses/LICENSE-2.0",
 				new Contact("Umar Saidu Auna", "https://umarauna.bitbucket.io", "umarmanofpeace@gmail.com"),
 				"License of API", "https://www.apache.org/licenses/LICENSE-2.0", Collections.emptyList());
+	}
+
+	private ApiInfo apiSecurityInfo() {
+		return new ApiInfo(
+				"Security Rest API",
+				"This API is for Security.",
+				"API TOS",
+				"https://www.apache.org/licenses/LICENSE-2.0",
+				new Contact("Umar Saidu Auna", "https://umarauna.bitbucket.io", "umarmanofpeace@gmail.com"),
+				"License of API", "https://www.apache.org/licenses/LICENSE-2.0", Collections.emptyList());
+	}
+
+	public ApiKey apiKeyToken() {
+		return new ApiKey("jwtToken", "Authorization", "header");
 	}
 
 
