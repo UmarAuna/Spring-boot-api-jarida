@@ -1,3 +1,4 @@
+/*
 package com.jarida.server.jaridaserver.spring_security_1.config;
 
 import org.springframework.security.core.AuthenticationException;
@@ -19,3 +20,4 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint, Se
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
     }
 }
+*/

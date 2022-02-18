@@ -7,6 +7,7 @@ import io.swagger.annotations.SwaggerDefinition;
 import io.swagger.annotations.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -39,22 +40,22 @@ public class ImageController {
         return imageService.getById(id);
     }
 
-    @PostMapping("/image")
+    @PostMapping(path = "/image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Image create(
-            @RequestParam(name = "file") MultipartFile multipartFile,
+            @RequestPart(name = "file") MultipartFile file,
             @RequestParam(required = false)String owner) {
-        return imageService.createImage(multipartFile, owner);
+        return imageService.createImage(file, owner);
     }
 
-    @PutMapping("/image/{id}")
+    @PutMapping(path = "/image/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Image updatImage(
-            @RequestParam(name = "file") MultipartFile multipartFile,
+            @RequestPart(name = "file") MultipartFile file,
             Long id,
             @RequestParam(required = false) String owner) throws IOException {
       /*  Image image = imageService.getById(id).get();
         Map result = imageService.updateImage(image.getName());*/
 
-        return imageService.updateImage(multipartFile, id, owner);
+        return imageService.updateImage(file, id, owner);
     }
 
     @DeleteMapping("/image/{id}")

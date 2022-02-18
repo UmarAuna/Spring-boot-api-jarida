@@ -1,3 +1,4 @@
+/*
 package com.jarida.server.jaridaserver.spring_security_1.controller;
 
 import com.jarida.server.jaridaserver.spring_security_1.config.JwtTokenUtil;
@@ -25,7 +26,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/v3")
 @Validated
-@Api(tags = "Security API v3")
+@Api(tags = "Security API v3 - Not Working")
 // https://www.techgeeknext.com/spring/spring-boot-security-token-authentication-jwt-mysql
 @SwaggerDefinition(tags = {
         @Tag(name = "Security API 3", description = "This is for getting Security API 3")
@@ -83,3 +84,4 @@ public class JwtAuthenticationController {
         }
     }
 }
+*/

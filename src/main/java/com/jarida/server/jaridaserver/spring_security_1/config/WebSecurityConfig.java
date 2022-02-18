@@ -1,3 +1,4 @@
+/*
 package com.jarida.server.jaridaserver.spring_security_1.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -83,3 +84,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
        httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
     }
 }
+*/

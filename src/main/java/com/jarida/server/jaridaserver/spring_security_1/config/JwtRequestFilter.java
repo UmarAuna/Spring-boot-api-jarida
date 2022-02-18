@@ -1,3 +1,4 @@
+/*
 package com.jarida.server.jaridaserver.spring_security_1.config;
 
 import com.jarida.server.jaridaserver.spring_security_1.service.JwtUserDetailsService;
@@ -65,3 +66,4 @@ public class JwtRequestFilter extends OncePerRequestFilter {
         chain.doFilter(request, response);
     }
 }
+*/

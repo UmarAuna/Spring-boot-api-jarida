@@ -136,6 +136,12 @@
 			<version>2.4.5</version>
 		</dependency>
 
+		<!--Converts your response from JSON to XML-->
+		<!--<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>-->
+
 
 		<!--<dependency>
 			<groupId>org.springframework.security</groupId>

@@ -3,25 +3,31 @@ package com.jarida.server.jaridaserver;
 import com.cloudinary.Cloudinary;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jarida.server.jaridaserver.spring_security_2.entity.RoleTwos;
+import com.jarida.server.jaridaserver.spring_security_2.repository.RoleRepositoryTwos;
 import com.jarida.server.jaridaserver.upload_image.service.FilesStorageService;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
+import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
-import springfox.documentation.service.ApiInfo;
-import springfox.documentation.service.ApiKey;
-import springfox.documentation.service.Contact;
+import springfox.documentation.service.*;
 import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spi.service.contexts.SecurityContext;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger.web.UiConfiguration;
 import springfox.documentation.swagger.web.UiConfigurationBuilder;
@@ -32,6 +38,7 @@ import java.util.*;
 @SpringBootApplication
 @EnableJpaAuditing //Enabling JPA Auditing
 @Configuration
+@EnableWebMvc
 public class JaridaServerApplication extends SpringBootServletInitializer implements WebMvcConfigurer {
 
 	@Resource
@@ -46,12 +53,30 @@ public class JaridaServerApplication extends SpringBootServletInitializer implem
 	@Value("${cloudinary.api_secret}")
 	private String apiSecret;
 
-	public static void main(String[] args) {
-		SpringApplication.run(JaridaServerApplication.class, args);
+	@Bean
+	public ModelMapper modelMapper(){
+		return new ModelMapper();
 	}
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = SpringApplication.run(JaridaServerApplication.class, args);
+
+		DispatcherServlet dispatcherServlet = (DispatcherServlet)ctx.getBean("dispatcherServlet");
+		dispatcherServlet.setThrowExceptionIfNoHandlerFound(true);
+	}
+
+	@Autowired
+	private RoleRepositoryTwos roleRepositoryTwos;
 
 	public void run(String... arg) throws Exception {
 		storageService.init();
+		RoleTwos adminRole = new RoleTwos();
+		adminRole.setName("ROLE_ADMIN");
+		roleRepositoryTwos.save(adminRole);
+
+		RoleTwos userRole = new RoleTwos();
+		userRole.setName("ROLE_USER");
+		roleRepositoryTwos.save(userRole);
 	}
 
 	@Bean
@@ -138,6 +163,7 @@ public class JaridaServerApplication extends SpringBootServletInitializer implem
 	@Bean
 	public Docket securityApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
+				.securityContexts(Collections.singletonList(securityContext()))
 				.securitySchemes(Collections.singletonList(apiKeyToken()))
 				.consumes(consumes)
 				.produces(produces)
@@ -183,7 +209,18 @@ public class JaridaServerApplication extends SpringBootServletInitializer implem
 	}
 
 	public ApiKey apiKeyToken() {
-		return new ApiKey("jwtToken", "Authorization", "header");
+		return new ApiKey("JWT", "Authorization", "header");
+	}
+
+	private SecurityContext securityContext(){
+		return SecurityContext.builder().securityReferences(defaultAuth()).build();
+	}
+
+	private List<SecurityReference> defaultAuth(){
+		AuthorizationScope authorizationScope = new AuthorizationScope("global", "accessEverything");
+		AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
+		authorizationScopes[0] = authorizationScope;
+		return Arrays.asList(new SecurityReference("JWT", authorizationScopes));
 	}
 
 
