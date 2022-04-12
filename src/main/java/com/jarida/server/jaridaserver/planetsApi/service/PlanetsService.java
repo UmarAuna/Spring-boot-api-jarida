@@ -16,9 +16,7 @@ public class PlanetsService {
         this.planetRepository = planetRepository;
     }
 
-    public List<Planets> getPlants() {
-        List<Planets> planets = new ArrayList<>();
-        planetRepository.findAll().forEach(planets::add);
-        return planets;
+    public List<Planets> getPlanets() {
+        return new ArrayList<>(planetRepository.findAll());
     }
 }

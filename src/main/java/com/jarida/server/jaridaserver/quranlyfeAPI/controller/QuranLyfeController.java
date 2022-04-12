@@ -1,10 +1,10 @@
-package com.jarida.server.jaridaserver.planetsApi.controller;
+package com.jarida.server.jaridaserver.quranlyfeAPI.controller;
 
 
 import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
-import com.jarida.server.jaridaserver.planetsApi.model.Planets;
-import com.jarida.server.jaridaserver.planetsApi.repository.PlanetsRepository;
-import com.jarida.server.jaridaserver.planetsApi.service.PlanetsService;
+import com.jarida.server.jaridaserver.quranlyfeAPI.model.QuranLyfe;
+import com.jarida.server.jaridaserver.quranlyfeAPI.repository.QuranLyfeRepository;
+import com.jarida.server.jaridaserver.quranlyfeAPI.service.QuranLyfeService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,26 +18,26 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1")
 @Validated
-@Api(tags = "REST API for getting list of planets")
+@Api(tags = "REST API for getting Dua's from the Quran and Hadith")
 @SwaggerDefinition(tags = {
-        @Tag(name = "Planet", description = "This is for getting  Planet Api")
+        @Tag(name = "QuranLyfe", description = "This is for getting Dua's from the Quran and Hadith")
 })
 @CrossOrigin
-public class PlanetsController {
+public class QuranLyfeController {
 
-    PlanetsService planetService;
+    QuranLyfeService quranLyfeService;
 
-    PlanetsRepository planetsRepository;
+    QuranLyfeRepository quranLyfeRepository;
 
     @Autowired
-    public PlanetsController(PlanetsService planetService, PlanetsRepository planetsRepository) {
-        this.planetService = planetService;
-        this.planetsRepository = planetsRepository;
+    public QuranLyfeController(QuranLyfeService quranLyfeService, QuranLyfeRepository quranLyfeRepository) {
+        this.quranLyfeService = quranLyfeService;
+        this.quranLyfeRepository = quranLyfeRepository;
     }
 
-    @GetMapping("/planets")
+    @GetMapping("/quranlyfe")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "This is for getting list of planets")
+    @ApiOperation(value = "This is for getting list of Dua's from the Quran and Hadith")
     @ApiResponses(value = {
             @io.swagger.annotations.ApiResponse(code = 200, message = "Successful"),
             @io.swagger.annotations.ApiResponse(code = 400, message = "Invalid request"),
@@ -48,13 +48,13 @@ public class PlanetsController {
             @io.swagger.annotations.ApiResponse(code = 415, message = "Unsupported Media Type"),
             @io.swagger.annotations.ApiResponse(code = 500, message = "Internal server error")
     })
-    public List<Planets> getAllPlanets() {
-        return  planetService.getPlanets();
+    public List<QuranLyfe> getAllDuas() {
+        return quranLyfeService.getAllDuas();
     }
 
-    @GetMapping("/planets/search")
+    @GetMapping("/quranlyfe/search")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "This is for getting list of planets")
+    @ApiOperation(value = "This is for getting list of Dua's from the Quran and Hadith")
     @ApiResponses(value = {
             @io.swagger.annotations.ApiResponse(code = 200, message = "Successful"),
             @io.swagger.annotations.ApiResponse(code = 400, message = "Invalid request"),
@@ -65,16 +65,17 @@ public class PlanetsController {
             @io.swagger.annotations.ApiResponse(code = 415, message = "Unsupported Media Type"),
             @io.swagger.annotations.ApiResponse(code = 500, message = "Internal server error")
     })
-    public ResponseEntity<List<Planets>> getQueryPlanets(@RequestParam(required = true) String planetName) {
+    public ResponseEntity<List<QuranLyfe>> getQueryDuas(
+            @RequestParam String categories
+    ) {
+        List<QuranLyfe> quranLyfe = new ArrayList<>(quranLyfeRepository.findByCategoryContaining(categories));
 
-        List<Planets> planets = new ArrayList<>(planetsRepository.findByPlanetNameContaining(planetName));
-
-        if(planets.isEmpty()) {
-            throw new ResourceNotFoundException(planetName + " is not a Planet name");
+        if(quranLyfe.isEmpty()) {
+            throw new ResourceNotFoundException("No category found");
         }
-
-        return new ResponseEntity<>(planets, HttpStatus.OK);
+        return new ResponseEntity<>(quranLyfe, HttpStatus.OK);
     }
+
 
 
 }

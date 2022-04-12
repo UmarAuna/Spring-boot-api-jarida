@@ -1,10 +1,10 @@
-package com.jarida.server.jaridaserver.planetsApi.controller;
+package com.jarida.server.jaridaserver.quranlyfeAPI.controller;
 
 
 import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
-import com.jarida.server.jaridaserver.planetsApi.model.Planets;
-import com.jarida.server.jaridaserver.planetsApi.repository.PlanetsRepository;
-import com.jarida.server.jaridaserver.planetsApi.service.PlanetsService;
+import com.jarida.server.jaridaserver.quranlyfeAPI.model.NamesOfAllah;
+import com.jarida.server.jaridaserver.quranlyfeAPI.repository.NamesOfAllahRepository;
+import com.jarida.server.jaridaserver.quranlyfeAPI.service.NamesOfAllahService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,26 +18,25 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1")
 @Validated
-@Api(tags = "REST API for getting list of planets")
+@Api(tags = "REST API for getting 99 Names of Allah")
 @SwaggerDefinition(tags = {
-        @Tag(name = "Planet", description = "This is for getting  Planet Api")
+        @Tag(name = "QuranLyfe", description = "This is for getting 99 Names of Allah")
 })
 @CrossOrigin
-public class PlanetsController {
+public class NamesOfAllahController {
+    NamesOfAllahService namesOfAllahService;
 
-    PlanetsService planetService;
-
-    PlanetsRepository planetsRepository;
+    NamesOfAllahRepository namesOfAllahRepository;
 
     @Autowired
-    public PlanetsController(PlanetsService planetService, PlanetsRepository planetsRepository) {
-        this.planetService = planetService;
-        this.planetsRepository = planetsRepository;
+    public NamesOfAllahController(NamesOfAllahService namesOfAllahService, NamesOfAllahRepository namesOfAllahRepository) {
+        this.namesOfAllahService = namesOfAllahService;
+        this.namesOfAllahRepository = namesOfAllahRepository;
     }
 
-    @GetMapping("/planets")
+    @GetMapping("/namesofAllah")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "This is for getting list of planets")
+    @ApiOperation(value = "This is for getting list of 99 Names of Allah")
     @ApiResponses(value = {
             @io.swagger.annotations.ApiResponse(code = 200, message = "Successful"),
             @io.swagger.annotations.ApiResponse(code = 400, message = "Invalid request"),
@@ -48,13 +47,13 @@ public class PlanetsController {
             @io.swagger.annotations.ApiResponse(code = 415, message = "Unsupported Media Type"),
             @io.swagger.annotations.ApiResponse(code = 500, message = "Internal server error")
     })
-    public List<Planets> getAllPlanets() {
-        return  planetService.getPlanets();
+    public List<NamesOfAllah> getNamesofAllah() {
+        return namesOfAllahService.getNamesOfAllah();
     }
 
-    @GetMapping("/planets/search")
+    @GetMapping("/namesofAllah/search")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "This is for getting list of planets")
+    @ApiOperation(value = "This is for getting list of 99 Names of Allah")
     @ApiResponses(value = {
             @io.swagger.annotations.ApiResponse(code = 200, message = "Successful"),
             @io.swagger.annotations.ApiResponse(code = 400, message = "Invalid request"),
@@ -65,15 +64,16 @@ public class PlanetsController {
             @io.swagger.annotations.ApiResponse(code = 415, message = "Unsupported Media Type"),
             @io.swagger.annotations.ApiResponse(code = 500, message = "Internal server error")
     })
-    public ResponseEntity<List<Planets>> getQueryPlanets(@RequestParam(required = true) String planetName) {
+    public ResponseEntity<List<NamesOfAllah>> getQueryNamesofAllah(
+            @RequestParam String transliterationName
+    ) {
+        List<NamesOfAllah> namesOfAllah = new ArrayList<>(namesOfAllahRepository.findByTransliterationNameContaining(transliterationName));
 
-        List<Planets> planets = new ArrayList<>(planetsRepository.findByPlanetNameContaining(planetName));
-
-        if(planets.isEmpty()) {
-            throw new ResourceNotFoundException(planetName + " is not a Planet name");
+        if(namesOfAllah.isEmpty()) {
+            throw new ResourceNotFoundException("No Name Found");
         }
 
-        return new ResponseEntity<>(planets, HttpStatus.OK);
+        return new ResponseEntity<>(namesOfAllah, HttpStatus.OK);
     }
 
 
