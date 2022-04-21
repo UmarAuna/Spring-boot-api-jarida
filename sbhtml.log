@@ -10403,3 +10403,1161 @@ Caused by: java.sql.SQLException: Incorrect file format 'user_uni_roles_uni'
 2022-04-21 15:42:17.363 DEBUG 202961 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2022-04-21 15:42:17.364 DEBUG 202961 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CountDownQuranLyfe(id=3, endDateTime=18/06/2022 00:00:00, showCard=SHOW, successMessage=Ramadan Muba (truncated)...]
 2022-04-21 15:42:17.365 DEBUG 202961 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:24:58.678  INFO 202961 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 16:24:58.724 TRACE 202961 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@79079075] for TypeConfiguration
+2022-04-21 16:24:58.727 DEBUG 202961 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@68407f16] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@79079075]
+2022-04-21 16:24:58.750  INFO 202961 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-21 16:24:58.771  INFO 202961 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 16:24:58.800  INFO 202961 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-21 16:35:23.024  INFO 212382 --- [restartedMain] c.j.s.j.JaridaServerApplication          : Starting JaridaServerApplication on umar-auna with PID 212382 (/home/umar-auna/IdeaProjects/Spring-boot-api-jarida/target/classes started by umar-auna in /home/umar-auna/IdeaProjects/Spring-boot-api-jarida)
+2022-04-21 16:35:23.027  INFO 212382 --- [restartedMain] c.j.s.j.JaridaServerApplication          : No active profile set, falling back to default profiles: default
+2022-04-21 16:35:23.073  INFO 212382 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-21 16:35:24.500  INFO 212382 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-04-21 16:35:24.599  INFO 212382 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 26 JPA repository interfaces.
+2022-04-21 16:35:24.989  INFO 212382 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6b2a8089' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-21 16:35:24.995  INFO 212382 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-21 16:35:25.202  INFO 212382 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 16:35:25.208  INFO 212382 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 16:35:25.208  INFO 212382 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-04-21 16:35:25.258  INFO 212382 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-21 16:35:25.258 DEBUG 212382 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-04-21 16:35:25.259  INFO 212382 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2186 ms
+2022-04-21 16:35:25.430  WARN 212382 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 16:35:25.532  INFO 212382 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-21 16:35:25.565  INFO 212382 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 16:35:25.615  INFO 212382 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2022-04-21 16:35:25.651 DEBUG 212382 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, jwtAuthenticationFilterTwos urls=[/*] order=2147483647
+2022-04-21 16:35:25.652 DEBUG 212382 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-04-21 16:35:25.707  INFO 212382 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 16:35:25.725 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@6a351b57
+2022-04-21 16:35:25.726 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@6a351b57
+2022-04-21 16:35:25.726 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6a351b57
+2022-04-21 16:35:25.726 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7cc52bef
+2022-04-21 16:35:25.727 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@49988f3f
+2022-04-21 16:35:25.727 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@79acaa4f
+2022-04-21 16:35:25.728 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@8465e07
+2022-04-21 16:35:25.728 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@8465e07
+2022-04-21 16:35:25.728 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@8465e07
+2022-04-21 16:35:25.729 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@77d63b18
+2022-04-21 16:35:25.729 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@77d63b18
+2022-04-21 16:35:25.729 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@77d63b18
+2022-04-21 16:35:25.730 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@142905c8
+2022-04-21 16:35:25.730 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@142905c8
+2022-04-21 16:35:25.731 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@142905c8
+2022-04-21 16:35:25.731 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@707160e5
+2022-04-21 16:35:25.731 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@707160e5
+2022-04-21 16:35:25.732 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@707160e5
+2022-04-21 16:35:25.733 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@6fcde280
+2022-04-21 16:35:25.733 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@6fcde280
+2022-04-21 16:35:25.733 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@6fcde280
+2022-04-21 16:35:25.734 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@1b9147c2
+2022-04-21 16:35:25.734 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@1b9147c2
+2022-04-21 16:35:25.734 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1b9147c2
+2022-04-21 16:35:25.735 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@7f3e38f1
+2022-04-21 16:35:25.735 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@7f3e38f1
+2022-04-21 16:35:25.735 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7f3e38f1
+2022-04-21 16:35:25.735 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@320922c4
+2022-04-21 16:35:25.736 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@320922c4
+2022-04-21 16:35:25.736 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@37571361
+2022-04-21 16:35:25.736 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@37571361
+2022-04-21 16:35:25.737 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@4a52c122
+2022-04-21 16:35:25.737 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@4a52c122
+2022-04-21 16:35:25.738 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7e846bc7
+2022-04-21 16:35:25.738 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@d9421ca
+2022-04-21 16:35:25.739 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@150c1325
+2022-04-21 16:35:25.739 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@150c1325
+2022-04-21 16:35:25.739 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@3f8e313b
+2022-04-21 16:35:25.740 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@3f8e313b
+2022-04-21 16:35:25.740 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@f4b66c
+2022-04-21 16:35:25.741 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@f4b66c
+2022-04-21 16:35:25.741 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@75948404
+2022-04-21 16:35:25.741 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@75948404
+2022-04-21 16:35:25.742 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@1aa94d79
+2022-04-21 16:35:25.742 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@1aa94d79
+2022-04-21 16:35:25.743 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@19692ce5
+2022-04-21 16:35:25.743 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@19692ce5
+2022-04-21 16:35:25.744 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@51cc68b9
+2022-04-21 16:35:25.744 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@51cc68b9
+2022-04-21 16:35:25.745 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5398e66b
+2022-04-21 16:35:25.745 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5398e66b
+2022-04-21 16:35:25.746 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@79dd1d3a
+2022-04-21 16:35:25.746 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@79dd1d3a
+2022-04-21 16:35:25.747 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@61f98665
+2022-04-21 16:35:25.747 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@61f98665
+2022-04-21 16:35:25.748 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@62d868d0
+2022-04-21 16:35:25.748 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@62d868d0
+2022-04-21 16:35:25.748 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@6e1df004
+2022-04-21 16:35:25.749 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6e1df004
+2022-04-21 16:35:25.749 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6e1df004
+2022-04-21 16:35:25.750 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@d4d5e78
+2022-04-21 16:35:25.750 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@3ac35345
+2022-04-21 16:35:25.751 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3ac35345
+2022-04-21 16:35:25.751 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3ac35345
+2022-04-21 16:35:25.751 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@48a9527f
+2022-04-21 16:35:25.752 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@3f2ae72b
+2022-04-21 16:35:25.752 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@307aab93
+2022-04-21 16:35:25.753 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@307aab93
+2022-04-21 16:35:25.753 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@10458709
+2022-04-21 16:35:25.753 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@10458709
+2022-04-21 16:35:25.754 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@1a181135
+2022-04-21 16:35:25.754 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1a181135
+2022-04-21 16:35:25.755 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@284e0e66
+2022-04-21 16:35:25.755 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@284e0e66
+2022-04-21 16:35:25.755 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4258ce51
+2022-04-21 16:35:25.755 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4258ce51
+2022-04-21 16:35:25.756 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@df261a9
+2022-04-21 16:35:25.756 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@364add97
+2022-04-21 16:35:25.757 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@364add97
+2022-04-21 16:35:25.757 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@364add97
+2022-04-21 16:35:25.757 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1fa320f6
+2022-04-21 16:35:25.757 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1fa320f6
+2022-04-21 16:35:25.758 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1fa320f6
+2022-04-21 16:35:25.758 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@42385f1b
+2022-04-21 16:35:25.759 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@65f5f7a2
+2022-04-21 16:35:25.759 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@6a6b92e3
+2022-04-21 16:35:25.759 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@6a6b92e3
+2022-04-21 16:35:25.759 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@6a6b92e3
+2022-04-21 16:35:25.760 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@18d319eb
+2022-04-21 16:35:25.760 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@18d319eb
+2022-04-21 16:35:25.760 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@18d319eb
+2022-04-21 16:35:25.761 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@76a02ddf
+2022-04-21 16:35:25.761 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@185080ff
+2022-04-21 16:35:25.762 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@6cf188a2
+2022-04-21 16:35:25.762 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6cf188a2
+2022-04-21 16:35:25.763 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@41f854c2
+2022-04-21 16:35:25.764 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@59d1046
+2022-04-21 16:35:25.764 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@59d1046
+2022-04-21 16:35:25.765 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@75e7a2c1
+2022-04-21 16:35:25.765 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@75e7a2c1
+2022-04-21 16:35:25.765 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@20b64885
+2022-04-21 16:35:25.765 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@18920d2f
+2022-04-21 16:35:25.766 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@f95d99f
+2022-04-21 16:35:25.768 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@c1d797d
+2022-04-21 16:35:25.769 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@c1d797d
+2022-04-21 16:35:25.769 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3d156226
+2022-04-21 16:35:25.769 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@13779494
+2022-04-21 16:35:25.769 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3e4486c3
+2022-04-21 16:35:25.769 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@456f9fdb
+2022-04-21 16:35:25.769 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@537dd102
+2022-04-21 16:35:25.770 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7c812ccd
+2022-04-21 16:35:25.770 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6669df00
+2022-04-21 16:35:25.770 DEBUG 212382 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5f410551
+2022-04-21 16:35:25.798  INFO 212382 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 16:35:25.924  INFO 212382 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 16:35:25.934  INFO 212382 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 16:35:26.008 DEBUG 212382 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@23e00cd1] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6d7435ec]
+2022-04-21 16:35:26.195 DEBUG 212382 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:35:26.269 DEBUG 212382 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:35:26.357 DEBUG 212382 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@23e00cd1] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@1cd11062]
+2022-04-21 16:35:26.480  INFO 212382 --- [task-1] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.entity.Imagen (class must be instantiated by Interceptor)
+2022-04-21 16:35:26.585 DEBUG 212382 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:35:26.585 DEBUG 212382 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:35:26.591 DEBUG 212382 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:35:26.591 DEBUG 212382 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:35:26.709 DEBUG 212382 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:35:26.709 DEBUG 212382 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:35:26.793 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    create table count_down_quran_life (
+       id bigint not null auto_increment,
+        count_down_message varchar(255),
+        end_date_time varchar(255),
+        show_card bit,
+        success_message varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2022-04-21 16:35:26.948 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table post_twos 
+       drop index UKfi1udsuamnfro8ija6fqdxqnj
+2022-04-21 16:35:26.971 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table post_twos 
+       add constraint UKfi1udsuamnfro8ija6fqdxqnj unique (title)
+2022-04-21 16:35:26.974 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_twos 
+       drop index UKkpskdd87hh5a63s6i6huv6cnb
+2022-04-21 16:35:26.978 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_twos 
+       add constraint UKkpskdd87hh5a63s6i6huv6cnb unique (user_uuid)
+2022-04-21 16:35:27.007 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table comment_twos 
+       add constraint FK7lc2mgm5t8y1ij5geaui9mqcq 
+       foreign key (post_twos_id) 
+       references post_twos (id)
+2022-04-21 16:35:27.055 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table comments 
+       add constraint FKocfnw2k5nu9q3aou2llk3frmx 
+       foreign key (posts_id) 
+       references posts (id)
+2022-04-21 16:35:27.118 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table course 
+       add constraint FKqk2yq2yk124dhlsilomy36qr9 
+       foreign key (instructor_id) 
+       references instructor (id)
+2022-04-21 16:35:27.128  WARN 212382 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table course 
+       add constraint FKqk2yq2yk124dhlsilomy36qr9 
+       foreign key (instructor_id) 
+       references instructor (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table course 
+       add constraint FKqk2yq2yk124dhlsilomy36qr9 
+       foreign key (instructor_id) 
+       references instructor (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'course'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:35:27.147 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table organization 
+       add constraint FK97eigsvq2tsrd2bge4ox651wh 
+       foreign key (address_id) 
+       references address (id)
+2022-04-21 16:35:27.149  WARN 212382 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table organization 
+       add constraint FK97eigsvq2tsrd2bge4ox651wh 
+       foreign key (address_id) 
+       references address (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table organization 
+       add constraint FK97eigsvq2tsrd2bge4ox651wh 
+       foreign key (address_id) 
+       references address (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'organization'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:35:27.161 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table post_twos 
+       add constraint FKqtnav21oxcf75sw8ayef1sfr1 
+       foreign key (user_twos_id) 
+       references user_twos (id)
+2022-04-21 16:35:27.206 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_role_twos 
+       add constraint FKp0g8nkhev8tx1mkrmtpes8mmv 
+       foreign key (role_twos_id) 
+       references role_twos (id)
+2022-04-21 16:35:27.259 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_role_twos 
+       add constraint FKe28xx3vvruuplenn3s0a2f30j 
+       foreign key (user_twos_id) 
+       references user_twos (id)
+2022-04-21 16:35:27.296 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_roles 
+       add constraint FKj9553ass9uctjrmh0gkqsmv0d 
+       foreign key (roles_id) 
+       references role (id)
+2022-04-21 16:35:27.297  WARN 212382 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_roles 
+       add constraint FKj9553ass9uctjrmh0gkqsmv0d 
+       foreign key (roles_id) 
+       references role (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_roles 
+       add constraint FKj9553ass9uctjrmh0gkqsmv0d 
+       foreign key (roles_id) 
+       references role (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'user_roles'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:35:27.298 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_roles 
+       add constraint FK7ecyobaa59vxkxckg6t355l86 
+       foreign key (users_id) 
+       references user (id)
+2022-04-21 16:35:27.299  WARN 212382 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_roles 
+       add constraint FK7ecyobaa59vxkxckg6t355l86 
+       foreign key (users_id) 
+       references user (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_roles 
+       add constraint FK7ecyobaa59vxkxckg6t355l86 
+       foreign key (users_id) 
+       references user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'user_roles'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:35:27.306 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_uni_roles_uni 
+       add constraint FKbhdimqeipm48tgut1uvhg0p4 
+       foreign key (roles_uni_id) 
+       references role_uni (id)
+2022-04-21 16:35:27.307  WARN 212382 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_uni_roles_uni 
+       add constraint FKbhdimqeipm48tgut1uvhg0p4 
+       foreign key (roles_uni_id) 
+       references role_uni (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_uni_roles_uni 
+       add constraint FKbhdimqeipm48tgut1uvhg0p4 
+       foreign key (roles_uni_id) 
+       references role_uni (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'user_uni_roles_uni'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:35:27.308 DEBUG 212382 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_uni_roles_uni 
+       add constraint FKphgnyu7jr3n9t9b27gltn17p 
+       foreign key (user_uni_id) 
+       references user_uni (id)
+2022-04-21 16:35:27.309  WARN 212382 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_uni_roles_uni 
+       add constraint FKphgnyu7jr3n9t9b27gltn17p 
+       foreign key (user_uni_id) 
+       references user_uni (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_uni_roles_uni 
+       add constraint FKphgnyu7jr3n9t9b27gltn17p 
+       foreign key (user_uni_id) 
+       references user_uni (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'user_uni_roles_uni'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:35:27.310  INFO 212382 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 16:35:27.315 TRACE 212382 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@1cd11062] for TypeConfiguration
+2022-04-21 16:35:27.317  INFO 212382 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 16:35:27.654 DEBUG 212382 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 119 mappings in 'requestMappingHandlerMapping'
+2022-04-21 16:35:27.765  INFO 212382 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-21 16:35:27.833  INFO 212382 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-21 16:35:28.065  INFO 212382 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@505846db, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f94f723, org.springframework.security.web.header.HeaderWriterFilter@734517d9, org.springframework.security.web.authentication.logout.LogoutFilter@7e93023c, com.jarida.server.jaridaserver.spring_security_2.security.JwtAuthenticationFilterTwos@2a1064e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e0d576, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fc9e331, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9396761, org.springframework.security.web.session.SessionManagementFilter@ed56aca, org.springframework.security.web.access.ExceptionTranslationFilter@5f9f0385, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4686307]
+2022-04-21 16:35:28.080 DEBUG 212382 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/, /documentation/v2/api-docs, /documentation/swagger-resources/configuration/ui, /documentation/swagger-resources/configuration/security, /documentation/swagger-resources] in 'viewControllerHandlerMapping'
+2022-04-21 16:35:28.105 DEBUG 212382 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui.html, /webjars/**, /swagger-ui/**] in 'resourceHandlerMapping'
+2022-04-21 16:35:28.145 DEBUG 212382 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-21 16:35:28.175 DEBUG 212382 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-21 16:35:28.411  WARN 212382 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-21 16:35:28.511  INFO 212382 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 16:35:29.268  INFO 212382 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-04-21 16:35:29.710  INFO 212382 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-04-21 16:35:29.722  INFO 212382 --- [restartedMain] c.j.s.j.JaridaServerApplication          : Started JaridaServerApplication in 7.101 seconds (JVM running for 7.891)
+2022-04-21 16:35:30.205  INFO 212382 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 16:35:30.205  INFO 212382 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-21 16:35:30.205 DEBUG 212382 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-04-21 16:35:30.212 DEBUG 212382 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2022-04-21 16:35:30.212  INFO 212382 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-04-21 16:36:15.794 DEBUG 212382 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?urls.primaryName=B%20Jarida%20-%20V1", parameters={urls.primaryName:[B Jarida - V1]}
+2022-04-21 16:36:15.801 DEBUG 212382 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:15.823 DEBUG 212382 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:15.993 DEBUG 212382 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.css?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:15.995 DEBUG 212382 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:15.998 DEBUG 212382 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:15.998 DEBUG 212382 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:15.999 DEBUG 212382 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:15.999 DEBUG 212382 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:15.999 DEBUG 212382 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:16.000 DEBUG 212382 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:16.000 DEBUG 212382 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:16.001 DEBUG 212382 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:16.001 DEBUG 212382 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:16.005 DEBUG 212382 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.006 DEBUG 212382 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.014 DEBUG 212382 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.021 DEBUG 212382 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:16.021 DEBUG 212382 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.022 DEBUG 212382 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:16.027 DEBUG 212382 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.028 DEBUG 212382 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:16.030 DEBUG 212382 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:16.036 DEBUG 212382 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.039 DEBUG 212382 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:16.040 DEBUG 212382 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:16.053 DEBUG 212382 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.916 DEBUG 212382 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:16.916 DEBUG 212382 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources/configuration/ui", parameters={}
+2022-04-21 16:36:16.917 DEBUG 212382 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:16.917 DEBUG 212382 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2022-04-21 16:36:16.920 DEBUG 212382 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.930 DEBUG 212382 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:36:16.934 DEBUG 212382 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.UiConfiguration@213a1dfd]
+2022-04-21 16:36:16.945 DEBUG 212382 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.951 DEBUG 212382 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources/configuration/security", parameters={}
+2022-04-21 16:36:16.951 DEBUG 212382 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2022-04-21 16:36:16.952 DEBUG 212382 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:36:16.954 DEBUG 212382 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.SecurityConfiguration@3aefdcc6]
+2022-04-21 16:36:16.955 DEBUG 212382 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:16.962 DEBUG 212382 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources", parameters={}
+2022-04-21 16:36:16.962 DEBUG 212382 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2022-04-21 16:36:16.963 DEBUG 212382 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:36:16.964 DEBUG 212382 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[springfox.documentation.swagger.web.SwaggerResource@59615752, springfox.documentation.swagger.web.S (truncated)...]
+2022-04-21 16:36:16.966 DEBUG 212382 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:17.130 DEBUG 212382 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=B%20Jarida%20-%20V1", parameters={group:[B Jarida - V1]}
+2022-04-21 16:36:17.131 DEBUG 212382 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)
+2022-04-21 16:36:17.236 DEBUG 212382 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, */*] and supported [application/json, application/hal+json]
+2022-04-21 16:36:17.238 DEBUG 212382 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@58cec7c7]
+2022-04-21 16:36:17.240 DEBUG 212382 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:17.433 DEBUG 212382 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=B%20Jarida%20-%20V1", parameters={group:[B Jarida - V1]}
+2022-04-21 16:36:17.434 DEBUG 212382 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)
+2022-04-21 16:36:17.454 DEBUG 212382 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/yaml] and supported [application/json]
+2022-04-21 16:36:17.454 DEBUG 212382 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@385f0215]
+2022-04-21 16:36:17.457 DEBUG 212382 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:34.295  INFO 212382 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 16:36:34.295 TRACE 212382 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@1cd11062] for TypeConfiguration
+2022-04-21 16:36:34.296 DEBUG 212382 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@205136a] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1cd11062]
+2022-04-21 16:36:34.296  INFO 212382 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-21 16:36:34.298  INFO 212382 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 16:36:34.304  INFO 212382 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-21 16:36:38.045  INFO 213137 --- [restartedMain] c.j.s.j.JaridaServerApplication          : Starting JaridaServerApplication on umar-auna with PID 213137 (/home/umar-auna/IdeaProjects/Spring-boot-api-jarida/target/classes started by umar-auna in /home/umar-auna/IdeaProjects/Spring-boot-api-jarida)
+2022-04-21 16:36:38.048  INFO 213137 --- [restartedMain] c.j.s.j.JaridaServerApplication          : No active profile set, falling back to default profiles: default
+2022-04-21 16:36:38.099  INFO 213137 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-21 16:36:39.351  INFO 213137 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-04-21 16:36:39.448  INFO 213137 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 26 JPA repository interfaces.
+2022-04-21 16:36:39.785  INFO 213137 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@57d30c68' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-21 16:36:39.790  INFO 213137 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-21 16:36:40.006  INFO 213137 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 16:36:40.012  INFO 213137 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 16:36:40.012  INFO 213137 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-04-21 16:36:40.072  INFO 213137 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-21 16:36:40.072 DEBUG 213137 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-04-21 16:36:40.072  INFO 213137 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1973 ms
+2022-04-21 16:36:40.217  WARN 213137 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 16:36:40.311  INFO 213137 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-21 16:36:40.342  INFO 213137 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 16:36:40.401  INFO 213137 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2022-04-21 16:36:40.447 DEBUG 213137 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, jwtAuthenticationFilterTwos urls=[/*] order=2147483647
+2022-04-21 16:36:40.447 DEBUG 213137 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-04-21 16:36:40.478  INFO 213137 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 16:36:40.493 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@11fb5386
+2022-04-21 16:36:40.493 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@11fb5386
+2022-04-21 16:36:40.494 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@11fb5386
+2022-04-21 16:36:40.494 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@65e57a16
+2022-04-21 16:36:40.494 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@7edb0eab
+2022-04-21 16:36:40.495 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@66095ac
+2022-04-21 16:36:40.496 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@3db3095d
+2022-04-21 16:36:40.496 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@3db3095d
+2022-04-21 16:36:40.496 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3db3095d
+2022-04-21 16:36:40.497 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@63d17e26
+2022-04-21 16:36:40.497 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@63d17e26
+2022-04-21 16:36:40.497 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@63d17e26
+2022-04-21 16:36:40.498 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@28326f3c
+2022-04-21 16:36:40.498 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@28326f3c
+2022-04-21 16:36:40.498 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@28326f3c
+2022-04-21 16:36:40.499 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@1363519c
+2022-04-21 16:36:40.499 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@1363519c
+2022-04-21 16:36:40.499 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1363519c
+2022-04-21 16:36:40.500 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@3bcd9425
+2022-04-21 16:36:40.500 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@3bcd9425
+2022-04-21 16:36:40.500 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@3bcd9425
+2022-04-21 16:36:40.501 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@6e463787
+2022-04-21 16:36:40.501 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@6e463787
+2022-04-21 16:36:40.502 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6e463787
+2022-04-21 16:36:40.502 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1040ec99
+2022-04-21 16:36:40.503 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1040ec99
+2022-04-21 16:36:40.503 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1040ec99
+2022-04-21 16:36:40.503 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@57b817f1
+2022-04-21 16:36:40.504 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@57b817f1
+2022-04-21 16:36:40.505 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@16a51c3b
+2022-04-21 16:36:40.505 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@16a51c3b
+2022-04-21 16:36:40.505 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@1cda7f51
+2022-04-21 16:36:40.506 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@1cda7f51
+2022-04-21 16:36:40.506 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7202cb68
+2022-04-21 16:36:40.507 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@79d222e5
+2022-04-21 16:36:40.508 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@77241e02
+2022-04-21 16:36:40.508 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@77241e02
+2022-04-21 16:36:40.509 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@6d97237d
+2022-04-21 16:36:40.509 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@6d97237d
+2022-04-21 16:36:40.510 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@60c62f79
+2022-04-21 16:36:40.510 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@60c62f79
+2022-04-21 16:36:40.511 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@507f914c
+2022-04-21 16:36:40.511 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@507f914c
+2022-04-21 16:36:40.512 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@653f9702
+2022-04-21 16:36:40.513 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@653f9702
+2022-04-21 16:36:40.514 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@5aed62e3
+2022-04-21 16:36:40.514 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@5aed62e3
+2022-04-21 16:36:40.515 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@41834005
+2022-04-21 16:36:40.515 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@41834005
+2022-04-21 16:36:40.516 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5714a200
+2022-04-21 16:36:40.516 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5714a200
+2022-04-21 16:36:40.517 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@136f707c
+2022-04-21 16:36:40.517 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@136f707c
+2022-04-21 16:36:40.518 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@7528ba68
+2022-04-21 16:36:40.519 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@7528ba68
+2022-04-21 16:36:40.520 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@70c74010
+2022-04-21 16:36:40.520 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@70c74010
+2022-04-21 16:36:40.521 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@a2e66b4
+2022-04-21 16:36:40.521 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@a2e66b4
+2022-04-21 16:36:40.521 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@a2e66b4
+2022-04-21 16:36:40.522 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@8527752
+2022-04-21 16:36:40.523 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@31071d49
+2022-04-21 16:36:40.524 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@31071d49
+2022-04-21 16:36:40.524 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@31071d49
+2022-04-21 16:36:40.525 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@22418cad
+2022-04-21 16:36:40.526 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@4e2d2994
+2022-04-21 16:36:40.527 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@277f93f0
+2022-04-21 16:36:40.527 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@277f93f0
+2022-04-21 16:36:40.528 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@1237ad76
+2022-04-21 16:36:40.528 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1237ad76
+2022-04-21 16:36:40.529 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@4d89356c
+2022-04-21 16:36:40.529 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4d89356c
+2022-04-21 16:36:40.530 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@41172a08
+2022-04-21 16:36:40.530 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@41172a08
+2022-04-21 16:36:40.530 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3276487f
+2022-04-21 16:36:40.531 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3276487f
+2022-04-21 16:36:40.531 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@40416f2f
+2022-04-21 16:36:40.532 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@36408edb
+2022-04-21 16:36:40.532 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@36408edb
+2022-04-21 16:36:40.533 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@36408edb
+2022-04-21 16:36:40.533 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@202f08a
+2022-04-21 16:36:40.533 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@202f08a
+2022-04-21 16:36:40.534 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@202f08a
+2022-04-21 16:36:40.534 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@4b5c39c1
+2022-04-21 16:36:40.535 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@5183e4d0
+2022-04-21 16:36:40.536 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@754c4547
+2022-04-21 16:36:40.536 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@754c4547
+2022-04-21 16:36:40.536 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@754c4547
+2022-04-21 16:36:40.537 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@34fa5651
+2022-04-21 16:36:40.537 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@34fa5651
+2022-04-21 16:36:40.537 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@34fa5651
+2022-04-21 16:36:40.537 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@5ff5e518
+2022-04-21 16:36:40.538 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@5c2332a2
+2022-04-21 16:36:40.539 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@5be87b92
+2022-04-21 16:36:40.539 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5be87b92
+2022-04-21 16:36:40.540 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@403d9040
+2022-04-21 16:36:40.541 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@44139fd4
+2022-04-21 16:36:40.541 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@44139fd4
+2022-04-21 16:36:40.542 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@f9fa70d
+2022-04-21 16:36:40.542 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@f9fa70d
+2022-04-21 16:36:40.543 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@39e3097f
+2022-04-21 16:36:40.543 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@14a1506e
+2022-04-21 16:36:40.544 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@699beb34
+2022-04-21 16:36:40.546 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@39a19e35
+2022-04-21 16:36:40.546 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@39a19e35
+2022-04-21 16:36:40.547 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6377a056
+2022-04-21 16:36:40.547 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@70d5ee2a
+2022-04-21 16:36:40.547 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2750dd54
+2022-04-21 16:36:40.547 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@67e65b4d
+2022-04-21 16:36:40.547 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@39cd22f7
+2022-04-21 16:36:40.547 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@66b62f5a
+2022-04-21 16:36:40.548 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@472de4a5
+2022-04-21 16:36:40.548 DEBUG 213137 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@12c4e33e
+2022-04-21 16:36:40.580  INFO 213137 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 16:36:40.680  INFO 213137 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 16:36:40.690  INFO 213137 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 16:36:40.740 DEBUG 213137 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@733eb6b9] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7cb5db8e]
+2022-04-21 16:36:40.910 DEBUG 213137 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:36:40.958 DEBUG 213137 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:36:41.045 DEBUG 213137 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@733eb6b9] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@21a88a8d]
+2022-04-21 16:36:41.164  INFO 213137 --- [task-1] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.jarida.server.jaridaserver.cloudinary_image_upload_2_not.entity.Imagen (class must be instantiated by Interceptor)
+2022-04-21 16:36:41.295 DEBUG 213137 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:36:41.296 DEBUG 213137 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:36:41.303 DEBUG 213137 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:36:41.303 DEBUG 213137 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:36:41.415 DEBUG 213137 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:36:41.415 DEBUG 213137 --- [task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.jarida.server.jaridaserver.todoApi.model.TodoStatus
+2022-04-21 16:36:41.461 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table post_twos 
+       drop index UKfi1udsuamnfro8ija6fqdxqnj
+2022-04-21 16:36:41.472 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table post_twos 
+       add constraint UKfi1udsuamnfro8ija6fqdxqnj unique (title)
+2022-04-21 16:36:41.475 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_twos 
+       drop index UKkpskdd87hh5a63s6i6huv6cnb
+2022-04-21 16:36:41.481 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_twos 
+       add constraint UKkpskdd87hh5a63s6i6huv6cnb unique (user_uuid)
+2022-04-21 16:36:41.496 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table comment_twos 
+       add constraint FK7lc2mgm5t8y1ij5geaui9mqcq 
+       foreign key (post_twos_id) 
+       references post_twos (id)
+2022-04-21 16:36:41.558 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table comments 
+       add constraint FKocfnw2k5nu9q3aou2llk3frmx 
+       foreign key (posts_id) 
+       references posts (id)
+2022-04-21 16:36:41.609 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table course 
+       add constraint FKqk2yq2yk124dhlsilomy36qr9 
+       foreign key (instructor_id) 
+       references instructor (id)
+2022-04-21 16:36:41.614  WARN 213137 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table course 
+       add constraint FKqk2yq2yk124dhlsilomy36qr9 
+       foreign key (instructor_id) 
+       references instructor (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table course 
+       add constraint FKqk2yq2yk124dhlsilomy36qr9 
+       foreign key (instructor_id) 
+       references instructor (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'course'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:36:41.623 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table organization 
+       add constraint FK97eigsvq2tsrd2bge4ox651wh 
+       foreign key (address_id) 
+       references address (id)
+2022-04-21 16:36:41.624  WARN 213137 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table organization 
+       add constraint FK97eigsvq2tsrd2bge4ox651wh 
+       foreign key (address_id) 
+       references address (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table organization 
+       add constraint FK97eigsvq2tsrd2bge4ox651wh 
+       foreign key (address_id) 
+       references address (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'organization'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:36:41.632 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table post_twos 
+       add constraint FKqtnav21oxcf75sw8ayef1sfr1 
+       foreign key (user_twos_id) 
+       references user_twos (id)
+2022-04-21 16:36:41.672 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_role_twos 
+       add constraint FKp0g8nkhev8tx1mkrmtpes8mmv 
+       foreign key (role_twos_id) 
+       references role_twos (id)
+2022-04-21 16:36:41.701 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_role_twos 
+       add constraint FKe28xx3vvruuplenn3s0a2f30j 
+       foreign key (user_twos_id) 
+       references user_twos (id)
+2022-04-21 16:36:41.768 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_roles 
+       add constraint FKj9553ass9uctjrmh0gkqsmv0d 
+       foreign key (roles_id) 
+       references role (id)
+2022-04-21 16:36:41.772  WARN 213137 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_roles 
+       add constraint FKj9553ass9uctjrmh0gkqsmv0d 
+       foreign key (roles_id) 
+       references role (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_roles 
+       add constraint FKj9553ass9uctjrmh0gkqsmv0d 
+       foreign key (roles_id) 
+       references role (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'user_roles'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:36:41.774 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_roles 
+       add constraint FK7ecyobaa59vxkxckg6t355l86 
+       foreign key (users_id) 
+       references user (id)
+2022-04-21 16:36:41.776  WARN 213137 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_roles 
+       add constraint FK7ecyobaa59vxkxckg6t355l86 
+       foreign key (users_id) 
+       references user (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_roles 
+       add constraint FK7ecyobaa59vxkxckg6t355l86 
+       foreign key (users_id) 
+       references user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'user_roles'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:36:41.787 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_uni_roles_uni 
+       add constraint FKbhdimqeipm48tgut1uvhg0p4 
+       foreign key (roles_uni_id) 
+       references role_uni (id)
+2022-04-21 16:36:41.788  WARN 213137 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_uni_roles_uni 
+       add constraint FKbhdimqeipm48tgut1uvhg0p4 
+       foreign key (roles_uni_id) 
+       references role_uni (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_uni_roles_uni 
+       add constraint FKbhdimqeipm48tgut1uvhg0p4 
+       foreign key (roles_uni_id) 
+       references role_uni (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'user_uni_roles_uni'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:36:41.789 DEBUG 213137 --- [task-1] org.hibernate.SQL                        : 
+    
+    alter table user_uni_roles_uni 
+       add constraint FKphgnyu7jr3n9t9b27gltn17p 
+       foreign key (user_uni_id) 
+       references user_uni (id)
+2022-04-21 16:36:41.790  WARN 213137 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_uni_roles_uni 
+       add constraint FKphgnyu7jr3n9t9b27gltn17p 
+       foreign key (user_uni_id) 
+       references user_uni (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_uni_roles_uni 
+       add constraint FKphgnyu7jr3n9t9b27gltn17p 
+       foreign key (user_uni_id) 
+       references user_uni (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.sql.SQLException: Incorrect file format 'user_uni_roles_uni'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	... 17 common frames omitted
+
+2022-04-21 16:36:41.791  INFO 213137 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 16:36:41.795 TRACE 213137 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@21a88a8d] for TypeConfiguration
+2022-04-21 16:36:41.797  INFO 213137 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 16:36:42.074 DEBUG 213137 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 119 mappings in 'requestMappingHandlerMapping'
+2022-04-21 16:36:42.182  INFO 213137 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-21 16:36:42.231  INFO 213137 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-21 16:36:42.394  INFO 213137 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bf9e9ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@14e5ceac, org.springframework.security.web.header.HeaderWriterFilter@1c1d6ee7, org.springframework.security.web.authentication.logout.LogoutFilter@2fbd2552, com.jarida.server.jaridaserver.spring_security_2.security.JwtAuthenticationFilterTwos@777e642d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a35ce89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57fc6da4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17afcf8a, org.springframework.security.web.session.SessionManagementFilter@429e68aa, org.springframework.security.web.access.ExceptionTranslationFilter@e15f794, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cb7c318]
+2022-04-21 16:36:42.435 DEBUG 213137 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/, /documentation/v2/api-docs, /documentation/swagger-resources/configuration/ui, /documentation/swagger-resources/configuration/security, /documentation/swagger-resources] in 'viewControllerHandlerMapping'
+2022-04-21 16:36:42.461 DEBUG 213137 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui.html, /webjars/**, /swagger-ui/**] in 'resourceHandlerMapping'
+2022-04-21 16:36:42.491 DEBUG 213137 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-21 16:36:42.514 DEBUG 213137 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-21 16:36:42.718  WARN 213137 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-21 16:36:42.809  INFO 213137 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 16:36:43.427  INFO 213137 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-04-21 16:36:43.864  INFO 213137 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-04-21 16:36:43.877  INFO 213137 --- [restartedMain] c.j.s.j.JaridaServerApplication          : Started JaridaServerApplication in 6.341 seconds (JVM running for 7.057)
+2022-04-21 16:36:44.172  INFO 213137 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 16:36:44.173  INFO 213137 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-21 16:36:44.173 DEBUG 213137 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-04-21 16:36:44.181 DEBUG 213137 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2022-04-21 16:36:44.182  INFO 213137 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-04-21 16:36:56.428 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?urls.primaryName=B%20Jarida%20-%20V1", parameters={urls.primaryName:[B Jarida - V1]}
+2022-04-21 16:36:56.436 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:56.448 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:56.531 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.css?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:56.533 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:56.544 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:56.547 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:56.539 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:56.541 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:56.539 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:56.550 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:56.550 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:56.551 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:56.560 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:56.566 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:56.566 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:56.568 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:56.578 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:57.178 DEBUG 213137 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources/configuration/ui", parameters={}
+2022-04-21 16:36:57.179 DEBUG 213137 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2022-04-21 16:36:57.182 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:36:57.183 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:36:57.186 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:57.196 DEBUG 213137 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:36:57.201 DEBUG 213137 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.UiConfiguration@4a82e971]
+2022-04-21 16:36:57.210 DEBUG 213137 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:57.217 DEBUG 213137 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources/configuration/security", parameters={}
+2022-04-21 16:36:57.218 DEBUG 213137 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2022-04-21 16:36:57.219 DEBUG 213137 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:36:57.220 DEBUG 213137 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.SecurityConfiguration@12980866]
+2022-04-21 16:36:57.221 DEBUG 213137 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:57.228 DEBUG 213137 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources", parameters={}
+2022-04-21 16:36:57.229 DEBUG 213137 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2022-04-21 16:36:57.230 DEBUG 213137 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:36:57.231 DEBUG 213137 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[springfox.documentation.swagger.web.SwaggerResource@29ca5d98, springfox.documentation.swagger.web.S (truncated)...]
+2022-04-21 16:36:57.233 DEBUG 213137 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:57.356 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=B%20Jarida%20-%20V1", parameters={group:[B Jarida - V1]}
+2022-04-21 16:36:57.356 DEBUG 213137 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)
+2022-04-21 16:36:57.476 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, */*] and supported [application/json, application/hal+json]
+2022-04-21 16:36:57.478 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@2ace55f]
+2022-04-21 16:36:57.481 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:36:57.799 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=B%20Jarida%20-%20V1", parameters={group:[B Jarida - V1]}
+2022-04-21 16:36:57.800 DEBUG 213137 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)
+2022-04-21 16:36:57.835 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/yaml] and supported [application/json]
+2022-04-21 16:36:57.836 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@7cb96e80]
+2022-04-21 16:36:57.839 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.111 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?urls.primaryName=B%20Jarida%20-%20V1", parameters={urls.primaryName:[B Jarida - V1]}
+2022-04-21 16:37:50.113 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.116 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.187 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.css?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.189 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.191 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.193 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.196 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.199 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.199 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.199 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.200 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.200 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.200 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.201 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.204 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.207 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.218 DEBUG 213137 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.235 DEBUG 213137 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/springfox.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.237 DEBUG 213137 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.239 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.239 DEBUG 213137 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.240 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.240 DEBUG 213137 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.241 DEBUG 213137 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.248 DEBUG 213137 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.252 DEBUG 213137 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.838 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources/configuration/ui", parameters={}
+2022-04-21 16:37:50.838 DEBUG 213137 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2022-04-21 16:37:50.839 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:37:50.839 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.UiConfiguration@4a82e971]
+2022-04-21 16:37:50.840 DEBUG 213137 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.842 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png?v=3.0.0", parameters={v:[3.0.0]}
+2022-04-21 16:37:50.843 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/springfox-swagger-ui/"]
+2022-04-21 16:37:50.845 DEBUG 213137 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.853 DEBUG 213137 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources/configuration/security", parameters={}
+2022-04-21 16:37:50.853 DEBUG 213137 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2022-04-21 16:37:50.854 DEBUG 213137 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:37:50.854 DEBUG 213137 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.SecurityConfiguration@12980866]
+2022-04-21 16:37:50.855 DEBUG 213137 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.862 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources", parameters={}
+2022-04-21 16:37:50.863 DEBUG 213137 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2022-04-21 16:37:50.864 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-04-21 16:37:50.864 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[springfox.documentation.swagger.web.SwaggerResource@2cbad227, springfox.documentation.swagger.web.S (truncated)...]
+2022-04-21 16:37:50.865 DEBUG 213137 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:50.956 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=B%20Jarida%20-%20V1", parameters={group:[B Jarida - V1]}
+2022-04-21 16:37:50.956 DEBUG 213137 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)
+2022-04-21 16:37:50.967 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, */*] and supported [application/json, application/hal+json]
+2022-04-21 16:37:50.967 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@37dfe55b]
+2022-04-21 16:37:50.969 DEBUG 213137 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-04-21 16:37:51.146 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=B%20Jarida%20-%20V1", parameters={group:[B Jarida - V1]}
+2022-04-21 16:37:51.147 DEBUG 213137 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)
+2022-04-21 16:37:51.157 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/yaml] and supported [application/json]
+2022-04-21 16:37:51.157 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@587b83c2]
+2022-04-21 16:37:51.159 DEBUG 213137 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

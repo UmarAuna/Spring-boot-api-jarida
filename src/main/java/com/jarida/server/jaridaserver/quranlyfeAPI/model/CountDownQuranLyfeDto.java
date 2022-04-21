@@ -18,7 +18,7 @@ public class CountDownQuranLyfeDto implements Serializable {
     @ApiModelProperty(value = "ShowCard")
     @NotEmpty(message = "Show Card should not be null or empty")
     @NotNull(message = "Show Card should not be null or empty")
-    private ShowCard showCard;
+    private Boolean showCard = false;
 
     @ApiModelProperty(value = "SuccessMessage")
     @NotEmpty(message = "Success Message should not be null or empty")
