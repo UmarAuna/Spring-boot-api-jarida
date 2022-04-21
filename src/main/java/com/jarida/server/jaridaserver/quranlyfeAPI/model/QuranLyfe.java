@@ -4,6 +4,7 @@ import lombok.*;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
@@ -14,7 +15,7 @@ import java.util.Objects;
 @Table(name = "quranlyfe")
 @AllArgsConstructor
 @Builder
-public class QuranLyfe {
+public class QuranLyfe implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

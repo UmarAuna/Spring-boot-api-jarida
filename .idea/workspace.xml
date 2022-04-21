@@ -5,30 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="new fixes">
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-02-18.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-02-19.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-02-20.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-04-10.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-04-11.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/controller/NamesOfAllahController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/NamesOfAllah.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/repository/NamesOfAllahRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/repository/QuranLyfeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/NamesOfAllahService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/ShowCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/repository/CountDownQuranLyfeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2022-02-11.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbhtml.log.2022-02-12.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/planetsApi/controller/PlanetsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/planetsApi/controller/PlanetsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/planetsApi/service/PlanetsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/planetsApi/service/PlanetsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/planetsApi/controller/PlanetsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/planetsApi/controller/PlanetsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/planetsApi/service/PlanetsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/planetsApi/service/PlanetsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2022-04-10.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2022-04-11.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfe$QuranLyfeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfe$QuranLyfeBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,9 +112,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.3.0.RELEASE/spring-data-commons-2.3.0.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar!/org/springframework/http/HttpStatus.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/controller/JaridaController.java" root0="SKIP_INSPECTION" />
     <setting file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/List.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar!/org/springframework/http/HttpStatus.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="JavaeeView">
     <option name="frameworksView" value="false" />
@@ -167,34 +160,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TODO_SCOPE" value="All Places" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-    <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7ac4107a7394e9c924446d7a50603485&quot;
+  }
+}</component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
   </component>
@@ -206,11 +186,11 @@
       <recent name="com.jarida.server.jaridaserver" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jarida.server.jaridaserver.quranlyfeAPI.repository" />
+      <recent name="com.jarida.server.jaridaserver.quranlyfeAPI.model" />
       <recent name="com.jarida.server.jaridaserver.quranlyfeAPI" />
       <recent name="PlanetAPI" />
       <recent name="com.jarida.server.jaridaserver.spring_security_2.payload" />
-      <recent name="com.jarida.server.jaridaserver.spring_security_2.config" />
-      <recent name="com.jarida.server.jaridaserver.spring_security_2.exception" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -549,7 +529,10 @@
       <workItem from="1645723433250" duration="1000" />
       <workItem from="1646684477424" duration="11000" />
       <workItem from="1646732359384" duration="35000" />
-      <workItem from="1649622044415" duration="14627000" />
+      <workItem from="1649622044415" duration="15982000" />
+      <workItem from="1649764630177" duration="1033000" />
+      <workItem from="1649765702180" duration="1259000" />
+      <workItem from="1650443897515" duration="7060000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
@@ -646,25 +629,12 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/jarida-spring" />
+      <path value="$PROJECT_DIR$/springtravel" />
     </ignored-roots>
     <MESSAGE value="new fixes" />
     <option name="LAST_COMMIT_MESSAGE" value="new fixes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/spring_security_2/repository/UserRepositoryTwos.java</url>
-          <line>22</line>
-          <properties class="com.jarida.server.jaridaserver.spring_security_2.repository.UserRepositoryTwos" method="findByUUID">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
