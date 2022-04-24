@@ -2,9 +2,11 @@ package com.jarida.server.jaridaserver.quranlyfeAPI.controller;
 
 
 import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
+import com.jarida.server.jaridaserver.quranlyfeAPI.model.AppUpdateQuranLyfe;
 import com.jarida.server.jaridaserver.quranlyfeAPI.model.CountDownQuranLyfe;
 import com.jarida.server.jaridaserver.quranlyfeAPI.model.CountDownQuranLyfeDto;
 import com.jarida.server.jaridaserver.quranlyfeAPI.model.QuranLyfe;
+import com.jarida.server.jaridaserver.quranlyfeAPI.repository.AppUpdateQuranLyfeRepository;
 import com.jarida.server.jaridaserver.quranlyfeAPI.repository.CountDownQuranLyfeRepository;
 import com.jarida.server.jaridaserver.quranlyfeAPI.repository.QuranLyfeRepository;
 import com.jarida.server.jaridaserver.quranlyfeAPI.service.QuranLyfeService;
@@ -35,11 +37,15 @@ public class QuranLyfeController {
     QuranLyfeRepository quranLyfeRepository;
 
     CountDownQuranLyfeRepository countDownQuranLyfeRepository;
+
+    AppUpdateQuranLyfeRepository appUpdateQuranLyfeRepository;
+
     @Autowired
-    public QuranLyfeController(QuranLyfeService quranLyfeService, QuranLyfeRepository quranLyfeRepository, CountDownQuranLyfeRepository countDownQuranLyfeRepository) {
+    public QuranLyfeController(QuranLyfeService quranLyfeService, QuranLyfeRepository quranLyfeRepository, CountDownQuranLyfeRepository countDownQuranLyfeRepository, AppUpdateQuranLyfeRepository appUpdateQuranLyfeRepository) {
         this.quranLyfeService = quranLyfeService;
         this.quranLyfeRepository = quranLyfeRepository;
         this.countDownQuranLyfeRepository = countDownQuranLyfeRepository;
+        this.appUpdateQuranLyfeRepository = appUpdateQuranLyfeRepository;
     }
 
     @GetMapping("/quranlyfe")
@@ -152,6 +158,48 @@ public class QuranLyfeController {
                         "Count Down does not exists"
                 )));
         return ResponseEntity.of(countDownQuranLyfeOptional);
+    }
+
+    @GetMapping("/quranlyfe/appversion")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This is for getting app update api")
+    @ApiResponses(value = {
+            @io.swagger.annotations.ApiResponse(code = 200, message = "Successful"),
+            @io.swagger.annotations.ApiResponse(code = 400, message = "Invalid request"),
+            @io.swagger.annotations.ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
+            @io.swagger.annotations.ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
+            @io.swagger.annotations.ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @io.swagger.annotations.ApiResponse(code = 409, message = "The resource you were trying to reach exist/conflict"),
+            @io.swagger.annotations.ApiResponse(code = 415, message = "Unsupported Media Type"),
+            @io.swagger.annotations.ApiResponse(code = 500, message = "Internal server error")
+    })
+    public ResponseEntity<AppUpdateQuranLyfe> getAppVersion() {
+        quranLyfeService.getAppVersion();
+
+        Optional<AppUpdateQuranLyfe> appUpdateQuranLyfeOptional = Optional.ofNullable(quranLyfeService.getAppVersion()
+                .orElseThrow(() -> new ResourceNotFoundException(
+                        "Count Down does not exists"
+                )));
+        return ResponseEntity.of(appUpdateQuranLyfeOptional);
+    }
+
+    @PutMapping("/quranlyfe/appversion")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This is for updating app version")
+    @ApiResponses(value = {
+            @io.swagger.annotations.ApiResponse(code = 200, message = "Successful"),
+            @io.swagger.annotations.ApiResponse(code = 400, message = "Invalid request"),
+            @io.swagger.annotations.ApiResponse(code = 401, message = "Unauthorized: token has expired or is not valid"),
+            @io.swagger.annotations.ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
+            @io.swagger.annotations.ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
+            @io.swagger.annotations.ApiResponse(code = 409, message = "The resource you were trying to reach exist/conflict"),
+            @io.swagger.annotations.ApiResponse(code = 415, message = "Unsupported Media Type"),
+            @io.swagger.annotations.ApiResponse(code = 500, message = "Internal server error")
+    })
+    public Optional<AppUpdateQuranLyfe> updateAppVersion(
+            @Valid @RequestBody AppUpdateQuranLyfe appUpdateQuranLyfe
+    ) {
+        return quranLyfeService.updateAppVersion(appUpdateQuranLyfe);
     }
 
 
