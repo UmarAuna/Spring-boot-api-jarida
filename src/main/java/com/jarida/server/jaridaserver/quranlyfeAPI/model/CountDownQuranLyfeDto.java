@@ -12,7 +12,7 @@ public class CountDownQuranLyfeDto implements Serializable {
     private String endDateTime;
 
     @ApiModelProperty(value = "ShowCard")
-    private Boolean showCard = false;
+    private String showCard;
 
     @ApiModelProperty(value = "SuccessMessage")
     private String successMessage;

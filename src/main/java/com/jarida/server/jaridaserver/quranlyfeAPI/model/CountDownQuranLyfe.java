@@ -28,7 +28,7 @@ public class CountDownQuranLyfe implements Serializable {
     String endDateTime;
 
     @Column(name = "show_card")
-    Boolean showCard;
+    String showCard;
 
     @Column(name = "success_message")
     String successMessage;

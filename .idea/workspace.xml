@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="new fixes">
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-04-21.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/ShowCard.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfe$CountDownQuranLyfeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfe$CountDownQuranLyfeBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/model/CountDownQuranLyfe.class" afterDir="false" />
@@ -153,22 +153,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "7ac4107a7394e9c924446d7a50603485"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7ac4107a7394e9c924446d7a50603485&quot;
   }
-}]]></component>
+}</component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
   </component>
@@ -526,7 +526,8 @@
       <workItem from="1649622044415" duration="15982000" />
       <workItem from="1649764630177" duration="1033000" />
       <workItem from="1649765702180" duration="1259000" />
-      <workItem from="1650443897515" duration="8838000" />
+      <workItem from="1650443897515" duration="10334000" />
+      <workItem from="1650788786567" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
