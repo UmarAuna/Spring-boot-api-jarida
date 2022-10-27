@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="new fixes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/AppUpdateQuranLyfe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/AppUpdateQuranLyfeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/repository/AppUpdateQuranLyfeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-04-24.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-04-25.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-10-20.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-10-22.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfeNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfteNotificationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/repository/QuranLyfeNotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeNotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jarida-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jarida-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,10 +114,38 @@
     <option name="projectConfigVersion" value="2" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar!/com/fasterxml/jackson/annotation/JsonIgnoreProperties.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar!/com/fasterxml/jackson/annotation/JsonView.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-data-rest/3.0.0/springfox-data-rest-3.0.0.jar!/springfox/documentation/spring/data/rest/SynthesizedAnnotations.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.35/tomcat-embed-core-9.0.35-sources.jar!/javax/servlet/FilterChain.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.3.0.RELEASE/spring-data-commons-2.3.0.RELEASE.jar!/org/springframework/data/domain/Page.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.3.0.RELEASE/spring-data-commons-2.3.0.RELEASE.jar!/org/springframework/data/domain/Sort.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.3.0.RELEASE/spring-data-commons-2.3.0.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.3.0.RELEASE/spring-data-commons-2.3.0.RELEASE.jar!/org/springframework/data/repository/PagingAndSortingRepository.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.3.2.RELEASE/spring-security-config-5.3.2.RELEASE.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/access/expression/SecurityExpressionRoot.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/authentication/AuthenticationManager.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/core/Authentication.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/core/context/SecurityContext.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/core/userdetails/User.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/core/userdetails/UsernameNotFoundException.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.3.2.RELEASE/spring-security-core-5.3.2.RELEASE.jar!/org/springframework/security/crypto/password/PasswordEncoder.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar!/org/springframework/http/HttpStatus.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar!/org/springframework/http/ResponseEntity.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar!/org/springframework/web/filter/GenericFilterBean.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/jarida/controller/JaridaController.java" root0="SKIP_INSPECTION" />
+    <setting file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/lang/Enum.class" root0="SKIP_INSPECTION" />
+    <setting file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/lang/String.class" root0="SKIP_INSPECTION" />
+    <setting file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/security/Principal.class" root0="SKIP_INSPECTION" />
+    <setting file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/Collections.class" root0="SKIP_INSPECTION" />
     <setting file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/List.class" root0="SKIP_INSPECTION" />
+    <setting file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/Optional.class" root0="SKIP_INSPECTION" />
+    <setting file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/UUID.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="JavaeeView">
     <option name="frameworksView" value="false" />
@@ -156,14 +197,20 @@
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;7ac4107a7394e9c924446d7a50603485&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="ReaderModeSettings">
@@ -308,11 +355,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.Spring_boot_api_jarida-endpoints | #1" />
-        <item itemvalue="HTTP Request.JaridaServerApplication | #1" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.rest-api#3" />
         <item itemvalue="HTTP Request.rest-api#1" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="HTTP Request.Spring_boot_api_jarida-endpoints | #1" />
+        <item itemvalue="HTTP Request.JaridaServerApplication | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -524,7 +571,27 @@
       <workItem from="1649764630177" duration="1033000" />
       <workItem from="1649765702180" duration="1259000" />
       <workItem from="1650443897515" duration="10334000" />
-      <workItem from="1650788786567" duration="2810000" />
+      <workItem from="1650788786567" duration="5047000" />
+      <workItem from="1651582878141" duration="8000" />
+      <workItem from="1652011449881" duration="1403000" />
+      <workItem from="1652812440433" duration="47000" />
+      <workItem from="1659357500767" duration="5209000" />
+      <workItem from="1659901516176" duration="20693000" />
+      <workItem from="1660132017073" duration="150000" />
+      <workItem from="1660132198906" duration="692000" />
+      <workItem from="1660146561244" duration="16862000" />
+      <workItem from="1660216341604" duration="10863000" />
+      <workItem from="1660320723073" duration="7000" />
+      <workItem from="1660420421593" duration="592000" />
+      <workItem from="1660822374997" duration="5000" />
+      <workItem from="1662673126086" duration="2342000" />
+      <workItem from="1664541705098" duration="160000" />
+      <workItem from="1664541906942" duration="869000" />
+      <workItem from="1664543323544" duration="551000" />
+      <workItem from="1665747373896" duration="308000" />
+      <workItem from="1665748197947" duration="28167000" />
+      <workItem from="1666261294486" duration="5630000" />
+      <workItem from="1666877797372" duration="6657000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>
@@ -589,7 +656,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -627,6 +694,39 @@
     <option name="LAST_COMMIT_MESSAGE" value="new fixes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/cloudinary_image_upload_1/service/ImageService.java</url>
+          <line>39</line>
+          <properties class="com.jarida.server.jaridaserver.cloudinary_image_upload_1.service.ImageService" method="delete">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/cloudinary_image_upload_1/service/ImageService.java</url>
+          <line>34</line>
+          <properties class="com.jarida.server.jaridaserver.cloudinary_image_upload_1.service.ImageService" method="deleteCloud">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/cloudinary_image_upload_1/service/ImageService.java</url>
+          <line>30</line>
+          <properties class="com.jarida.server.jaridaserver.cloudinary_image_upload_1.service.ImageService" method="exists">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

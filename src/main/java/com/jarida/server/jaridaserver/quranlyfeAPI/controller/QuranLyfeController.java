@@ -2,25 +2,25 @@ package com.jarida.server.jaridaserver.quranlyfeAPI.controller;
 
 
 import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
-import com.jarida.server.jaridaserver.quranlyfeAPI.model.AppUpdateQuranLyfe;
-import com.jarida.server.jaridaserver.quranlyfeAPI.model.CountDownQuranLyfe;
-import com.jarida.server.jaridaserver.quranlyfeAPI.model.CountDownQuranLyfeDto;
-import com.jarida.server.jaridaserver.quranlyfeAPI.model.QuranLyfe;
+import com.jarida.server.jaridaserver.quranlyfeAPI.model.*;
 import com.jarida.server.jaridaserver.quranlyfeAPI.repository.AppUpdateQuranLyfeRepository;
 import com.jarida.server.jaridaserver.quranlyfeAPI.repository.CountDownQuranLyfeRepository;
+import com.jarida.server.jaridaserver.quranlyfeAPI.repository.QuranLyfeNotificationRepository;
 import com.jarida.server.jaridaserver.quranlyfeAPI.repository.QuranLyfeRepository;
+import com.jarida.server.jaridaserver.quranlyfeAPI.service.QuranLyfeNotificationService;
 import com.jarida.server.jaridaserver.quranlyfeAPI.service.QuranLyfeService;
+import com.jarida.server.jaridaserver.spring_security_2.payload.ApiResponseTwos;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.NoHandlerFoundException;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -34,18 +34,32 @@ public class QuranLyfeController {
 
     QuranLyfeService quranLyfeService;
 
+    QuranLyfeNotificationService quranLyfeNotificationService;
+
     QuranLyfeRepository quranLyfeRepository;
 
     CountDownQuranLyfeRepository countDownQuranLyfeRepository;
 
     AppUpdateQuranLyfeRepository appUpdateQuranLyfeRepository;
 
+    QuranLyfeNotificationRepository quranLyfeNotificationRepository;
+
+
+
     @Autowired
-    public QuranLyfeController(QuranLyfeService quranLyfeService, QuranLyfeRepository quranLyfeRepository, CountDownQuranLyfeRepository countDownQuranLyfeRepository, AppUpdateQuranLyfeRepository appUpdateQuranLyfeRepository) {
+    public QuranLyfeController(
+            QuranLyfeService quranLyfeService,
+            QuranLyfeNotificationService quranLyfeNotificationService,
+            QuranLyfeRepository quranLyfeRepository,
+            CountDownQuranLyfeRepository countDownQuranLyfeRepository,
+            AppUpdateQuranLyfeRepository appUpdateQuranLyfeRepository,
+            QuranLyfeNotificationRepository quranLyfeNotificationRepository) {
         this.quranLyfeService = quranLyfeService;
+        this.quranLyfeNotificationService = quranLyfeNotificationService;
         this.quranLyfeRepository = quranLyfeRepository;
         this.countDownQuranLyfeRepository = countDownQuranLyfeRepository;
         this.appUpdateQuranLyfeRepository = appUpdateQuranLyfeRepository;
+        this.quranLyfeNotificationRepository = quranLyfeNotificationRepository;
     }
 
     @GetMapping("/quranlyfe")
@@ -202,6 +216,41 @@ public class QuranLyfeController {
         return quranLyfeService.updateAppVersion(appUpdateQuranLyfe);
     }
 
+    @GetMapping("/quranlyfe/notification")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This is for getting notifications")
+    public List<QuranLyfeNotification> getAllNotifications() {
+        return quranLyfeNotificationService.getAllNotifications();
+    }
 
+    @DeleteMapping("/quranlyfe/notification/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This is for deleting notification")
+    public Map<String, String> deleteNotification(
+            @PathVariable("id") Long id) {
+        quranLyfeNotificationService.deleteNotificationImage(id);
+        Map<String,String> response = new HashMap<>();
+        response.put("timestamp", new SimpleDateFormat("dd, MMMM, yyyy - hh:mm aa").format(Calendar.getInstance().getTime()));
+        response.put("message","Deleted Successfully");
+        return response;
+    }
 
+    @PutMapping("/quranlyfe/notification/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This is for updating notification")
+    public QuranLyfeNotification updateNotification(
+            @PathVariable("id") Long id,
+            @Valid @RequestBody QuranLyfeNotification quranLyfeNotification
+            ) {
+        return quranLyfeNotificationService.updateNotification(id, quranLyfeNotification);
+    }
+
+    @PostMapping(path = "/quranlyfe/notification/")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This is for sending notification without image")
+    public ResponseEntity<ApiResponseTwos> sendNotificationNoImage(
+            @Valid @RequestBody QuranLyfeNotification quranLyfeNotification
+    ) throws NoHandlerFoundException {
+        return quranLyfeNotificationService.sendNotificationNoImage(quranLyfeNotification);
+    }
 }

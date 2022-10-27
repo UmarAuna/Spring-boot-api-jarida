@@ -6,7 +6,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="entityManagerFactory" value="54893ca7-7ecf-4d24-97e4-3e3789d8c050" />
+          <factory-entry name="entityManagerFactory" value="74fa6804-f934-48fc-9f11-406ffe7b8580" />
           <factory-entry name="jarida-server" value="4b73f31b-bafa-4b3a-9bb2-21193a5b0e82" />
         </datasource-mapping>
         <naming-strategy-map />
@@ -224,5 +224,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:5.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.modelmapper:modelmapper:2.4.5" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.9.0" level="project" />
   </component>
 </module>
