@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="new fixes">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-04-24.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-04-25.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-10-20.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-10-22.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfeNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/model/QuranLyfteNotificationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/repository/QuranLyfeNotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeNotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sbhtml.log.2022-10-27.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jarida-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jarida-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbhtml.log.2022-10-20.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/quranlyfeAPI/controller/QuranLyfeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeNotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/quranlyfeAPI/service/QuranLyfeNotificationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -592,6 +578,7 @@
       <workItem from="1665748197947" duration="28167000" />
       <workItem from="1666261294486" duration="5630000" />
       <workItem from="1666877797372" duration="6657000" />
+      <workItem from="1666957935991" duration="3902000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>

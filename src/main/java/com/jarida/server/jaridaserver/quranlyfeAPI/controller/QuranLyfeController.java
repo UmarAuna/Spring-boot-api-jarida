@@ -228,7 +228,7 @@ public class QuranLyfeController {
     @ApiOperation(value = "This is for deleting notification")
     public Map<String, String> deleteNotification(
             @PathVariable("id") Long id) {
-        quranLyfeNotificationService.deleteNotificationImage(id);
+        quranLyfeNotificationService.deleteNotification(id);
         Map<String,String> response = new HashMap<>();
         response.put("timestamp", new SimpleDateFormat("dd, MMMM, yyyy - hh:mm aa").format(Calendar.getInstance().getTime()));
         response.put("message","Deleted Successfully");
@@ -247,10 +247,19 @@ public class QuranLyfeController {
 
     @PostMapping(path = "/quranlyfe/notification/")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "This is for sending notification without image")
+    @ApiOperation(value = "This is for sending notification and saving inside the database")
     public ResponseEntity<ApiResponseTwos> sendNotificationNoImage(
             @Valid @RequestBody QuranLyfeNotification quranLyfeNotification
     ) throws NoHandlerFoundException {
-        return quranLyfeNotificationService.sendNotificationNoImage(quranLyfeNotification);
+        return quranLyfeNotificationService.sendNotification(quranLyfeNotification);
+    }
+
+    @PostMapping(path = "/quranlyfe/notification-no-db/")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This is for sending notification without saving it inside the database")
+    public ResponseEntity<ApiResponseTwos> sendNotificationNoDb(
+            @Valid @RequestBody QuranLyfeNotification quranLyfeNotification
+    ) throws NoHandlerFoundException {
+        return quranLyfeNotificationService.sendNotificationNoDb(quranLyfeNotification);
     }
 }
