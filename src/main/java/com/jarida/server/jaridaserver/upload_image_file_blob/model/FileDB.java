@@ -14,7 +14,7 @@ public class FileDB {
     @GeneratedValue(generator = "uuid4")
     @GenericGenerator(name = "UUID", strategy = "uuid4")
     @Type(type = "org.hibernate.type.UUIDCharType")
-    @Column(columnDefinition = "CHAR(36)", unique = true)
+    //@Column(columnDefinition = "CHAR(36)", unique = true)
     private UUID id = UUID.randomUUID();
 
     private String name;
@@ -26,7 +26,7 @@ public class FileDB {
     * BLOB is for storing binary data
     * CLOB is for storing text data
     * */
-    @Lob
+    //@Lob
     private byte[] data;
 
     public FileDB() {

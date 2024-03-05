@@ -5,7 +5,7 @@ import com.jarida.server.jaridaserver.exception.ResourceForbiddenException;
 import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.exception.ResourceSuccessfulException;
 import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.Role;
-import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User;
+import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo;
 import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.repository.RoleRepository;
 import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.repository.UserRepository;
 import org.springframework.http.ResponseEntity;
@@ -37,9 +37,9 @@ public class RoleService {
         roleList.add(newRole);
         for(int i=0; i< role.getUsers().size(); i++){
             if(!userRepository.findByEmail(role.getUsers().get(i).getEmail()).isPresent()) {
-                User newUser = role.getUsers().get(i);
+                UserInfo newUser = role.getUsers().get(i);
                 newUser.setRoles(roleList);
-                User savedUser = userRepository.save(newUser);
+                UserInfo savedUser = userRepository.save(newUser);
                 if(! userRepository.findById(savedUser.getId()).isPresent())
                     throw new ResourceBadRequestException("Role Creation Failed");
             }

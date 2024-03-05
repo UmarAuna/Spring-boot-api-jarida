@@ -114,7 +114,7 @@ public class StudentService {
             if (userInput.length() < 11 || userInput.length() > 11) {
                 throw new ResourceBadRequestException("Error! Invalid number. Number must not be lesser or greater than 11");
             }
-            else if (checkNumber.equals( m1 ) || checkNumber.equals( m2 ) || checkNumber.equals( m3 ) || checkNumber.equals( m4 ) || checkNumber.equals( m5 ) || checkNumber.equals( m6 ) || checkNumber.equals( m7 ) || checkNumber.equals( m8 ) || checkNumber.equals( m9 )) {
+            else if (checkNumber.equals( m1 ) || checkNumber.equals( m2 ) || checkNumber.equals( m3 ) || checkNumber.equals( m4 ) || checkNumber.equals( m5 ) || checkNumber.equals( m6 ) || checkNumber.equals( m7 ) || checkNumber.equals( m8 ) || checkNumber.equals( m9 ) || checkNumber.equals( m10 ) || checkNumber.equals( m11 )) {
                 response.put("Network Image", "https://res.cloudinary.com/dxrxviiv8/image/upload/v1642934123/network_providers/mtn.png");
                 response.put("Network Info", iInput + " belongs to MTN network 🟨");
                 response.put("Network Name",  "MTN");
@@ -129,7 +129,7 @@ public class StudentService {
                 response.put("Network Info", iInput + " belongs to 9MOBILE network 🟩");
                 response.put("Network Name",  "9MOBILE");
             }
-            else if (checkNumber.equals( a1 ) || checkNumber.equals( a2 ) || checkNumber.equals( a3 ) || checkNumber.equals( a4 ) || checkNumber.equals( a5 ) || checkNumber.equals( a6 ) || checkNumber.equals( a7 )) {
+            else if (checkNumber.equals( a1 ) || checkNumber.equals( a2 ) || checkNumber.equals( a3 ) || checkNumber.equals( a4 ) || checkNumber.equals( a5 ) || checkNumber.equals( a6 ) || checkNumber.equals( a7 )|| checkNumber.equals( a8 )) {
                 response.put("Network Image", "https://res.cloudinary.com/dxrxviiv8/image/upload/v1642934123/network_providers/airtel.png");
                 response.put("Network Info", iInput + " belongs to AIRTEL network 🟥");
                 response.put("Network Name",  "AIRTEL");

@@ -22,7 +22,7 @@ public class QuranLyfeNotification implements Serializable {
     @Id
     //@JsonIgnore
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(updatable = false, nullable = false)
+    //@Column(updatable = false, nullable = false)
     // @ApiModelProperty(hidden = true) // for swagger hidding not to show
     Long id;
 

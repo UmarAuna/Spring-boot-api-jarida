@@ -2,7 +2,7 @@ package com.jarida.server.jaridaserver.users_many_to_many_bidirectional.controll
 
 
 import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
-import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User;
+import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo;
 import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.repository.UserRepository;
 import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.service.UserService;
 import io.swagger.annotations.Api;
@@ -33,24 +33,24 @@ public class UserController {
     }
 
     @PostMapping("/user/create")
-    public ResponseEntity<Object> createUser(@RequestBody User user) {
+    public ResponseEntity<Object> createUser(@RequestBody UserInfo user) {
         return userService.createUser(user);
     }
 
     @GetMapping("/user/details/{id}")
-    public User getUser(@PathVariable Long id) {
+    public UserInfo getUser(@PathVariable Long id) {
         if(userRepository.findById(id).isPresent())
             return userRepository.findById(id).get();
         else throw new ResourceNotFoundException("Cannot find the user specified");
     }
 
     @GetMapping("/user/all")
-    public List<User> getUsers() {
+    public List<UserInfo> getUsers() {
         return userRepository.findAll();
     }
 
     @PutMapping("/user/update/{id}")
-    public ResponseEntity<Object> updateUser(@PathVariable Long id, @RequestBody User user) {
+    public ResponseEntity<Object> updateUser(@PathVariable Long id, @RequestBody UserInfo user) {
         return userService.updateUser(user, id);
     }
 

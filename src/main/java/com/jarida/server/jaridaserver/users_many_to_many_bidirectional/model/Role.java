@@ -20,9 +20,9 @@ public class    Role {
 
     private String description;
 
-    @ManyToMany(targetEntity = User.class, mappedBy = "roles", cascade = {CascadeType.PERSIST,
+    @ManyToMany(targetEntity = UserInfo.class, mappedBy = "roles", cascade = {CascadeType.PERSIST,
             CascadeType.DETACH,CascadeType.MERGE,CascadeType.REFRESH})
-    private List<User> users;
+    private List<UserInfo> users;
 
     public Long getId() {
         return id;
@@ -48,11 +48,11 @@ public class    Role {
         this.description = description;
     }
 
-    public List<User> getUsers() {
+    public List<UserInfo> getUsers() {
         return users;
     }
 
-    public void setUsers(List<User> users) {
+    public void setUsers(List<UserInfo> users) {
         this.users = users;
     }
 }

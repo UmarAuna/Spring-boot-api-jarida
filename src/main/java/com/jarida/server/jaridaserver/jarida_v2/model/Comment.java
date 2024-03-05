@@ -19,7 +19,7 @@ public class Comment extends AuditModel implements Serializable {
 
     @NotNull(message = "Tittle is mandatory")
     @NotEmpty(message = "Title is mandatory" )
-    @Lob //is used to map fields/properties of large value to a corresponding database-supported large object type.
+    //@Lob //is used to map fields/properties of large value to a corresponding database-supported large object type.
     private String text;
 
     @JsonBackReference

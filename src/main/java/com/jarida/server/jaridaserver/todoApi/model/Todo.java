@@ -22,7 +22,7 @@ import java.sql.Timestamp;
 public class Todo {
     @Id
     @GeneratedValue
-    @Column(updatable = false, nullable = false)
+    //@Column(updatable = false, nullable = false)
     Long id;
 
     @NotNull(message = "Title cannot be empty")

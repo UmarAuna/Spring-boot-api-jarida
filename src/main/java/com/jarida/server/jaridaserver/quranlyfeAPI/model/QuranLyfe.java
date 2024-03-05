@@ -19,7 +19,7 @@ public class QuranLyfe implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(updatable = false, nullable = false)
+    //@Column(updatable = false, nullable = false)
     Long id;
 
     @Column(name = "arabic_url")

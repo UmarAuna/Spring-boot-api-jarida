@@ -1,5 +1,7 @@
 package com.jarida.server.jaridaserver.jarida_v2.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -27,7 +29,7 @@ public class Post extends AuditModel implements Serializable {
     private String content;
 
     @NotNull
-    @Lob
+    //@Lob
     private String author;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "post", orphanRemoval = true)

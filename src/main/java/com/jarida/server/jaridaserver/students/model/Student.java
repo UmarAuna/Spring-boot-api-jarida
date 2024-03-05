@@ -31,7 +31,7 @@ public class Student {
     @GeneratedValue(generator = "uuid4")
     @GenericGenerator(name = "UUID", strategy = "uuid4")
     @Type(type = "org.hibernate.type.UUIDCharType")
-    @Column(columnDefinition = "CHAR(36)", unique = true)
+    //@Column(columnDefinition = "CHAR(36)", unique = true)
     // @ApiModelProperty(hidden = true) // for swagger hidding not to show
     private UUID id = UUID.randomUUID();
 
@@ -55,7 +55,7 @@ public class Student {
      * BLOB is for storing binary data
      * CLOB is for storing text data
      * */
-    @Lob
+    //@Lob
     private byte[] data;
 
     public Student() {

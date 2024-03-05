@@ -7350,7 +7350,7 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:56:51.142 TRACE 25808 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_1_] : [VARCHAR]) - [string]
 2021-07-27 18:56:51.142 TRACE 25808 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roles_id2_13_0_] : [BIGINT]) - [8]
 2021-07-27 18:56:51.142 TRACE 25808 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([users_id1_13_0_] : [BIGINT]) - [5]
-2021-07-27 18:56:51.142 TRACE 25808 --- [http-nio-8080-exec-5] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#5]
+2021-07-27 18:56:51.142 TRACE 25808 --- [http-nio-8080-exec-5] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#5]
 2021-07-27 18:56:51.144 DEBUG 25808 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
     select
         roles0_.users_id as users_id1_13_0_,
@@ -7427,7 +7427,7 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:56:51.149 TRACE 25808 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_1_] : [VARCHAR]) - [string]
 2021-07-27 18:56:51.149 TRACE 25808 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roles_id2_13_0_] : [BIGINT]) - [6]
 2021-07-27 18:56:51.149 TRACE 25808 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([users_id1_13_0_] : [BIGINT]) - [3]
-2021-07-27 18:56:51.149 TRACE 25808 --- [http-nio-8080-exec-5] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#3]
+2021-07-27 18:56:51.149 TRACE 25808 --- [http-nio-8080-exec-5] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#3]
 2021-07-27 18:56:51.149 DEBUG 25808 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
     select
         roles0_.users_id as users_id1_13_0_,
@@ -7473,11 +7473,11 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_12_] : [VARCHAR]) - [string]
 2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_12_] : [VARCHAR]) - [string]
 2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_] : [VARCHAR]) - [string]
-2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#2]
-2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#3]
-2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#5]
+2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#2]
+2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#3]
+2021-07-27 18:57:12.304 TRACE 25808 --- [http-nio-8080-exec-6] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#5]
 2021-07-27 18:57:12.306 DEBUG 25808 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-07-27 18:57:12.306 DEBUG 25808 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User@437824e4, com.jarida.ser (truncated)...]
+2021-07-27 18:57:12.306 DEBUG 25808 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo@437824e4, com.jarida.ser (truncated)...]
 2021-07-27 18:57:12.307 DEBUG 25808 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
     select
         roles0_.users_id as users_id1_13_0_,
@@ -7578,10 +7578,10 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:57:12.314 DEBUG 25808 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2021-07-27 18:58:34.101 DEBUG 25808 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : PUT "/api/v2/user/update/3", parameters={}
 2021-07-27 18:58:34.104 DEBUG 25808 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.users_many_to_many_bidirectional.controller.UserController#updateUser(Long, User)
-2021-07-27 18:58:34.128 DEBUG 25808 --- [http-nio-8080-exec-8] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [1] in public org.springframework.http.ResponseEntity<java.lang.Object> com.jarida.server.jaridaserver.users_many_to_many_bidirectional.controller.UserController.updateUser(java.lang.Long,com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User): JSON parse error: Unresolved forward references for: ; nested exception is com.fasterxml.jackson.databind.deser.UnresolvedForwardReference: Unresolved forward references for: 
- at [Source: (PushbackInputStream); line: 16, column: 1]Object id [3] (for `com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User`) at [Source: (PushbackInputStream); line: 12, column: 12].
+2021-07-27 18:58:34.128 DEBUG 25808 --- [http-nio-8080-exec-8] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [1] in public org.springframework.http.ResponseEntity<java.lang.Object> com.jarida.server.jaridaserver.users_many_to_many_bidirectional.controller.UserController.updateUser(java.lang.Long,com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo): JSON parse error: Unresolved forward references for: ; nested exception is com.fasterxml.jackson.databind.deser.UnresolvedForwardReference: Unresolved forward references for:
+ at [Source: (PushbackInputStream); line: 16, column: 1]Object id [3] (for `com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo`) at [Source: (PushbackInputStream); line: 12, column: 12].
 2021-07-27 18:58:34.132  WARN 25808 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unresolved forward references for: ; nested exception is com.fasterxml.jackson.databind.deser.UnresolvedForwardReference: Unresolved forward references for: 
- at [Source: (PushbackInputStream); line: 16, column: 1]Object id [3] (for `com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User`) at [Source: (PushbackInputStream); line: 12, column: 12].]
+ at [Source: (PushbackInputStream); line: 16, column: 1]Object id [3] (for `com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo`) at [Source: (PushbackInputStream); line: 12, column: 12].]
 2021-07-27 18:58:34.132 DEBUG 25808 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
 2021-07-27 18:58:34.137 DEBUG 25808 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
 2021-07-27 18:58:34.138 DEBUG 25808 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
@@ -7590,7 +7590,7 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:58:34.147 DEBUG 25808 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
 2021-07-27 18:58:52.853 DEBUG 25808 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : PUT "/api/v2/user/update/3", parameters={}
 2021-07-27 18:58:52.855 DEBUG 25808 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.users_many_to_many_bidirectional.controller.UserController#updateUser(Long, User)
-2021-07-27 18:58:52.858 DEBUG 25808 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User@9650330]
+2021-07-27 18:58:52.858 DEBUG 25808 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo@9650330]
 2021-07-27 18:58:52.872 DEBUG 25808 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
     select
         user0_.id as id1_12_0_,
@@ -7607,7 +7607,7 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:58:52.875 TRACE 25808 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_12_0_] : [VARCHAR]) - [string]
 2021-07-27 18:58:52.875 TRACE 25808 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_12_0_] : [VARCHAR]) - [string]
 2021-07-27 18:58:52.876 TRACE 25808 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_0_] : [VARCHAR]) - [string]
-2021-07-27 18:58:52.876 TRACE 25808 --- [http-nio-8080-exec-9] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#3]
+2021-07-27 18:58:52.876 TRACE 25808 --- [http-nio-8080-exec-9] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#3]
 2021-07-27 18:58:52.888 DEBUG 25808 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
     select
         role0_.id as id1_7_1_,
@@ -7707,11 +7707,11 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:59:01.913 TRACE 25808 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_12_] : [VARCHAR]) - [string]
 2021-07-27 18:59:01.914 TRACE 25808 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_12_] : [VARCHAR]) - [string]
 2021-07-27 18:59:01.914 TRACE 25808 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_] : [VARCHAR]) - [string]
-2021-07-27 18:59:01.914 TRACE 25808 --- [http-nio-8080-exec-10] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#2]
-2021-07-27 18:59:01.914 TRACE 25808 --- [http-nio-8080-exec-10] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#3]
-2021-07-27 18:59:01.914 TRACE 25808 --- [http-nio-8080-exec-10] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#5]
+2021-07-27 18:59:01.914 TRACE 25808 --- [http-nio-8080-exec-10] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#2]
+2021-07-27 18:59:01.914 TRACE 25808 --- [http-nio-8080-exec-10] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#3]
+2021-07-27 18:59:01.914 TRACE 25808 --- [http-nio-8080-exec-10] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#5]
 2021-07-27 18:59:01.916 DEBUG 25808 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-07-27 18:59:01.917 DEBUG 25808 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User@7025211d, com.jarida.ser (truncated)...]
+2021-07-27 18:59:01.917 DEBUG 25808 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo@7025211d, com.jarida.ser (truncated)...]
 2021-07-27 18:59:01.917 DEBUG 25808 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
     select
         roles0_.users_id as users_id1_13_0_,
@@ -7812,7 +7812,7 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:59:01.930 DEBUG 25808 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2021-07-27 18:59:19.588 DEBUG 25808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : PUT "/api/v2/user/update/3", parameters={}
 2021-07-27 18:59:19.589 DEBUG 25808 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.users_many_to_many_bidirectional.controller.UserController#updateUser(Long, User)
-2021-07-27 18:59:19.591 DEBUG 25808 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User@423e7642]
+2021-07-27 18:59:19.591 DEBUG 25808 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo@423e7642]
 2021-07-27 18:59:19.593 DEBUG 25808 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
     select
         user0_.id as id1_12_0_,
@@ -7829,7 +7829,7 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:59:19.594 TRACE 25808 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_12_0_] : [VARCHAR]) - [string]
 2021-07-27 18:59:19.594 TRACE 25808 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_12_0_] : [VARCHAR]) - [string]
 2021-07-27 18:59:19.594 TRACE 25808 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_0_] : [VARCHAR]) - [string]
-2021-07-27 18:59:19.594 TRACE 25808 --- [http-nio-8080-exec-1] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#3]
+2021-07-27 18:59:19.594 TRACE 25808 --- [http-nio-8080-exec-1] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#3]
 2021-07-27 18:59:19.596 DEBUG 25808 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
     insert 
     into
@@ -7884,11 +7884,11 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_12_] : [VARCHAR]) - [string]
 2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_12_] : [VARCHAR]) - [string]
 2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_] : [VARCHAR]) - [string]
-2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#2]
-2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#3]
-2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#5]
+2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#2]
+2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#3]
+2021-07-27 18:59:25.125 TRACE 25808 --- [http-nio-8080-exec-2] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#5]
 2021-07-27 18:59:25.126 DEBUG 25808 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-07-27 18:59:25.127 DEBUG 25808 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User@4b946e35, com.jarida.ser (truncated)...]
+2021-07-27 18:59:25.127 DEBUG 25808 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo@4b946e35, com.jarida.ser (truncated)...]
 2021-07-27 18:59:25.127 DEBUG 25808 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
     select
         roles0_.users_id as users_id1_13_0_,
@@ -7989,7 +7989,7 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:59:25.138 DEBUG 25808 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2021-07-27 18:59:40.500 DEBUG 25808 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : PUT "/api/v2/user/update/3", parameters={}
 2021-07-27 18:59:40.501 DEBUG 25808 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jarida.server.jaridaserver.users_many_to_many_bidirectional.controller.UserController#updateUser(Long, User)
-2021-07-27 18:59:40.503 DEBUG 25808 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User@72009179]
+2021-07-27 18:59:40.503 DEBUG 25808 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo@72009179]
 2021-07-27 18:59:40.505 DEBUG 25808 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
     select
         user0_.id as id1_12_0_,
@@ -8006,7 +8006,7 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:59:40.506 TRACE 25808 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_12_0_] : [VARCHAR]) - [string]
 2021-07-27 18:59:40.506 TRACE 25808 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_12_0_] : [VARCHAR]) - [string]
 2021-07-27 18:59:40.506 TRACE 25808 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_0_] : [VARCHAR]) - [string]
-2021-07-27 18:59:40.506 TRACE 25808 --- [http-nio-8080-exec-3] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#3]
+2021-07-27 18:59:40.506 TRACE 25808 --- [http-nio-8080-exec-3] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#3]
 2021-07-27 18:59:40.507 DEBUG 25808 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
     select
         role0_.id as id1_7_1_,
@@ -8090,11 +8090,11 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2021-07-27 18:59:45.537 TRACE 25808 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_12_] : [VARCHAR]) - [string]
 2021-07-27 18:59:45.537 TRACE 25808 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_12_] : [VARCHAR]) - [string]
 2021-07-27 18:59:45.537 TRACE 25808 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile5_12_] : [VARCHAR]) - [string]
-2021-07-27 18:59:45.538 TRACE 25808 --- [http-nio-8080-exec-4] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#2]
-2021-07-27 18:59:45.538 TRACE 25808 --- [http-nio-8080-exec-4] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#3]
-2021-07-27 18:59:45.538 TRACE 25808 --- [http-nio-8080-exec-4] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User.roles#5]
+2021-07-27 18:59:45.538 TRACE 25808 --- [http-nio-8080-exec-4] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#2]
+2021-07-27 18:59:45.538 TRACE 25808 --- [http-nio-8080-exec-4] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#3]
+2021-07-27 18:59:45.538 TRACE 25808 --- [http-nio-8080-exec-4] org.hibernate.type.CollectionType        : Created collection wrapper: [com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo.roles#5]
 2021-07-27 18:59:45.542 DEBUG 25808 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-07-27 18:59:45.542 DEBUG 25808 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User@5ff9e8db, com.jarida.ser (truncated)...]
+2021-07-27 18:59:45.542 DEBUG 25808 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo@5ff9e8db, com.jarida.ser (truncated)...]
 2021-07-27 18:59:45.543 DEBUG 25808 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
     select
         roles0_.users_id as users_id1_13_0_,

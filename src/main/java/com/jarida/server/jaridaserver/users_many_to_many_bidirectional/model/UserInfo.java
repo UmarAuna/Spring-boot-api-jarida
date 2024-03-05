@@ -10,7 +10,7 @@ import java.util.List;
 @JsonIdentityInfo(
         generator = ObjectIdGenerators.PropertyGenerator.class,
         property = "id")
-public class    User {
+public class UserInfo {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

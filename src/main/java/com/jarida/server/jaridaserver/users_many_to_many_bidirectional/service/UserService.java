@@ -4,7 +4,7 @@ import com.jarida.server.jaridaserver.exception.ResourceBadRequestException;
 import com.jarida.server.jaridaserver.exception.ResourceForbiddenException;
 import com.jarida.server.jaridaserver.exception.ResourceNotFoundException;
 import com.jarida.server.jaridaserver.exception.ResourceSuccessfulException;
-import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.User;
+import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.model.UserInfo;
 import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.repository.RoleRepository;
 import com.jarida.server.jaridaserver.users_many_to_many_bidirectional.repository.UserRepository;
 import org.springframework.http.ResponseEntity;
@@ -22,8 +22,8 @@ public class UserService {
     }
 
     /** Create a new User */
-    public ResponseEntity<Object> createUser(User model) {
-        User user = new User();
+    public ResponseEntity<Object> createUser(UserInfo model) {
+        UserInfo user = new UserInfo();
         if (userRepository.findByEmail(model.getEmail()).isPresent()) {
             throw new ResourceBadRequestException("The Email is already Present, Failed to Create new User");
         } else {
@@ -33,7 +33,7 @@ public class UserService {
             user.setEmail(model.getEmail());
             user.setRoles(model.getRoles());
 
-            User savedUser = userRepository.save(user);
+            UserInfo savedUser = userRepository.save(user);
             if (userRepository.findById(savedUser.getId()).isPresent())
                 return ResponseEntity.ok().body(savedUser);
             else throw new ResourceForbiddenException("Failed Creating User as Specified");
@@ -42,15 +42,15 @@ public class UserService {
 
     /** Update an Existing User */
     @Transactional
-    public ResponseEntity<Object> updateUser(User user, Long id) {
+    public ResponseEntity<Object> updateUser(UserInfo user, Long id) {
         if(userRepository.findById(id).isPresent()) {
-            User newUser = userRepository.findById(id).get();
+            UserInfo newUser = userRepository.findById(id).get();
             newUser.setFirstName(user.getFirstName());
             newUser.setLastName(user.getLastName());
             newUser.setMobile(user.getMobile());
             newUser.setEmail(user.getEmail());
             newUser.setRoles(user.getRoles());
-            User savedUser = userRepository.save(newUser);
+            UserInfo savedUser = userRepository.save(newUser);
             if(userRepository.findById(savedUser.getId()).isPresent())
                 return  ResponseEntity.ok().body(savedUser);
             else throw new ResourceBadRequestException("Failed updating the user specified");
