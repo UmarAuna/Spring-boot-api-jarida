@@ -1,10 +1,6 @@
 package com.jarida.server.jaridaserver.spring_security_2.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -32,21 +28,21 @@ public class JwtAuthenticationFilterTwos extends OncePerRequestFilter {
         String token = getJWTfromRequest(request);
 
         // validate token
-        if(StringUtils.hasText(token) && tokenProviderTwos.validateToken(token)){
+   /*     if(StringUtils.hasText(token) && tokenProviderTwos.validateToken(token)){
             // get username from token
-            String username = tokenProviderTwos.getUsernameFromJWT(token);
+           // String username = tokenProviderTwos.getUsernameFromJWT(token);
 
             // load user associated with token
-            UserDetails userDetails = customUserDetailsServiceTwos.loadUserByUsername(username);
+            //UserDetails userDetails = customUserDetailsServiceTwos.loadUserByUsername(username);
 
 
-            UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
-                    userDetails, null, userDetails.getAuthorities()
+           *//* UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
+                    userDetails, null, userDetails.getAuthorities()*//*
             );
             authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
             // set spring security
             SecurityContextHolder.getContext().setAuthentication(authenticationToken);
-        }
+        }*/
         filterChain.doFilter(request, response);
     }
 

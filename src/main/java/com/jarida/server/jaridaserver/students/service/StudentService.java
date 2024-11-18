@@ -32,6 +32,8 @@ public class StudentService {
     static String m9 = "0706";
     static String m10 = "0903";
     static String m11 = "0906";
+    static String m12 = "0913";
+    static String m13 = "0916";
 
     //GLO GSM Prefixes
     static String g1 = "0805";
@@ -57,6 +59,8 @@ public class StudentService {
     static String a6 = "0812";
     static String a7 = "0907";
     static String a8 = "0901";
+    static String a9 = "0904";
+    static String a10 = "0912";
 
     //STARCOMMS GSM Prefixes
     static String s1 = "07028";
@@ -114,7 +118,7 @@ public class StudentService {
             if (userInput.length() < 11 || userInput.length() > 11) {
                 throw new ResourceBadRequestException("Error! Invalid number. Number must not be lesser or greater than 11");
             }
-            else if (checkNumber.equals( m1 ) || checkNumber.equals( m2 ) || checkNumber.equals( m3 ) || checkNumber.equals( m4 ) || checkNumber.equals( m5 ) || checkNumber.equals( m6 ) || checkNumber.equals( m7 ) || checkNumber.equals( m8 ) || checkNumber.equals( m9 ) || checkNumber.equals( m10 ) || checkNumber.equals( m11 )) {
+            else if (checkNumber.equals( m1 ) || checkNumber.equals( m2 ) || checkNumber.equals( m3 ) || checkNumber.equals( m4 ) || checkNumber.equals( m5 ) || checkNumber.equals( m6 ) || checkNumber.equals( m7 ) || checkNumber.equals( m8 ) || checkNumber.equals( m9 ) || checkNumber.equals( m10 ) || checkNumber.equals( m11 ) || checkNumber.equals( m12 ) || checkNumber.equals( m13 )) {
                 response.put("Network Image", "https://res.cloudinary.com/dxrxviiv8/image/upload/v1642934123/network_providers/mtn.png");
                 response.put("Network Info", iInput + " belongs to MTN network 🟨");
                 response.put("Network Name",  "MTN");
@@ -129,7 +133,7 @@ public class StudentService {
                 response.put("Network Info", iInput + " belongs to 9MOBILE network 🟩");
                 response.put("Network Name",  "9MOBILE");
             }
-            else if (checkNumber.equals( a1 ) || checkNumber.equals( a2 ) || checkNumber.equals( a3 ) || checkNumber.equals( a4 ) || checkNumber.equals( a5 ) || checkNumber.equals( a6 ) || checkNumber.equals( a7 )|| checkNumber.equals( a8 )) {
+            else if (checkNumber.equals( a1 ) || checkNumber.equals( a2 ) || checkNumber.equals( a3 ) || checkNumber.equals( a4 ) || checkNumber.equals( a5 ) || checkNumber.equals( a6 ) || checkNumber.equals( a7 )|| checkNumber.equals( a8 ) || checkNumber.equals( a9 ) || checkNumber.equals( a10 )) {
                 response.put("Network Image", "https://res.cloudinary.com/dxrxviiv8/image/upload/v1642934123/network_providers/airtel.png");
                 response.put("Network Info", iInput + " belongs to AIRTEL network 🟥");
                 response.put("Network Name",  "AIRTEL");

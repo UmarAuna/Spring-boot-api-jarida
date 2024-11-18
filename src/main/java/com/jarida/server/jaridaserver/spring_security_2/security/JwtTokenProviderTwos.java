@@ -33,25 +33,25 @@ public class JwtTokenProviderTwos {
     }
 
     // get username from the token
-    public String getUsernameFromJWT(String token){
-        Claims claims = Jwts.parser()
-                .setSigningKey(jwtSecret)
-                .parseClaimsJws(token)
-                .getBody();
-        return claims.getSubject();
-    }
+   /* public String getUsernameFromJWT(String token){
+       *//* Claims claims = Jwts.parser()
+                //.setSigningKey(jwtSecret)
+                //.parseClaimsJws(token)
+                .getBody();*//*
+        //return claims.getSubject();
+    }*/
 
     /**
      * Returns the token expiration date encapsulated within the token
      */
-    public Date getTokenExpiryFromJWT(String token) {
+  /*  public Date getTokenExpiryFromJWT(String token) {
         Claims claims = Jwts.parser()
                 .setSigningKey(jwtSecret)
                 .parseClaimsJws(token)
                 .getBody();
 
         return claims.getExpiration();
-    }
+    }*/
 
     /**
      * Generates a token from a principal object. Embed the refresh token in the jwt
@@ -71,14 +71,14 @@ public class JwtTokenProviderTwos {
     /**
      * Returns the user id encapsulated within the token
      */
-    public Long getUserIdFromJWT(String token) {
+/*    public Long getUserIdFromJWT(String token) {
         Claims claims = Jwts.parser()
                 .setSigningKey(jwtSecret)
-                .parseClaimsJws(token)
+                //.parseClaimsJws(token)
                 .getBody();
 
         return Long.parseLong(claims.getSubject());
-    }
+    }*/
 
 
     /**
@@ -92,7 +92,7 @@ public class JwtTokenProviderTwos {
     // validate JWT token
     public boolean validateToken(String token){
         try{
-            Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token);
+            //Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token);
             return true;
         }catch (SignatureException ex){
             throw new BlogAPIExceptionTwos(HttpStatus.BAD_REQUEST, "Invalid JWT signature");

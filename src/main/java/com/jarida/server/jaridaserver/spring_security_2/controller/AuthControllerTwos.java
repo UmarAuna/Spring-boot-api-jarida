@@ -4,7 +4,6 @@ import com.jarida.server.jaridaserver.spring_security_2.entity.RoleTwos;
 import com.jarida.server.jaridaserver.spring_security_2.entity.UserTwos;
 import com.jarida.server.jaridaserver.spring_security_2.exception.BadCredentialsExceptionTwos;
 import com.jarida.server.jaridaserver.spring_security_2.exception.ResourceNotFoundExceptionTwos;
-import com.jarida.server.jaridaserver.spring_security_2.payload.ApiResponseTwos;
 import com.jarida.server.jaridaserver.spring_security_2.payload.*;
 import com.jarida.server.jaridaserver.spring_security_2.repository.RoleRepositoryTwos;
 import com.jarida.server.jaridaserver.spring_security_2.repository.UserRepositoryTwos;
@@ -12,7 +11,10 @@ import com.jarida.server.jaridaserver.spring_security_2.security.CustomUserDetai
 import com.jarida.server.jaridaserver.spring_security_2.security.JwtTokenProviderTwos;
 import com.jarida.server.jaridaserver.spring_security_2.service.impl.AuthServiceImplTwos;
 import com.jarida.server.jaridaserver.spring_security_2.utils.PasswordEncoderGeneratorTwo;
-import io.swagger.annotations.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.SwaggerDefinition;
+import io.swagger.annotations.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -32,7 +34,6 @@ import javax.transaction.Transactional;
 import javax.validation.Valid;
 import java.net.URI;
 import java.util.Collections;
-import java.util.Date;
 
 @RestController
 @RequestMapping("/api/v3")
@@ -242,7 +243,7 @@ public class AuthControllerTwos {
 
     }
 
-    @GetMapping("/user/tokenExpirationDate")
+ /*   @GetMapping("/user/tokenExpirationDate")
     public ResponseEntity<ApiResponseTwos> getTokenExpirationDate(
             @Valid @RequestParam("token") String token
     ) {
@@ -250,7 +251,7 @@ public class AuthControllerTwos {
 
         ApiResponseTwos apiResponse = new ApiResponseTwos(Boolean.TRUE, tokens.toString());
         return new ResponseEntity<>(apiResponse, HttpStatus.OK);
-    }
+    }*/
 
 }
 
