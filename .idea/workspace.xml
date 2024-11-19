@@ -5,31 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e65b50-8217-4fe0-ac65-b2d2079feffc" name="Default Changelist" comment="new fixes">
-      <change afterPath="$PROJECT_DIR$/pom.xml.versionsBackup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbhtml.log.2024-03-05.0.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sbhtml.log" beforeDir="false" afterPath="$PROJECT_DIR$/sbhtml.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/spring_security_2/controller/AuthControllerTwos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/spring_security_2/controller/AuthControllerTwos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/spring_security_2/security/JwtAuthenticationFilterTwos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/spring_security_2/security/JwtAuthenticationFilterTwos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/spring_security_2/security/JwtTokenProviderTwos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/spring_security_2/security/JwtTokenProviderTwos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/students/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/students/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/todoApi/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/todoApi/service/TodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/students/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jarida/server/jaridaserver/students/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/spring_security_2/controller/AuthControllerTwos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/spring_security_2/controller/AuthControllerTwos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/spring_security_2/security/JwtAuthenticationFilterTwos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/spring_security_2/security/JwtAuthenticationFilterTwos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/spring_security_2/security/JwtTokenProviderTwos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/spring_security_2/security/JwtTokenProviderTwos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/students/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/students/controller/StudentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/students/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jarida/server/jaridaserver/students/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jarida-server-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jarida-server-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +89,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;UmarAuna&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -118,6 +106,12 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/UmarAuna/Spring-boot-api-jarida.git&quot;,
+    &quot;accountId&quot;: &quot;f4e39747-5ac8-4731-9668-d987eb0626c8&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar!/com/fasterxml/jackson/annotation/JsonIgnoreProperties.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar!/com/fasterxml/jackson/annotation/JsonView.class" root0="SKIP_INSPECTION" />
@@ -219,6 +213,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.generated-requests | #1.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -238,7 +233,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "spring",
+    "settings.editor.selected.configurable": "http.proxy",
     "show.migrate.to.gradle.popup": "false",
     "spring.configuration.checksum": "7ac4107a7394e9c924446d7a50603485",
     "vue.rearranger.settings.migration": "true"
@@ -390,11 +385,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.rest-api#3" />
         <item itemvalue="HTTP Request.rest-api#1" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.Spring_boot_api_jarida-endpoints | #1" />
         <item itemvalue="HTTP Request.JaridaServerApplication | #1" />
       </list>
@@ -649,7 +648,9 @@
       <workItem from="1731822335931" duration="659000" />
       <workItem from="1731823027531" duration="9052000" />
       <workItem from="1731922212152" duration="1834000" />
-      <workItem from="1731924666060" duration="4616000" />
+      <workItem from="1731924666060" duration="8581000" />
+      <workItem from="1732011847503" duration="562000" />
+      <workItem from="1732012509328" duration="9180000" />
     </task>
     <task id="LOCAL-00001" summary="new fixes">
       <created>1591212267954</created>

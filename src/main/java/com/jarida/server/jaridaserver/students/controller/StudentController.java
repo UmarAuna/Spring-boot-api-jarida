@@ -92,7 +92,7 @@ public class StudentController {
         return ResponseEntity.ok().body(student);
     }
 
-    @PostMapping("/phonenumber")
+    @GetMapping("/phonenumber")
     public Map<String, String> phoneNumber(@RequestParam @Valid String number) {
         return studentService.phoneNumber(number);
     }
